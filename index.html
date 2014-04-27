@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questionário</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="container-fluid">
+    
+    <h1>Programa de Pós-Graduação em Saneamento, Meio Ambiente e Recursos Hídricos </h1>
+    
+    <form class="form-horizontal" role="form">        
+        <div class="form-group">
+            <label for="numero" class="col-sm-5 control-label">Número do questionário (nove dígitos)</label>
+            <div class="col-sm-6">
+                <input name="numero" type="number" class="form-control" placeholder="">
+            </div>
+        </div>
+        
+        <h2>1. Identificação da Residência</h2>
+        
+        <div class="form-group">
+            <label for="nome" class="col-sm-3 control-label">Nome do entrevistado</label>
+            <div class="col-sm-9">
+                <input name="nome" type="text" class="form-control" placeholder="">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="idade" class="col-sm-3 control-label">Idade do entrevistado</label>
+            <div class="col-sm-2">
+                <input name="idade" type="number" class="form-control" placeholder="">
+            </div>
+            <label for="sexo" class="col-sm-3 control-label">Sexo do entrevistado</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline">
+                  <input name="sexo" type="checkbox" value="homem"> Homem
+                </label>
+                <label class="checkbox-inline">
+                  <input name="sexo" type="checkbox" value="mulher"> Mulher
+                </label>
+            </div>
+        </div>        
+        
+        <div class="form-group">
+            <label for="casa_numero" class="col-sm-3 control-label">Número da casa-/ FNS</label>
+            <div class="col-sm-3">
+                <input name="casa_numero" type="text" class="form-control" placeholder="">
+            </div>
+            <label for="sexo" class="col-sm-2 control-label">Município</label>
+            <div class="col-sm-4">
+                <input name="municipio" type="text" class="form-control" placeholder="">
+            </div>
+        </div>   
+        
+        <div class="form-group">
+           <label for="entrevistador" class="col-sm-2 control-label">Entrevistador</label>
+           <div class="col-sm-4">
+               <input name="entrevistador" type="text" class="form-control" placeholder="">
+           </div>
+           <label for="data_entrevista" class="col-sm-2 control-label">Data da entrevista</label>
+           <div class="col-sm-3">
+               <input name="data_entrevista" type="date" class="form-control" placeholder="">
+           </div>
+        </div>   
+        
+        <div class="form-group">
+           <div class="col-sm-4">
+            <label class="checkbox-inline">
+                <input name="desistiu" type="checkbox" value="desistiu"> Não participou/desistiu
+            </label>
+           </div>
+           <label for="hora_inicio_entrevista" class="col-sm-4 control-label">Início da entrevista (hora)</label>
+           <div class="col-sm-2">
+               <input name="hora_inicio_entrevista" type="time" class="form-control" placeholder="">
+           </div>
+        </div>                
+    
+    
+        <h2>2. Participação e importância do acesso à água e ao banheiro</h2>
+        <h3>PERCEPÇÃO SOBRE A ÁGUA E O BANHEIRO</h3>
+        <div class="col-sm-12">
+            <div class="form-group ">
+                <label for="exampleInputEmail1">(A) 2.1 Como a chegada da água tratada vai melhorar sua vida: (estimulada) 
+                  (e depois? –repete as outras alternativas) 
+                </label>
+                <div class="radio"><label>
+                    <input name="questao_2_1" type="radio" value="mais tempo" > Mais tempo
+                </label></div>  
+                <div class="radio"><label>
+                    <input name="questao_2_1" type="radio" value="mais conforto" > Mais conforto
+                </label></div>     
+                <div class="radio"><label>
+                    <input name="questao_2_1" type="radio" value="mais dinheiro" > Mais dinheiro
+                </label></div>     
+                <div class="radio"><label>
+                    <input name="questao_2_1" type="radio" value="mais saúde" > Mais saúde
+                </label></div>                                                 
+            </div>
+        
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">(A) 2.2 Como você acha que a construção do banheiro vai melhorar sua vida: 
+                    (estimulada) (e depois? –repete as outras alternativas) 
+                </label>
+                <div class="radio"><label>
+                    <input name="questao_2_2" type="radio" value="mais tempo" > Mais tempo
+                </label></div>  
+                <div class="radio"><label>
+                    <input name="questao_2_2" type="radio" value="mais conforto" > Mais conforto
+                </label></div>     
+                <div class="radio"><label>
+                    <input name="questao_2_2" type="radio" value="mais privacidade" > Mais privacidade
+                </label></div>     
+                <div class="radio"><label>
+                    <input name="questao_2_2" type="radio" value="mais saúde" > Mais saúde
+                </label></div>                                                 
+            </div>        
+        
+            <div class="form-group">
+                <label for="exampleInputEmail1">(D) 2.3 Depois da chegada da água o que melhorou na sua vida: 
+                    (estimulada) (e depois? –repete as outras alternativas) 
+                </label>
+                <div class="radio"><label>
+                    <input name="questao_2_3" type="radio" value="mais tempo" > Mais tempo
+                </label></div>  
+                <div class="radio"><label>
+                    <input name="questao_2_3" type="radio" value="mais conforto" > Mais conforto
+                </label></div>     
+                <div class="radio"><label>
+                    <input name="questao_2_3" type="radio" value="mais dinheiro" > Mais dinheiro
+                </label></div>     
+                <div class="radio"><label>
+                    <input name="questao_2_3" type="radio" value="mais saúde" > Mais saúde
+                </label></div>                                                 
+            </div>     
+        
+            <div class="form-group">
+                <label for="exampleInputEmail1">(D) 2.4 Depois da construção do banheiro o que melhorou na sua vida: 
+                    (estimulada) (e depois? –repete as outras alternativas)	
+                </label>
+                <div class="radio"><label>
+                    <input name="questao_2_4" type="radio" value="mais tempo" checked> Mais tempo
+                </label></div>  
+                <div class="radio"><label>
+                    <input name="questao_2_4" type="radio" value="mais conforto" > Mais conforto
+                </label></div>     
+                <div class="radio"><label>
+                    <input name="questao_2_4" type="radio" value="mais privacidade" > Mais privacidade
+                </label></div>     
+                <div class="radio"><label>
+                    <input name="questao_2_4" type="radio" value="mais saúde" > Mais saúde
+                </label></div>                                                 
+            </div>              
+        </div>
+        
+        
+        <h2>3. Características  do domicílio (Parte 1)</h2>
+
+        <label>3.1 Quanto tempo a família mora nesta casa?</label>
+        <div class="form-group form-inline">
+            <div class="col-sm-4">
+                <input name="questao_3_1_anos" type="text" class="form-control" placeholder="">
+                <label for="casa_numero" class=""> anos</label>
+            </div>
+            <div class="col-sm-4">
+                <input name="questao_3_1_meses" type="text" class="form-control" placeholder="">
+                <label for="casa_numero" class=""> meses</label>
+            </div>
+        </div>         
+        
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">3.2 As pessoas desta casa moram só aqui nesta comunidade? (estimular se necessário)
+            </label>
+            <div class="radio"><label>
+                <input name="questao_3_2" type="radio" value="mais tempo" > Sim
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_3_2" type="radio" value="mais conforto" > Não
+            </label></div>     
+            
+            <div class="col-sm-7 col-sm-offset-1">
+                <div class="radio"><label>
+                    <input name="questao_3_2_2" type="radio" value="mais tempo" > Permanece alguns dias da semana nesta casa
+                </label></div>
+                <input name="questao_3_2_2_tempo" type="text" > dias
+                
+                <div class="radio"><label>
+                    <input name="questao_3_2_2" type="radio" value="mais tempo" > Permanece nesta casa apenas parte do mês
+                </label></div>
+                <input name="questao_3_2_2_tempo" type="text" > dias
+                
+                <div class="radio"><label>
+                    <input name="questao_3_2_2" type="radio" value="mais tempo" > Permanece apenas alguns meses do ano nesta casa
+                </label></div>
+                <input name="questao_3_2_2_tempo" type="text" > meses
+            </div>                                
+        </div>          
+        
+        
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">3.3 De quem é esta casa? 
+            </label>
+            <div class="radio"><label>
+                <input name="questao_3_3" type="radio" value="1" > 1 - Próprio, de algum morador da casa - já paga
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_3_3" type="radio" value="2" > 2 - Próprio, de algum morador da casa - ainda pagando
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_3_3" type="radio" value="3" > 3 - Alugado 
+            </label></div> 
+            <div class="radio"><label>
+                <input name="questao_3_3" type="radio" value="4" > 4 - Cedido por empregador
+            </label></div>   
+            <div class="radio"><label>
+                <input name="questao_3_3" type="radio" value="5" > 5 - Cedido de outra forma
+            </label></div>
+            Especificar: <input name="questao_3_3_especificar" type="text" >   
+            <div class="radio"><label>
+                <input name="questao_3_3" type="radio" value="6" > 6 - Outra condição
+            </label></div>
+            Especificar: <input name="questao_3_3_especificar" type="text" >                                                  
+        </div>
+        
+        
+        <label>3.4 Quantos cômodos existem nesta casa? (perguntar)</label>
+        <div class="form-group form-inline">
+            <div class="col-sm-4">
+                <input name="questao_3_4" type="number" class="form-control" placeholder="">
+            </div>
+            <span class="col-sm-7">(Inclusive banheiro e cozinha, porém não considere como cômodo: corredores, 
+                varandas abertas, garagem e outros compartimentos para fins não residenciais)</span>
+        </div>
+        
+        <label>3.5 Quantos cômodos servem de dormitório para os moradores?</label>
+        <div class="form-group form-inline">
+            <div class="col-sm-4">
+                <input name="questao_3_5" type="number" class="form-control" placeholder="">
+            </div>     
+        </div>        
+        
+        <label>3.6 Quantos banheiros que só vocês usam nesta casa? </label>
+        <div class="form-group form-inline">
+            <div class="col-sm-4">
+                <input name="questao_3_6" type="number" class="form-control" placeholder="">
+            </div>
+            <span class="col-sm-7">(Inclusive os localizados fora da casa, no terreno ou na propriedade)</span>
+        </div>        
+        
+        
+        
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">3.7 O que a família faz com o lixo desta casa? (múltipla) e outra? 
+            </label>
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="1" > 1 - Coletado diretamente por serviço de limpeza
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="2" > 2 - Colocado em caçamba de serviço de limpeza
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="3" > 3 - Queimado (na propriedade)
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="4" > 4 - Enterrado (na propriedade)
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="5" > 5 - Jogado em terreno baldio ou logradouro
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="6" > 6 - Jogado em rio
+            </label></div>           
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="7" > 7 - Tem outro destino
+            </label></div>                                   
+        </div>        
+        
+
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">3.8 - O material nas paredes externas é: (perguntar só se necessário) 
+            </label>
+            <div class="radio"><label>
+                <input name="questao_3_8" type="radio" value="1" > 1 - Alvenaria com revestimento
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_3_8" type="radio" value="2" > 2 - Alvenaria sem revestimento
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_3_8" type="radio" value="3" > 3 - Madeira apropriada para construção (aparelhada)
+            </label></div> 
+            <div class="radio"><label>
+                <input name="questao_3_8" type="radio" value="4" > 4 - Taipa revestida
+            </label></div>   
+            <div class="radio"><label>
+                <input name="questao_3_8" type="radio" value="5" > 5 - Taipa não revestida
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_3_8" type="radio" value="6" > 6 - Madeira aproveitada
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_3_8" type="radio" value="7" > 7 - Palha
+            </label></div>                        
+            <div class="radio"><label>
+                <input name="questao_3_8" type="radio" value="8" > 8 - Outro material
+            </label></div>        
+
+            Especificar: <input name="questao_3_8_especificar" type="text" >                                                    
+        </div>
+
+        
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">3.9. Qual o material de cobertura da casa? (perguntar só se necessário) 
+            </label>
+            <div class="radio"><label>
+                <input name="questao_3_9" type="radio" value="1" > 1. Laje de concreto
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_3_9" type="radio" value="2" > 2. Brasilite (Telha de amianto)
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_3_9" type="radio" value="3" > 3. Telha colonial
+            </label></div> 
+            <div class="radio"><label>
+                <input name="questao_3_9" type="radio" value="4" > 4. Telha de barro
+            </label></div>   
+            <div class="radio"><label>
+                <input name="questao_3_9" type="radio" value="5" > 5. Telha de zinco 
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_3_9" type="radio" value="6" > 6. Madeirite, compensado
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_3_9" type="radio" value="7" > 7. Palha (sapê) 
+            </label></div>                        
+            <div class="radio"><label>
+                <input name="questao_3_9" type="radio" value="8" > 8. Outro
+            </label></div>        
+
+            Especificar: <input name="questao_3_9_especificar" type="text" >                                                    
+        </div>        
+        
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">3.10. Qual o material do piso da casa? (perguntar só se necessário)
+            </label>
+            <div class="radio"><label>
+                <input name="questao_3_10" type="radio" value="1" > 1. Cimentado
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_3_10" type="radio" value="2" > 2. Madeira
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_3_10" type="radio" value="3" > 3. Cerâmica	
+            </label></div> 
+            <div class="radio"><label>
+                <input name="questao_3_10" type="radio" value="4" > 4. Terra batida
+            </label></div>   
+            <div class="radio"><label>
+                <input name="questao_3_10" type="radio" value="5" > 5. Outro
+            </label></div>                          
+            Especificar: <input name="questao_3_10_especificar" type="text" >                                                    
+        </div>         
+        
+        
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">3.7 O que a família faz com o lixo desta casa? (múltipla) e outra? 
+            </label>
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="1" > 1 - Coletado diretamente por serviço de limpeza
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="2" > 2 - Colocado em caçamba de serviço de limpeza
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="3" > 3 - Queimado (na propriedade)
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="4" > 4 - Enterrado (na propriedade)
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="5" > 5 - Jogado em terreno baldio ou logradouro
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="6" > 6 - Jogado em rio
+            </label></div>           
+            <div class="checkbox"><label>
+                <input name="questao_3_7" type="checkbox" value="7" > 7 - Tem outro destino
+            </label></div>                                   
+        </div>           
+
+    
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">3.11 Quais bens a família possui? (resposta múltipla)
+            </label>
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="1" > 1. Geladeira
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="2" > 2. Fogão a gás
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="3" > 3. Televisão 
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="4" > 4. Parabólica
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="5" > 5. TV a cabo/satélite	
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="6" > 6. DVD
+            </label></div>           
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="7" > 7. Aparelho de som
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="8" > 8. Rádio
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="9" > 9. Telefone celular
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="10" > 10. Telefone fixo
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="11" > 11. Computador
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="12" > 12. Computador com acesso à internet
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="13" > 13. Tanquinho de lavar roupas	
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="14" > 14. Máquina de lavar roupas	
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="15" > 15. Motocicleta para uso participar	
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="16" > 16. Carro para uso particular
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="17" > 17. Micro-ondas	
+            </label></div>   
+            <div class="checkbox"><label>
+                <input name="questao_3_11" type="checkbox" value="18" > 18. Outros
+            </label></div>   
+            Especificar: <input name="questao_3_11_especificar" type="text" >
+        </div>       	
+
+        <label>3.12 Quanto a família gasta por mês com: </label>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">1. Energia Elétrica</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_1" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_1_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">2. Água</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_2" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_2_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">2. Água</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_2" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_2_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div>	
+        <div class="form-group">
+            <label class="col-sm-3 control-label">3. Gás, carvão e lenha</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_3" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_3_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div>		
+        <div class="form-group">
+            <label class="col-sm-3 control-label">4. Supermercado (Alimentação, Higiene e Limpeza)</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_4" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_4_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div>	
+        <div class="form-group">
+            <label class="col-sm-3 control-label">5. Animais  (Doméstico ou Criação)</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_5" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_5_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div>	
+        <div class="form-group">
+            <label class="col-sm-3 control-label">6. Transporte</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_6" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_6_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div>	
+        <div class="form-group">
+            <label class="col-sm-3 control-label">7. Aluguel</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_7" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_7_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div>	
+        <div class="form-group">
+            <label class="col-sm-3 control-label">8. Remédio</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_8" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_8_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div> 	
+        <div class="form-group">
+            <label class="col-sm-3 control-label">9. Funcionários</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_9" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            <label><input name="questao_3_12_9_naotem" type="checkbox" value="nao" > Não tem</label>
+        </div> 	 
+        <div class="form-group">
+            <label class="col-sm-3 control-label">10. Outros</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_10" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            Especificar: <input name="questao_3_12_10_especificar" type="text" > 
+        </div>         	
+        <div class="form-group">
+            <label class="col-sm-3 control-label">11. Outros</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_11" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            Especificar: <input name="questao_3_12_11_especificar" type="text" > 
+        </div>  
+        <div class="form-group">
+            <label class="col-sm-3 control-label">12. Outros</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input name="questao_3_12_12" type="number" class="form-control" placeholder="">
+                </div>
+            </div>
+            Especificar: <input name="questao_3_12_12_especificar" type="text" > 
+        </div>          				
+
+
+
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">3.13- A família possui animais de criação (que não são domésticos)? Em caso afirmativo: quais e quantos? (estimulada)
+            </label>
+            <div class="radio"><label>
+                <input name="questao_3_13" type="radio" value="sim"> Sim
+            </label></div>  
+                <div class="col-sm-8 col-sm-offset-1">
+                    <div class="radio"><label class="control-label">
+                        Gado: </label><input name="questao_3_13_gado" type="number"> cabeças
+                    </div>
+                    <div class="radio"><label class="control-label">
+                        Cavalos: </label><input name="questao_3_13_cavalos" type="number"> cabeças
+                    </div>          
+                    <div class="radio"><label class="control-label">
+                        Burro: </label><input name="questao_3_13_burro" type="number"> cabeças
+                    </div>   
+                    <div class="radio"><label class="control-label">
+                        Cabras: </label><input name="questao_3_13_cabras" type="number"> cabeças
+                    </div>   
+                    <div class="radio"><label class="control-label">
+                        Porcos (bacurin/barrão): </label><input name="questao_3_13_porcos" type="number"> cabeças
+                    </div>   
+                    <div class="radio"><label class="control-label">
+                        Aves: </label><input name="questao_3_13_aves" type="number"> cabeças
+                    </div>    
+                    <div class="radio"><label class="control-label">
+                        Outro: </label><input name="questao_3_13_outro" type="number"> cabeças
+                    </div>                                                                                                          
+                </div>
+            <div class="clearfix"></div>
+            
+            <div class="radio"><label>
+                <input name="questao_3_13" type="radio" value="nao"> Não
+            </label></div>                       
+        </div>
+
+
+
+
+	
+
+
+
+
+
+
+	
+                  	
+	
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="form-group">
+            <div class="col-sm-offset-8 col-sm-4">
+                <button type="submit" class="btn btn-primary">Salvar questionário</button>
+            </div>
+        </div>        
+    </form>
+</div>
+
+<script src="js/zepto.min.js"></script>
+</body>
+</html>

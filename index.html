@@ -47,15 +47,21 @@
             </div>
             <label for="sexo" class="col-sm-3 control-label">Sexo do entrevistado</label>
             <div class="col-sm-4">
-                <label class="checkbox-inline">
-                  <input name="sexo" type="checkbox" value="homem"> Homem
+                <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary">
+                  <input name="sexo" type="radio" value="homem"> Homem
                 </label>
-                <label class="checkbox-inline">
-                  <input name="sexo" type="checkbox" value="mulher"> Mulher
+                <label class="btn btn-primary">
+                  <input name="sexo" type="radio" value="mulher"> Mulher
                 </label>
+                </div>
             </div>
         </div>        
         
+
+          
+          
+          
         <div class="form-group">
             <label for="casa_numero" class="col-sm-3 control-label">Número da casa-/ FNS</label>
             <div class="col-sm-3">
@@ -79,11 +85,11 @@
         </div>   
         
         <div class="form-group">
-           <div class="col-sm-4">
-            <label class="checkbox-inline">
+           <div class="col-sm-4"><div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary">
                 <input name="desistiu" type="checkbox" value="desistiu"> Não participou/desistiu
             </label>
-           </div>
+           </div></div>
            <label for="hora_inicio_entrevista" class="col-sm-4 control-label">Início da entrevista (hora)</label>
            <div class="col-sm-2">
                <input name="hora_inicio_entrevista" type="time" class="form-control" placeholder="">
@@ -1036,7 +1042,7 @@
             
             <tr>
                 <td>7</td>
-                <td>Cisterna PIMC - água de chuva</td>
+                <td>Cisterna P1MC - água de chuva</td>
                 <td><input type="checkbox" name="questao_4_2" value="7"></td>
                 <td><input type="checkbox" name="questao_4_3_1" value="7" ></td>
                 <td><input type="radio" name="questao_4_3_2" value="7"></td>
@@ -1080,7 +1086,392 @@
                         <input name="questao_4_5_7" type="radio" value="999"> NQR
                     </label></div>                                                                                    
                 </td>                
-            </tr>                
+            </tr>  
+            
+            <tr>
+                <td>8</td>
+                <td>Cisterna P1MC do vizinho ou parente</td>
+                <td><input type="checkbox" name="questao_4_2" value="8"></td>
+                <td><input type="checkbox" name="questao_4_3_1" value="8" ></td>
+                <td><input type="radio" name="questao_4_3_2" value="8"></td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_4_8" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_8" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_4_8" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_4_8" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_8" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_4_8" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_5_8" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_8" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_5_8" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_5_8" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_8" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_5_8" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>                
+            </tr>    
+            
+            <tr>
+                <td>9</td>
+                <td>Cisterna P1MC - Outros</td>
+                <td><input type="checkbox" name="questao_4_2" value="9"></td>
+                <td><input type="checkbox" name="questao_4_3_1" value="9" ></td>
+                <td><input type="radio" name="questao_4_3_2" value="9"></td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_4_9" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_9" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_4_9" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_4_9" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_9" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_4_9" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_5_9" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_9" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_5_9" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_5_9" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_9" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_5_9" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>                
+            </tr> 
+            
+            <tr>
+                <td>10</td>
+                <td>Vasilhames de água de chuva (manilha, pequenas cisternas, etc)</td>
+                <td><input type="checkbox" name="questao_4_2" value="10"></td>
+                <td><input type="checkbox" name="questao_4_3_1" value="10" ></td>
+                <td><input type="radio" name="questao_4_3_2" value="10"></td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_4_10" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_10" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_4_10" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_4_10" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_10" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_4_10" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_5_10" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_10" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_5_10" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_5_10" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_10" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_5_10" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>                
+            </tr>  
+            
+            <tr>
+                <td>11</td>
+                <td>Água mineral (garrafão)</td>
+                <td><input type="checkbox" name="questao_4_2" value="11"></td>
+                <td><input type="checkbox" name="questao_4_3_1" value="11" ></td>
+                <td><input type="radio" name="questao_4_3_2" value="11"></td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_4_11" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_11" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_4_11" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_4_11" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_11" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_4_11" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_5_11" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_11" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_5_11" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_5_11" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_11" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_5_11" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>                
+            </tr>       
+            
+            <tr>
+                <td>12</td>
+                <td>Busca chafariz ou cisterna pública</td>
+                <td><input type="checkbox" name="questao_4_2" value="12"></td>
+                <td><input type="checkbox" name="questao_4_3_1" value="12" ></td>
+                <td><input type="radio" name="questao_4_3_2" value="12"></td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_4_12" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_12" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_4_12" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_4_12" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_12" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_4_12" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_5_12" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_12" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_5_12" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_5_12" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_12" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_5_12" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>                
+            </tr>  
+
+            <tr>
+                <td>13</td>
+                <td>Água paga (carroceiro, água Itapeim)</td>
+                <td><input type="checkbox" name="questao_4_2" value="13"></td>
+                <td><input type="checkbox" name="questao_4_3_1" value="13" ></td>
+                <td><input type="radio" name="questao_4_3_2" value="13"></td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_4_13" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_13" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_4_13" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_4_13" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_13" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_4_13" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_5_13" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_13" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_5_13" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_5_13" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_13" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_5_13" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>                
+            </tr>                    
+            
+            <tr>
+                <td>14</td>
+                <td>Poço raso</td>
+                <td><input type="checkbox" name="questao_4_2" value="14"></td>
+                <td><input type="checkbox" name="questao_4_3_1" value="14" ></td>
+                <td><input type="radio" name="questao_4_3_2" value="14"></td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_4_14" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_14" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_4_14" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_4_14" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_14" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_4_14" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_5_14" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_14" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_5_14" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_5_14" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_14" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_5_14" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>                
+            </tr>           
+            
+            <tr>
+                <td>15</td>
+                <td>Outra</td>
+                <td><input type="checkbox" name="questao_4_2" value="15"></td>
+                <td><input type="checkbox" name="questao_4_3_1" value="15" ></td>
+                <td><input type="radio" name="questao_4_3_2" value="15"></td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_4_15" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_15" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_4_15" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_4_15" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_4_15" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_4_15" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>
+                <td>
+                    <div class="radio"><label>
+                        <input name="questao_4_5_15" type="radio" value="1"> 1. Ótima
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_15" type="radio" value="2"> 2. Boa
+                    </label></div>          
+                    <div class="radio"><label>
+                        <input name="questao_4_5_15" type="radio" value="3"> 3. Regular
+                    </label></div>       
+                    <div class="radio"><label>
+                        <input name="questao_4_5_15" type="radio" value="4"> 4. Ruim
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_5_15" type="radio" value="998"> NSR
+                    </label></div> 
+                    <div class="radio"><label>
+                        <input name="questao_4_5_15" type="radio" value="999"> NQR
+                    </label></div>                                                                                    
+                </td>                
+            </tr>                                                                
+                          
         </table>
         </div>
 
@@ -1113,6 +1504,7 @@
     </form>
 </div>
 
-<script src="js/zepto.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

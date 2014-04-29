@@ -23,11 +23,68 @@
     
     <h1>Programa de Pós-Graduação em Saneamento, Meio Ambiente e Recursos Hídricos </h1>
     
+    <div id="pre-form">
+        
+        <label>Recebeu banheiro</label><br>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input name="pre-form-1" type="radio" value="0" checked> Sem informação
+            </label>
+            <label class="btn btn-primary">
+              <input name="pre-form-1" type="radio" value="1"> Não
+            </label>
+            <label class="btn btn-primary">
+              <input name="pre-form-1" type="radio" value="2"> Sim
+            </label>        
+        </div>    
+        <br>
+        <label>Etapa</label><br>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input name="pre-form-2" type="radio" value="0" checked> Antes
+            </label>
+            <label class="btn btn-primary">
+              <input name="pre-form-2" type="radio" value="1"> Depois
+            </label>      
+        </div> 
+        <br>
+        <label>Caso ou controle</label><br>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input name="pre-form-3" type="radio" value="0" checked> Caso
+            </label>
+            <label class="btn btn-primary">
+              <input name="pre-form-3" type="radio" value="1"> Controle
+            </label>      
+        </div>
+        <br>
+        <label>Localidade</label><br>
+        <select name="pre-form-4">
+            <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option><option>8</option><option>9</option>
+        </select>    
+        <br>
+        <label>Crianças até 5 anos</label><br>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input name="pre-form-5" type="radio" value="0" checked> Não possui
+            </label>
+            <label class="btn btn-primary">
+              <input name="pre-form-5" type="radio" value="1"> Possui
+            </label>      
+        </div>         
+    </div>
+
+
     <form class="form-horizontal" role="form">        
         <div class="form-group">
             <label for="numero" class="col-sm-5 control-label">Número do questionário (nove dígitos)</label>
-            <div class="col-sm-6">
-                <input name="numero" type="number" class="form-control" placeholder="">
+            <div class="col-sm-4">
+                
+                <div class="input-group">
+                  <span class="input-group-addon" id="result-pre-form">00000</span>
+                  <input name="numero" type="number" class="form-control" max="9999">
+                </div>                
             </div>
         </div>
         
@@ -189,11 +246,11 @@
         <label>3.1 Quanto tempo a família mora nesta casa?</label>
         <div class="form-group form-inline">
             <div class="col-sm-4">
-                <input name="questao_3_1_anos" type="text" class="form-control" placeholder="">
+                <input name="questao_3_1_anos" type="number" class="form-control" placeholder="">
                 <label for="casa_numero" class=""> anos</label>
             </div>
-            <div class="col-sm-4">
-                <input name="questao_3_1_meses" type="text" class="form-control" placeholder="">
+            <div class="col-sm-5">
+                <input name="questao_3_1_meses" type="number" class="form-control" placeholder="">
                 <label for="casa_numero" class=""> meses</label>
             </div>
         </div>         
@@ -1515,5 +1572,6 @@
 
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+$(function(){$("#pre-form input, #pre-form select").change(function(){var e=$("input[name=pre-form-1]:checked").val(),t=$("input[name=pre-form-2]:checked").val(),n=$("input[name=pre-form-3]:checked").val(),r=$("select[name=pre-form-4]").val(),i=$("input[name=pre-form-5]:checked").val();$("#result-pre-form").text(e+t+n+r+i)})});

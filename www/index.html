@@ -25,7 +25,7 @@
     
     <div id="pre-form">
         
-        <label>Recebeu banheiro</label><br>
+        <label>1. Recebeu banheiro</label><br>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary active">
               <input name="pre-form-1" type="radio" value="0" checked> Sem informação
@@ -38,17 +38,25 @@
             </label>        
         </div>    
         <br>
-        <label>Etapa</label><br>
-        <div class="btn-group" data-toggle="buttons">
+        <label>2. Etapa</label><br>
+       
             <label class="btn btn-primary active">
-              <input name="pre-form-2" type="radio" value="0" checked> Antes
+              <input name="pre-form-2" ng-model="pre_form_2" type="radio" value="0" checked> Antes
             </label>
             <label class="btn btn-primary">
-              <input name="pre-form-2" type="radio" value="1"> Depois
+              <input name="pre-form-2" ng-model="pre_form_2" type="radio" value="1"> Depois
             </label>      
-        </div> 
+         
+        <!-- <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input name="pre-form-2" ng-model="pre_form_2" type="radio" value="0" checked> Antes
+            </label>
+            <label class="btn btn-primary">
+              <input name="pre-form-2" ng-model="pre_form_2" type="radio" value="1"> Depois
+            </label>      
+        </div>  -->
         <br>
-        <label>Caso ou controle</label><br>
+        <label>3. Caso ou controle</label><br>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary active">
               <input name="pre-form-3" type="radio" value="0" checked> Caso
@@ -58,13 +66,13 @@
             </label>      
         </div>
         <br>
-        <label>Localidade</label><br>
+        <label>4. Localidade</label><br>
         <select name="pre-form-4">
             <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option>
             <option>5</option><option>6</option><option>7</option><option>8</option><option>9</option>
         </select>    
         <br>
-        <label>Crianças até 5 anos</label><br>
+        <label>5. Crianças até 5 anos</label><br>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary active">
               <input name="pre-form-5" type="radio" value="0" checked> Não possui
@@ -85,6 +93,7 @@
                   <span class="input-group-addon" id="result-pre-form">00000</span>
                   <input name="numero" type="number" class="form-control" max="9999">
                 </div>                
+                (digite os outros 4 dígitos que idenfiticam o formulário)
             </div>
         </div>
         
@@ -2140,20 +2149,187 @@
 
 
 
+        <div ng-show="pre_form_2==1" class="form-group col-sm-12 depois">
+            <label for="exampleInputEmail1"> 4.34 (No caso de não estar ligado ao SISAR- NSA) A chegada da água tratada aumentou ou trouxe melhorias na renda da família? (pode marcar mais de uma)
+            </label>
+            <div class="checkbox"><label>
+                <input name="questao_4_34" type="checkbox" value="1" > 1. Não
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_34" type="checkbox" value="2" > 2. Sim: criação de animais
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_34" type="checkbox" value="3" > 3. Sim: cultiva plantas
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_34" type="checkbox" value="4" > 4. Sim: outras
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_34" type="checkbox" value="997" > NSA – Mudou há pouco tempo
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_34" type="checkbox" value="998" > NSR
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_34" type="checkbox" value="999" > NQR
+            </label></div> 
+            
+        </div>  
+
+
+        <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
+            <label for="exampleInputEmail1">4.35 O que você faz com todas ás águas que tem (estimulada e múltipla) 
+            </label>
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="1" > 1. Lavar vasilhas
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="2" > 2. Tomar banho
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="3" > 3. Lavar roupa
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="4" > 4. Jogar no aparelho ou privada
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="5" > 5. Água para limpeza da casa
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="6" > 6. Água para  animais domésticos beberem.
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="7" > 7. Água para animais que não são domésticos. 
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="8" > 8. Molhar plantas: horta ou plantas que servem para comer
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="9" > 9. Molhar plantas: que servem para animais comerem
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="10" > 10. Molhar plantas: canteiro de flor (e relacionados)
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="11" > 11. Algum outro uso
+            </label></div>  
+            Especificar: <input name="questao_4_35_especificar" type="text" >
+            <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="998" > NSR
+            </label></div>                                                                                                                        <div class="checkbox"><label>
+                <input name="questao_4_35" type="checkbox" value="999" > NQR
+            </label></div>                         
+        </div>  
+
+
+        <div ng-show="pre_form_2==0" class="form-group antes col-sm-12">
+            <label for="exampleInputEmail1">4.36 Quando precisa buscar água, quem vai? (múltipla)
+            </label>
+            <div class="checkbox"><label>
+                <input name="questao_4_36" type="checkbox" value="1" > 1. As mulheres (adultas) da casa
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_36" type="checkbox" value="2" > 2. Os homens (adultos) da casa
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_36" type="checkbox" value="3" > 3. Os Jovens da casa entre 15 e 18
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_36" type="checkbox" value="4" > 4. Crianças menores de 15 anos
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_36" type="checkbox" value="5" > 5. Paga alguém para buscar 
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_36" type="checkbox" value="6" > 6. Não busca água
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_36" type="checkbox" value="998" > NSR
+            </label></div>                                                                                                                        <div class="checkbox"><label>
+                <input name="questao_4_36" type="checkbox" value="999" > NQR
+            </label></div>                         
+        </div>  
+
+
+        <h2>INFRAESTRUTURA HIDRÁULICA DA CASA</h2>
+
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">4.37 Tem caixa d’água na casa? Em caso positivo, pergunte: Onde ela fica?</label>
+            <div class="radio"><label>
+                <input name="questao_4_37" type="radio" value="1"> 1. Sim. A caixa d’água fica no chão
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_37" type="radio" value="2"> 2. Sim. A caixa d’água fica em um local elevado
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_37" type="radio" value="3"> 3. Não. A água é guardada em outro lugar (tambor, balde ou vasilha)  
+            </label></div>   
+            <div class="radio"><label>
+                <input name="questao_4_37" type="radio" value="998"> NSR
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_37" type="radio" value="999"> NQR
+            </label></div>                                     
+        </div>
+
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">4.38 Quantas vezes você ou alguém de sua família costuma esvaziar e lavar (a caixa d’água ou tambor, balde, vasilha)?</label>
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="1"> 1. Diário
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="2"> 2. Semanal
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="3"> 3. Quinzenal  
+            </label></div>   
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="4"> 4. Mensal  
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="5"> 5. Trimestral
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="6"> 6. Semestral
+            </label></div>    
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="7"> 7. Anual
+            </label></div>      
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="8"> 8. Outro – (especificar)___________
+            </label></div>      
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="9"> 9. Nunca lavei a caixa, tambor, balde ou vasilha
+            </label></div>                                                                            
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="998"> NSR
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_38" type="radio" value="999"> NQR
+            </label></div>                                     
+        </div>
 
 
 
-FAZER PERGUNTAS De DEPOISSSS<br>
-PAG. 20 do doc
+  			
+	
 
 
 
 
 
-                              
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+  
         
         
         

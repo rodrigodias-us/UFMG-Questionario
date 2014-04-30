@@ -1,0 +1,8 @@
+
+ANTES
+ng-show="pre_form_2==1"
+class="antes"
+
+DEPOIS
+ng-show="pre_form_2==1"
+class="depois"

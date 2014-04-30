@@ -2296,8 +2296,10 @@
                 <input name="questao_4_38" type="radio" value="7"> 7. Anual
             </label></div>      
             <div class="radio"><label>
-                <input name="questao_4_38" type="radio" value="8"> 8. Outro – (especificar)___________
-            </label></div>      
+                    <input name="questao_4_38" type="radio" value="8"> 8. Outro -  
+                </label>
+                Especificar: <input name="questao_4_38_especificar" type="text" >
+            </div>         
             <div class="radio"><label>
                 <input name="questao_4_38" type="radio" value="9"> 9. Nunca lavei a caixa, tambor, balde ou vasilha
             </label></div>                                                                            
@@ -2309,15 +2311,153 @@
             </label></div>                                     
         </div>
 
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">4.39 A casa possui pontos de encanamento e torneiras (pontos de água)? Em caso positivo, pergunte: Onde e quantas? (pode marcar mais de uma)
+            </label>
+            <div class="checkbox"><label>
+                <input name="questao_4_39" type="checkbox" value="1" > 1. No banheiro - inclui aparelho com descarga e chuveiro
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_39" type="checkbox" value="2" > 2. Área de serviço
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_39" type="checkbox" value="3" > 3. Na cozinha
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_39" type="checkbox" value="4" > 4. No quintal
+            </label></div> 
+            <div class="checkbox"><label>
+                    <input name="questao_4_39" type="checkbox" value="5" > 5. Outro local. 
+                </label>
+                Especificar: <input name="questao_4_39_especificar" type="text" >
+            </div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_39" type="checkbox" value="6" > 6. Não possui.
+            </label></div>                             
+            <br>
+            Quantidade de torneiras: <input name="questao_4_39_torceiras" type="number" >
+        </div>
 
+        <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
+            <label for="exampleInputEmail1">4.40 Foi feita alguma melhoria na casa depois da chegada da água? (múltipla e estimulada se necessário)</label>
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="1" > 1. Construção do banheiro (recursos próprios)
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="2" > 2. Recebeu banheiro do Projeto São José
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="3" > 3. Pia de cozinha
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="4" > 4. Chuveiro
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="5" > 5. Vaso sanitário
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="6" > 6. Tanque de lavar roupa
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="7" > 7. Descarga
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="8" > 8. Lavatório
+            </label></div>    
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="9" > 9. Caixa d’água
+            </label></div>    
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="10" > 10. Não fez melhoria
+            </label></div>
+            <div class="checkbox"><label>
+                    <input name="questao_4_40" type="checkbox" value="11" > 11. Outros - 
+                </label>
+            Especificar: <input name="questao_4_40_especificar" type="text" value="" > 
+            </div>
+                             
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="997" > NSA - mora há pouco tempo na casa
+            </label></div>                  
+            <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="998" > NSR
+            </label></div>                                                                                                                        <div class="checkbox"><label>
+                <input name="questao_4_40" type="checkbox" value="999" > NQR
+            </label></div>             
+      
+        </div>
+        
+        <h2>PERCEPÇÃO SOBRE A QUALIDADE DOS SERVIÇOS</h2>
+        
 
-  			
+        <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
+            <label for="exampleInputEmail1">4.41 Quais mudanças ocorreram depois da chegada da água na comunidade? (estimulada e múltipla)</label>
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="1" > 1. Aumentou a quantidade de água usada pela família
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="2" > 2. Melhorou a qualidade da água usada pela família
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="3" > 3. Melhorou a regularidade da chegada da água na casa da família
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="4" > 4. Diminuiu o custo para ter água
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="5" > 5. Aumentou o custo para ter água
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="6" > 6. Diminuiu a necessidade de carregar água
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="7" > 7. Eliminou a necessidade de carregar água
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="8" > 8. Não trouxe mudança
+            </label></div>    
+            <div class="checkbox"><label>
+                    <input name="questao_4_41" type="checkbox" value="9" > 9. Outros - 
+                </label>
+            Especificar: <input name="questao_4_41_especificar" type="text" value="" > 
+            </div>
+                             
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="997" > NSA - mora há pouco tempo na casa
+            </label></div>                  
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="998" > NSR
+            </label></div>                                                                                                                        <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="999" > NQR
+            </label></div>             
+      
+        </div>
 	
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">4.42 A família está satisfeita com a situação da água: (estimulada)</label>
+            <div class="radio"><label>
+                <input name="questao_4_42" type="radio" value="1"> 1. Muito satisfeita	
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_42" type="radio" value="2"> 2. Satisfeita
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_42" type="radio" value="3"> 3. Não está nada satisfeita  
+            </label></div>                                                                              
+            <div class="radio"><label>
+                <input name="questao_4_42" type="radio" value="998"> NSR
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_42" type="radio" value="999"> NQR
+            </label></div>                                     
+        </div>
 
 
 
 
+ 
 
+ 
 
 
 

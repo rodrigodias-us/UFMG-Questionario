@@ -795,19 +795,19 @@
         <div class="form-group col-sm-12">
             <label for="exampleInputEmail1">(A) 4.1 - Qual a estação que estamos hoje: (estimulada)</label>
             <div class="radio"><label>
-                <input name="questao_4_1" type="radio" value="1"> 1.  Inverno
+                <input name="questao_4_1" type="radio" value="1" ng-model="questao_4_1"> 1.  Inverno
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_1" type="radio" value="2"> 2. Verão
+                <input name="questao_4_1" type="radio" value="2" ng-model="questao_4_1"> 2. Verão
             </label></div>
         </div>
 
 
-        <p>Antes da implantação do SAA – No inverno): Ler: “As questões a seguir são referentes às condições de acesso a água no inverno” </p>
-        <p>Antes da implantação do SAA - no Verão  ler: “As questões a seguir são referentes às condições de acesso a água no verão” </p>
+        <p ng-show="questao_4_1==1">Antes da implantação do SAA – No inverno): Ler: “As questões a seguir são referentes às condições de acesso a água no inverno” </p>
+        <p ng-show="questao_4_1==2">Antes da implantação do SAA - no Verão  ler: “As questões a seguir são referentes às condições de acesso a água no verão” </p>
         
 
-                <div>(A) 4.2 Qual a água que tem na sua casa, no inverno? (estimular se necessário)</div>
+                <!-- <div>(A) 4.2 Qual a água que tem na sua casa, no inverno? (estimular se necessário)</div>
                 <div>(A) 4.3.1 A água é usada para beber, e cozinhar?</div>
                 <div>(A) 4.3.2 Qual destas é a mais usadas para beber e cozinhar?</div>
                 <div>(A) 4.4 A qualidade da água do/da é: (estimulada) </div>
@@ -819,7 +819,7 @@
                 <div>(A) 4.8 A família busca a água? </div>    
                 <div>(A) 4.9 Quantas vezes por semana a família precisa buscar água?</div>
                 <div>(A) 4.10.1 Qual a quantidade de água que a família busca por ida? Volume (L)</div>
-                <div>(A) 4.10.2 Quanto tempo gasta para buscar água por ida? (Minutos)
+                <div>(A) 4.10.2 Quanto tempo gasta para buscar água por ida? (Minutos)</div> -->
                     <br>
                     
         <div class="table-responsive">
@@ -1977,7 +1977,7 @@
 
 
 
-        <div class="form-group col-sm-12">
+        <div ng-show="questao_4_1==1" class="form-group col-sm-12">
             <label for="exampleInputEmail1">4.11 No inverno, o que você faz com todas ás águas que tem: (estimulada e múltipla )
             </label>
             <div class="checkbox"><label>
@@ -2021,7 +2021,7 @@
             </label></div>                         
         </div>  
   	
-        <div class="form-group col-sm-12">
+        <div ng-show="questao_4_1==1" class="form-group col-sm-12">
             <label for="exampleInputEmail1">4.12 No inverno, quando precisa buscar água, quem vai? (múltipla)
             </label>
             <div class="checkbox"><label>
@@ -2052,13 +2052,99 @@
 
 
 
+        <div ng-show="questao_4_1==2" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">4.22 No verão, o que você faz com todas ás águas que tem (estimulada e múltipla)
+            </label>
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="1" > 1. Lavar vasilhas
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="2" > 2. Tomar banho
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="3" > 3. Lavar roupa
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="4" > 4. Jogar no aparelho ou privada
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="5" > 5. Água para limpeza da casa
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="6" > 6. Água para  animais domésticos beberem.
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="7" > 7. Água para animais que não são domésticos. 
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="8" > 8. Molhar plantas: horta ou plantas que servem para comer
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="9" > 9. Molhar plantas: que servem para animais comerem
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="10" > 10. Molhar plantas: canteiro de flor (e relacionados)
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="11" > 11. Algum outro uso
+            </label></div>  
+            Especificar: <input name="questao_4_22_especificar" type="text" >
+            <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="998" > NSR
+            </label></div>                                                                                                                        <div class="checkbox"><label>
+                <input name="questao_4_22" type="checkbox" value="999" > NQR
+            </label></div>                         
+        </div>  
+  	
+        <div ng-show="questao_4_1==2" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">4.23 No verão, quando precisa buscar água, quem vai? (múltipla)
+            </label>
+            <div class="checkbox"><label>
+                <input name="questao_4_23" type="checkbox" value="1" > 1. As mulheres (adultas) da casa
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_4_23" type="checkbox" value="2" > 2. Os homens (adultos) da casa
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_4_23" type="checkbox" value="3" > 3. Os Jovens da casa entre 15 e 18
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_23" type="checkbox" value="4" > 4. Crianças menores de 15 anos
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_23" type="checkbox" value="5" > 5. Paga alguém para buscar 
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_23" type="checkbox" value="6" > 6. Não busca água
+            </label></div> 
+            <div class="checkbox"><label>
+                <input name="questao_4_23" type="checkbox" value="998" > NSR
+            </label></div>                                                                                                                        <div class="checkbox"><label>
+                <input name="questao_4_23" type="checkbox" value="999" > NQR
+            </label></div>                         
+        </div>  
+
+        <div ng-show="questao_4_1==2" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">4.24 No verão os usos da água, os volumes consumidos e os valores 
+                pagos são os mesmos do inverno?
+            </label>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary">
+                    <input name="questao_4_24" type="radio" value="1" > 1. Sim
+                </label>
+                <label class="btn btn-primary">
+                    <input name="questao_4_24" type="radio" value="2" > 2. Não (retornar para a questão 4.14)
+                </label>
+            </div>                         
+        </div>  
 
 
 
 
 
 
-
+FAZER PERGUNTAS De DEPOISSSS<br>
+PAG. 20 do doc
 
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="project">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,10 +17,10 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body ng-controller="AppController">
 
 <div class="container-fluid">
-    
+	
     <h1>Programa de Pós-Graduação em Saneamento, Meio Ambiente e Recursos Hídricos </h1>
     
     <div id="pre-form">
@@ -76,7 +76,7 @@
     </div>
 
 
-    <form class="form-horizontal" role="form">        
+    <form class="form-horizontal" role="form" ng-model="formulario">        
         <div class="form-group">
             <label for="numero" class="col-sm-5 control-label">Número do questionário (nove dígitos)</label>
             <div class="col-sm-4">
@@ -1588,7 +1588,8 @@
         
         <div class="form-group">
             <div class="col-sm-offset-8 col-sm-4">
-                <button type="submit" class="btn btn-primary">Salvar questionário</button>
+                <button type="submit" class="btn btn-primary" ng-click="salvarClick()">Salvar questionário</button>
+				<button class="btn btn-primary" ng-click="getItensFromDB()">Export</button>
             </div>
         </div>        
     </form>
@@ -1597,5 +1598,7 @@
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

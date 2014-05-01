@@ -148,18 +148,18 @@
         </div>   
         
         <div class="form-group">
-           <div class="col-sm-4"><div class="btn-group" data-toggle="buttons">
+           <div class="col-sm-4">
             <label class="btn btn-danger">
-                <input name="questao_1_desistiu" type="checkbox" value="desistiu"> Não participou/desistiu
+                <input name="questao_1_desistiu" type="checkbox" value="desistiu" ng-model="questao_1_desistiu"> Não participou/desistiu
             </label>
-           </div></div>
+           </div>
            <label for="questao_1_hora_entrevista" class="col-sm-4 control-label">Início da entrevista (hora)</label>
            <div class="col-sm-2">
                <input name="questao_1_hora_entrevista" type="time" class="form-control" placeholder="">
            </div>
         </div>                
     
-    
+<div ng-hide="questao_1_desistiu">
         <h2>2. Participação e importância do acesso à água e ao banheiro</h2>
         <h3>PERCEPÇÃO SOBRE A ÁGUA E O BANHEIRO</h3>
         <div class="col-sm-12">
@@ -7576,7 +7576,7 @@
             </tr>       
         </table>
 
- 
+
 
  
         <h2>11	DESCRIÇÃO DAS FOTOS E GPS</h2>
@@ -7610,12 +7610,15 @@
         <p>OBS: As fotos devem ser tiradas tanto do domicílio quanto do peridomicílio, pelo menos na perspectiva dos quatro lados da casa.</p>
  
  
+</div>
 
 	<h4>COORDENADAS GEORREFERÊNCIADAS:</h4>
 
     Coordenadas: N°: <input name="coordenada_num" type="text"> UTM: Long.: <input name="coordenada_long" type="text"> Lat: <input name="coordenada_lat" type="text">
     <br>
     <p>Número de inscrição no SISAR/CAGECE: <input name="numero_inscricao" type="text"></p>
+    
+    
     
     
     <h2>12	OBSERVAÇÕES FINAIS DO ENTREVISTADOR:</h2>
@@ -7629,58 +7632,8 @@
      <p>Encerramento da entrevista (hora): <input name="encerramento_hora" type="text"></p>
     
     
-    
-
-	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-  
-        
-        
-        
-        
-        
         
         
         <div class="form-group">

@@ -3566,8 +3566,97 @@
        
 
  
- 
- 
+        <p><h4>Outro ambiente aquático:</h4> <input name="questao_9_outro" type="text" ng-model="questao_9_outro" >
+        <div ng-show="questao_9_outro" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">9.5 Na sua opinião o {{questao_9_outro}} é: (estimulada)</label>
+            <p>
+                <select name="questao_9_5">
+                    <option value="">Selecione</option>
+                    <option value="1">1-Muito poluído</option>
+                    <option value="2">2-Poluído</option>
+                    <option value="3">3-Pouco poluído</option>
+                    <option value="4">4-Limpo (ir para a pergunta 9.3)</option>
+                    <option value="998">998- NSR (ir para a pergunta 9.3)</option>
+                    <option value="99">999-NQR (ir para a pergunta 9.3)</option>
+                </select>
+            </p>           
+                                      
+        </div>
+
+       
+        <div ng-show="questao_9_outro" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">9.6 Você ou sua família se consideram afetados pela poluição no {{questao_9_outro}}?</label>
+            <p>
+                <select name="questao_9_6">
+                    <option value="">Selecione</option>
+                    <option value="1">1- Não</option>
+                    <option value="2">2- Sim</option>
+                    <option value="998">998- NSR (ir para a pergunta 9.3)</option>
+                    <option value="99">999-NQR (ir para a pergunta 9.3)</option>
+                </select>
+            </p>           
+                                   
+        </div>       
+       
+        <div ng-show="questao_9_outro" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">9.7 Usou o {{questao_9_outro}} na última semana: Se sim: Para que?</label>
+            <div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_7" type="checkbox" value="1" > 1. Tomar banho
+                </label></div> 
+                <div class="checkbox"><label>
+                    <input name="questao_9_7" type="checkbox" value="2" > 2. Lavar roupa
+                </label></div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_7" type="checkbox" value="3" > 3. Nadar
+                </label></div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_7" type="checkbox" value="4" > 4. Pescar
+                </label></div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_7" type="checkbox" value="5" > 5. Lavar animais
+                </label></div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_7" type="checkbox" value="6" > 6. Outros
+                </label></div>
+                Especificar: <input name="questao_9_7_especificar" type="text" value="" > 
+                
+                <div class="checkbox"><label>
+                    <input name="questao_9_7" type="checkbox" value="998" > NSR
+                </label></div>                                                                                                                        <div class="checkbox"><label>
+                    <input name="questao_9_7" type="checkbox" value="999" > NQR
+                </label></div>
+            </div>  <br>         
+                              
+        </div>          
+       
+        <div ng-show="questao_9_outro" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">9.8 Como você caracteriza a qualidade da água do {{questao_9_outro}}? (estimulada e múltipla)</label>
+            <div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_8" type="checkbox" value="1" >  1- É boa para tomar banho
+                </label></div>  
+                <div class="checkbox"><label>
+                    <input name="questao_9_8" type="checkbox" value="2" >  2- É bom para pescar
+                </label></div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_8" type="checkbox" value="3" >  3- É bom para praticar atividades 
+                </label></div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_8" type="checkbox" value="4" >  4- É bom levar animais
+                </label></div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_8" type="checkbox" value="5" >  5- Não é aceitável para nenhum uso 
+                </label></div>
+                <div class="checkbox"><label>
+                    <input name="questao_9_8" type="checkbox" value="998" > NSR
+                </label></div>                                                                                                                        <div class="checkbox"><label>
+                    <input name="questao_9_8" type="checkbox" value="999" > NQR
+                </label></div> 
+            </div>            
+            <br>
+            
+        </div>     
  
  
         

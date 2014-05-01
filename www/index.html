@@ -2974,18 +2974,300 @@
     
     <h2>FORMA DE DESTINAÇÃO DOS ESGOTOS:</h2>
     
-    
-    5.4 Alguém da família faz cocô no chão do quintal ou em terreno próximo a casa, mesmo que só algumas vezes?
-    1. Não 
-    2. Sim
-    998. NSR
-    999. NQR
-    
+    <div class="form-group col-sm-12">
+        <label for="exampleInputEmail1">5.4 Alguém da família faz cocô no chão do quintal ou em terreno próximo a casa, mesmo que só algumas vezes?</label>
+        <div class="radio"><label>
+            <input name="questao_5_4" type="radio" value="1"> 1. Não	
+        </label></div>  
+        <div class="radio"><label>
+            <input name="questao_5_4" type="radio" value="2"> 2. Sim	
+        </label></div>  
 
+                                                                    
+        <div class="radio"><label>
+            <input name="questao_5_4" type="radio" value="998"> NSR
+        </label></div>  
+        <div class="radio"><label>
+            <input name="questao_5_4" type="radio" value="999"> NQR
+        </label></div>                                     
+    </div>
     
-   
-   
     
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">5.5 Para onde vai a água usada no tanque, na pia da cozinha e no banho? (múltipla)</label>
+            <div class="checkbox"><label>
+                <input name="questao_5_5" type="checkbox" value="1" > 1. Fossa seca
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_5_5" type="checkbox" value="2" > 2. Fossa rudimentar
+            </label></div>  
+            <div class="checkbox"><label>
+                <input name="questao_5_5" type="checkbox" value="3" > 3. Tanque séptico e sumidouro
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_5_5" type="checkbox" value="4" > 4. Terreno próximo à casa/ quintal com planta
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_5_5" type="checkbox" value="5" > 5. Terreno próximo à casa/ quintal sem planta
+            </label></div>
+            <div class="checkbox"><label>
+                <input name="questao_5_5" type="checkbox" value="6" > 6. Rio
+            </label></div>
+                        
+            <div class="checkbox"><label>
+                    <input name="questao_5_5" type="checkbox" value="7" > 7. Outros - 
+                </label>
+            Especificar: <input name="questao_5_5_especificar" type="text" value="" > 
+            </div>
+                             
+                             
+            <div class="checkbox"><label>
+                <input name="questao_5_5" type="checkbox" value="8" > 8. Não possui tanque ou pia de cozinha   
+            </label></div>                  
+            <div class="checkbox"><label>
+                <input name="questao_5_5" type="checkbox" value="998" > NSR
+            </label></div>                                                                                                                        <div class="checkbox"><label>
+                <input name="questao_5_5" type="checkbox" value="999" > NQR
+            </label></div>             
+        </div>    
+    
+    
+        <div ng-show="pre_form_2==1" class="depois">
+            <h2>INFORMAÇÕES SOBRE O BANHEIRO CONSTRUÍDO</h2>
+            
+            <div class="form-group col-sm-12">
+                <label for="exampleInputEmail1">5.6. Foi construido banheiro na sua casa? Se sim o que recebeu? ( se necessário estimulada)</label>
+                <div class="radio"><label>
+                    <input name="questao_5_6" type="radio" value="1"> 1. Sim, recebeu banheiro com tanque séptico e sumidouro. 	
+                </label></div>  
+                <div class="radio"><label>
+                    <input name="questao_5_6" type="radio" value="2"> 2. Sim, recebeu tanque séptico e sumidouro, pois ja tinha banheiro
+                </label></div>
+                <div class="radio"><label>
+                    <input name="questao_5_6" type="radio" value="3"> 3. Não, ir para pergunta 6.1)
+                </label></div>
+                                                 
+                <div class="radio"><label>
+                    <input name="questao_5_6" type="radio" value="998"> NSR
+                </label></div>  
+                <div class="radio"><label>
+                    <input name="questao_5_6" type="radio" value="999"> NQR
+                </label></div>                                     
+            </div>
+            
+            
+            <div class="form-group col-sm-12">
+                <label for="exampleInputEmail1">5.7. A família notou algum problema depois que o banheiro foi construído? </label>
+                <div class="radio"><label>
+                    <input name="questao_5_7" type="radio" value="1"> 1. Sim	
+                </label></div>  
+                Especificar: <input name="questao_5_7_especificar" type="text" value="" > 
+                
+                <div class="radio"><label>
+                    <input name="questao_5_7" type="radio" value="2"> 2. Não
+                </label></div>
+                <div class="radio"><label>
+                    <input name="questao_5_7" type="radio" value="3"> 3. O banheiro não é usado, por algum problema
+                </label></div>
+                Especificar: <input name="questao_5_7_especificar" type="text" value="" > 
+                                                 
+                <div class="radio"><label>
+                    <input name="questao_5_7" type="radio" value="998"> NSR
+                </label></div>  
+                <div class="radio"><label>
+                    <input name="questao_5_7" type="radio" value="999"> NQR
+                </label></div>                                     
+            </div>
+        </div>
+
+
+
+        <h2>6	HIGIENE PESSOAL</h2>
+
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">6.1 Há crianças na casa com até cinco anos de idade?</label>
+            <div class="radio"><label>
+                <input name="questao_6_1" type="radio" value="1"> 1. Sim 	
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_1" type="radio" value="2"> 2. Não (ir para pergunta 8.1)
+            </label></div>                   
+        </div>
+
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">6.2 Qual a freqüência de banho das crianças? (estimular)</label>
+            <div class="radio"><label>
+                <input name="questao_6_2" type="radio" value="1"> 1. Mais de uma vez ao dia	
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_2" type="radio" value="2"> 2. Uma vez ao dia
+            </label></div>     
+            <div class="radio"><label>
+                <input name="questao_6_2" type="radio" value="3"> 3. O banho não é diário	
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_2" type="radio" value="998"> NSR
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_2" type="radio" value="999"> NQR
+            </label></div>            
+        </div>    
+    
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">6.3 As crianças lavam as mãos antes de se alimentar? (estimular)</label>
+            <div class="radio"><label>
+                <input name="questao_6_3" type="radio" value="1">  1. Sempre, com água e sabão 
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_3" type="radio" value="2"> 2. Sempre, somente com água 
+            </label></div>     
+            <div class="radio"><label>
+                <input name="questao_6_3" type="radio" value="3"> 3. Algumas vezes sim, outras não
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_3" type="radio" value="4"> 4. Não tem esse hábito 
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_6_3" type="radio" value="5"> 5. A criança não se alimenta sozinha 
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_6_3" type="radio" value="998"> NSR
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_3" type="radio" value="999"> NQR
+            </label></div>            
+        </div>      
+    
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">6.4 As crianças lavam as mãos depois de ir ao banheiro? (estimular) </label>
+            <div class="radio"><label>
+                <input name="questao_6_4" type="radio" value="1"> 1. Sempre, com água e sabão 
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_4" type="radio" value="2"> 2. Sempre, somente com água 
+            </label></div>     
+            <div class="radio"><label>
+                <input name="questao_6_4" type="radio" value="3"> 3. Algumas vezes sim, outras não
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_4" type="radio" value="4"> 4. Não tem esse hábito 
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_6_4" type="radio" value="5"> 5. A criança não se alimenta sozinha 
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_6_4" type="radio" value="998"> NSR
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_4" type="radio" value="999"> NQR
+            </label></div>            
+        </div>    
+
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">6.5 A(s) pessoa(s) que prepara(m) a comida lava(m) as mãos antes de iniciar as atividades na cozinha? (estimular) </label>
+            <div class="radio"><label>
+                <input name="questao_6_5" type="radio" value="1"> 1. Sempre, com água e sabão 
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_5" type="radio" value="2"> 2. Sempre, somente com água 
+            </label></div>     
+            <div class="radio"><label>
+                <input name="questao_6_5" type="radio" value="3"> 3. Algumas vezes sim, outras não
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_5" type="radio" value="4"> 4. Nunca lavam
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_6_5" type="radio" value="998"> NSR
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_5" type="radio" value="999"> NQR
+            </label></div>            
+        </div>     
+ 
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">6.6 Como as verduras, as frutas e os legumes são preparados antes de serem consumidos? (estimular)</label>
+            <div class="radio"><label>
+                <input name="questao_6_6" type="radio" value="1"> 1. São lavados com água filtrada 
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_6" type="radio" value="2"> 2. São lavados com água tratada
+            </label></div>     
+            <div class="radio"><label>
+                <input name="questao_6_6" type="radio" value="3"> 3. São lavados com água sem tratamento
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_6" type="radio" value="4"> 4. São lavados e colocados em solução de água sanitária ou vinagre
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_6_6" type="radio" value="5"> 5. Não são lavados
+            </label></div>
+            <div class="radio"><label>
+                <input name="questao_6_6" type="radio" value="6"> 6. Outro
+            </label></div>
+                Especificar: <input name="questao_6_6_especificar" type="text" value="" > 
+            <div class="radio"><label>
+                <input name="questao_6_6" type="radio" value="998"> NSR
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_6_6" type="radio" value="999"> NQR
+            </label></div>            
+        </div>    
+ 
+ 
+ 
+        <h2>INFORMAÇÕES SOBRE CRIANÇAS DE ATÉ CINCO ANOS</h2>
+        
+        7.1 Nome
+        7.2 Parentesco
+        7.3 Sexo
+        7.4 Data Nascimento
+        7.5 Data Nascimento Mae
+        7.6 Ordem de gravidez
+        7.7 Realizou pre-natal
+        7.8 Quantas consultas
+        7.9 Houve complicaçoes?
+        7.10 Duracao da gravidez
+        7.11 Houve internacao no 1 mes?
+        7.12 Vacinas em dia?
+        7.13 Amamentado no peito?
+        7.14 Porque nao foi?
+        7.15 Quanto tempo amamentada
+        7.16 Ainda é amamentada?
+        7.17 Usou vitamina?
+        7.18 Está tomando remedio?
+        7.19 Está com diarreia hoje?
+        7.20 Ontem?
+        7.21 Antes de ontem?
+        7.22 Outros sintomas?
+        7.23 Remedio contra vermes?
+        
+        
+        7.24, 7.25, 7.26 perguntas normais.
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+	
+
+
+ 
+
+
     
     
     

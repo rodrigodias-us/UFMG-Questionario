@@ -3279,7 +3279,7 @@
             <tbody>
             <tr>
                 <td>1</td>
-                <td><input name="questao_7_1_1" type="text"></td>
+                <td><input name="questao_7_1_1" type="text" ng-model="questao_7_1_1"></td>
                 <td><input name="questao_7_2_1" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -3564,7 +3564,7 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td><input name="questao_7_1_2" type="text"></td>
+                <td><input name="questao_7_1_2" type="text" ng-model="questao_7_1_2"></td>
                 <td><input name="questao_7_2_2" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -3849,7 +3849,7 @@
             </tr>      
             <tr>
                 <td>3</td>
-                <td><input name="questao_7_1_3" type="text"></td>
+                <td><input name="questao_7_1_3" type="text" ng-model="questao_7_1_3"></td>
                 <td><input name="questao_7_2_3" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -4134,7 +4134,7 @@
             </tr>
             <tr>
                 <td>4</td>
-                <td><input name="questao_7_1_4" type="text"></td>
+                <td><input name="questao_7_1_4" type="text" ng-model="questao_7_1_4"></td>
                 <td><input name="questao_7_2_4" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -4419,7 +4419,7 @@
             </tr> 
             <tr>
                 <td>5</td>
-                <td><input name="questao_7_1_5" type="text"></td>
+                <td><input name="questao_7_1_5" type="text" ng-model="questao_7_1_5"></td>
                 <td><input name="questao_7_2_5" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -4704,7 +4704,7 @@
             </tr>
             <tr>
                 <td>6</td>
-                <td><input name="questao_7_1_6" type="text"></td>
+                <td><input name="questao_7_1_6" type="text" ng-model="questao_7_1_6"></td>
                 <td><input name="questao_7_2_6" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -4989,7 +4989,7 @@
             </tr>
             <tr>
                 <td>7</td>
-                <td><input name="questao_7_1_7" type="text"></td>
+                <td><input name="questao_7_1_7" type="text" ng-model="questao_7_1_7"></td>
                 <td><input name="questao_7_2_7" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -5274,7 +5274,7 @@
             </tr>
             <tr>
                 <td>8</td>
-                <td><input name="questao_7_1_8" type="text"></td>
+                <td><input name="questao_7_1_8" type="text" ng-model="questao_7_1_8"></td>
                 <td><input name="questao_7_2_8" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -5559,7 +5559,7 @@
             </tr>
             <tr>
                 <td>9</td>
-                <td><input name="questao_7_1_9" type="text"></td>
+                <td><input name="questao_7_1_9" type="text" ng-model="questao_7_1_9"></td>
                 <td><input name="questao_7_2_9" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -5844,7 +5844,7 @@
             </tr>
             <tr>
                 <td>10</td>
-                <td><input name="questao_7_1_10" type="text"></td>
+                <td><input name="questao_7_1_10" type="text" ng-model="questao_7_1_10"></td>
                 <td><input name="questao_7_2_10" type="text"></td>
                 <td>
                     <div class="radio"><label>
@@ -7236,7 +7236,73 @@
 
 
         <table class="table">
+            <tr>
+                <th>10.1 Nome</th>
+                <th>10.2 Peso (kg)</th>
+                <th>10.3 Altura (cm)</th>
+                <th>10.4 Medido 1-em pé 2- deitado</th>
+            </tr>
             
+            <tr ng-show="questao_7_1_1">
+                <td><input name="questao_10_1_1" type="text" value="{{questao_7_1_1}}" disabled></td>
+                <td><input name="questao_10_2_1" type="text" value="" ></td>
+                <td><input name="questao_10_3_1" type="text" value="" ></td>
+                <td><input name="questao_10_4_1" type="text" value="" ></td>
+            </tr>
+            <tr ng-show="questao_7_1_2">
+                <td><input name="questao_10_1_2" type="text" value="{{questao_7_1_2}}" disabled></td>
+                <td><input name="questao_10_2_2" type="text" value="" ></td>
+                <td><input name="questao_10_3_2" type="text" value="" ></td>
+                <td><input name="questao_10_4_2" type="text" value="" ></td>
+            </tr>
+            <tr ng-show="questao_7_1_3">
+                <td><input name="questao_10_1_3" type="text" value="{{questao_7_1_3}}" disabled></td>
+                <td><input name="questao_10_2_3" type="text" value="" ></td>
+                <td><input name="questao_10_3_3" type="text" value="" ></td>
+                <td><input name="questao_10_4_3" type="text" value="" ></td>
+            </tr>
+            <tr ng-show="questao_7_1_4">
+                <td><input name="questao_10_1_4" type="text" value="{{questao_7_1_4}}" disabled></td>
+                <td><input name="questao_10_2_4" type="text" value="" ></td>
+                <td><input name="questao_10_3_4" type="text" value="" ></td>
+                <td><input name="questao_10_4_4" type="text" value="" ></td>
+            </tr>
+            <tr ng-show="questao_7_1_5">
+                <td><input name="questao_10_1_5" type="text" value="{{questao_7_1_5}}" disabled></td>
+                <td><input name="questao_10_2_5" type="text" value="" ></td>
+                <td><input name="questao_10_3_5" type="text" value="" ></td>
+                <td><input name="questao_10_4_5" type="text" value="" ></td>
+            </tr>     
+            <tr ng-show="questao_7_1_6">
+                <td><input name="questao_10_1_6" type="text" value="{{questao_7_1_6}}" disabled></td>
+                <td><input name="questao_10_2_6" type="text" value="" ></td>
+                <td><input name="questao_10_3_6" type="text" value="" ></td>
+                <td><input name="questao_10_4_6" type="text" value="" ></td>
+            </tr>
+            <tr ng-show="questao_7_1_7">
+                <td><input name="questao_10_1_7" type="text" value="{{questao_7_1_7}}" disabled></td>
+                <td><input name="questao_10_2_7" type="text" value="" ></td>
+                <td><input name="questao_10_3_7" type="text" value="" ></td>
+                <td><input name="questao_10_4_7" type="text" value="" ></td>
+            </tr>
+            <tr ng-show="questao_7_1_8">
+                <td><input name="questao_10_1_8" type="text" value="{{questao_7_1_8}}" disabled></td>
+                <td><input name="questao_10_2_8" type="text" value="" ></td>
+                <td><input name="questao_10_3_8" type="text" value="" ></td>
+                <td><input name="questao_10_4_8" type="text" value="" ></td>
+            </tr>
+            <tr ng-show="questao_7_1_9">
+                <td><input name="questao_10_1_9" type="text" value="{{questao_7_1_9}}" disabled></td>
+                <td><input name="questao_10_2_9" type="text" value="" ></td>
+                <td><input name="questao_10_3_9" type="text" value="" ></td>
+                <td><input name="questao_10_4_9" type="text" value="" ></td>
+            </tr>
+            <tr ng-show="questao_7_1_10">
+                <td><input name="questao_10_1_10" type="text" value="{{questao_7_1_10}}" disabled></td>
+                <td><input name="questao_10_2_10" type="text" value="" ></td>
+                <td><input name="questao_10_3_10" type="text" value="" ></td>
+                <td><input name="questao_10_4_10" type="text" value="" ></td>
+            </tr>       
         </table>
 
  

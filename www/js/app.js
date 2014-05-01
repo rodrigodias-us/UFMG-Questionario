@@ -125,4 +125,19 @@ angular.module('project', [])
 		}
 		db.transaction(queryDB, error);
 	}
+	$scope.clearDB = function () {
+		var db = window.openDatabase("questionario", "1.0", "Questionario DB", 1000000);
+		
+		function query(tx){
+			tx.executeSql('DROP TABLE IF EXISTS DADOS'); // COMENTAR PARA NAO APAGAR OS DADOS
+			tx.executeSql('CREATE TABLE IF NOT EXISTS DADOS (id, data)');
+		}
+		function error(err) {
+			console.log(err);
+		}
+		function success() {
+			console.log("Dados Excluidos!");
+		}
+		db.transaction(query, error, success);
+	}
 });

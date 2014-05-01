@@ -100,25 +100,25 @@
         <h2>1. Identificação da Residência</h2>
         
         <div class="form-group">
-            <label for="nome" class="col-sm-3 control-label">Nome do entrevistado</label>
+            <label for="questao_1_entrevistado" class="col-sm-3 control-label">Nome do entrevistado</label>
             <div class="col-sm-9">
-                <input name="nome" type="text" class="form-control" placeholder="">
+                <input name="questao_1_entrevistado" type="text" class="form-control" placeholder="">
             </div>
         </div>
         
         <div class="form-group">
-            <label for="idade" class="col-sm-3 control-label">Idade do entrevistado</label>
+            <label for="questao_1_idade" class="col-sm-3 control-label">Idade do entrevistado</label>
             <div class="col-sm-2">
-                <input name="idade" type="number" class="form-control" placeholder="">
+                <input name="questao_1_idade" type="number" class="form-control" placeholder="">
             </div>
-            <label for="sexo" class="col-sm-3 control-label">Sexo do entrevistado</label>
+            <label for="questao_1_sexo" class="col-sm-3 control-label">Sexo do entrevistado</label>
             <div class="col-sm-4">
                 <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-primary">
-                      <input name="sexo" type="radio" value="homem"> Homem
+                      <input name="questao_1_sexo" type="radio" value="homem"> Homem
                     </label>
                     <label class="btn btn-primary">
-                      <input name="sexo" type="radio" value="mulher"> Mulher
+                      <input name="questao_1_sexo" type="radio" value="mulher"> Mulher
                     </label>
                 </div>
             </div>
@@ -126,36 +126,36 @@
         
           
         <div class="form-group">
-            <label for="casa_numero" class="col-sm-3 control-label">Número da casa-/ FNS</label>
+            <label for="questao_1_numero_casa" class="col-sm-3 control-label">Número da casa-/ FNS</label>
             <div class="col-sm-3">
-                <input name="casa_numero" type="text" class="form-control" placeholder="">
+                <input name="questao_1_numero_casa" type="text" class="form-control" placeholder="">
             </div>
-            <label for="sexo" class="col-sm-2 control-label">Município</label>
+            <label for="questao_1_municipio" class="col-sm-2 control-label">Município</label>
             <div class="col-sm-4">
-                <input name="municipio" type="text" class="form-control" placeholder="">
+                <input name="questao_1_municipio" type="text" class="form-control" placeholder="">
             </div>
         </div>   
         
         <div class="form-group">
-           <label for="entrevistador" class="col-sm-2 control-label">Entrevistador</label>
+           <label for="questao_1_entrevistador" class="col-sm-2 control-label">Entrevistador</label>
            <div class="col-sm-4">
-               <input name="entrevistador" type="text" class="form-control" placeholder="">
+               <input name="questao_1_entrevistador" type="text" class="form-control" placeholder="">
            </div>
-           <label for="data_entrevista" class="col-sm-2 control-label">Data da entrevista</label>
+           <label for="questao_1_data_entrevista" class="col-sm-2 control-label">Data da entrevista</label>
            <div class="col-sm-3">
-               <input name="data_entrevista" type="date" class="form-control" placeholder="">
+               <input name="questao_1_data_entrevista" type="date" class="form-control" placeholder="">
            </div>
         </div>   
         
         <div class="form-group">
            <div class="col-sm-4"><div class="btn-group" data-toggle="buttons">
             <label class="btn btn-danger">
-                <input name="desistiu" type="checkbox" value="desistiu"> Não participou/desistiu
+                <input name="questao_1_desistiu" type="checkbox" value="desistiu"> Não participou/desistiu
             </label>
            </div></div>
-           <label for="hora_inicio_entrevista" class="col-sm-4 control-label">Início da entrevista (hora)</label>
+           <label for="questao_1_hora_entrevista" class="col-sm-4 control-label">Início da entrevista (hora)</label>
            <div class="col-sm-2">
-               <input name="hora_inicio_entrevista" type="time" class="form-control" placeholder="">
+               <input name="questao_1_hora_entrevista" type="time" class="form-control" placeholder="">
            </div>
         </div>                
     
@@ -163,89 +163,49 @@
         <h2>2. Participação e importância do acesso à água e ao banheiro</h2>
         <h3>PERCEPÇÃO SOBRE A ÁGUA E O BANHEIRO</h3>
         <div class="col-sm-12">
-            <div class="form-group ">
+            <div class="form-group form-inline">
                 <label for="exampleInputEmail1">(A) 2.1 Como a chegada da água tratada vai melhorar sua vida: (estimulada) 
                   (e depois? –repete as outras alternativas) 
                 </label>
-                <br>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary">
-                        <input name="questao_2_1" type="radio" value="mais tempo" > Mais tempo
-                    </label>
-                    <label class="btn btn-primary">
-                        <input name="questao_2_1" type="radio" value="mais conforto" > Mais conforto
-                    </label>   
-                    <label class="btn btn-primary">
-                        <input name="questao_2_1" type="radio" value="mais dinheiro" > Mais dinheiro
-                    </label>
-                    <label class="btn btn-primary">
-                        <input name="questao_2_1" type="radio" value="mais saúde" > Mais saúde
-                    </label>
-                </div>                                                
+				<br>
+				Mais tempo <input name="questao_2_1_1" type="number" class="form-control"><br>
+				Mais conforto <input name="questao_2_1_2" type="number" class="form-control"><br>
+				Mais dinheiro <input name="questao_2_1_3" type="number" class="form-control"><br>
+				Mais saúde <input name="questao_2_1_4" type="number" class="form-control"><br>
             </div>
      
 
-            <div class="form-group">
+            <div class="form-group form-inline">
                 <label for="exampleInputEmail1">(A) 2.2 Como você acha que a construção do banheiro vai melhorar sua vida: 
                     (estimulada) (e depois? –repete as outras alternativas) 
                 </label>
                 <br>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary">
-                        <input name="questao_2_2" type="radio" value="mais tempo" > Mais tempo
-                    </label>
-                    <label class="btn btn-primary">
-                        <input name="questao_2_2" type="radio" value="mais conforto" > Mais conforto
-                    </label>   
-                    <label class="btn btn-primary">
-                        <input name="questao_2_2" type="radio" value="mais privacidade" > Mais privacidade
-                    </label>    
-                    <label class="btn btn-primary">
-                        <input name="questao_2_2" type="radio" value="mais saúde" > Mais saúde
-                    </label>   
-                </div>                                             
+				Mais tempo <input name="questao_2_2_1" type="number" class="form-control"><br>
+				Mais conforto <input name="questao_2_2_2" type="number" class="form-control"><br>
+				Mais dinheiro <input name="questao_2_2_3" type="number" class="form-control"><br>
+				Mais saúde <input name="questao_2_2_4" type="number" class="form-control"><br>
             </div>        
         
-            <div class="form-group">
+            <div class="form-group form-inline">
                 <label for="exampleInputEmail1">(D) 2.3 Depois da chegada da água o que melhorou na sua vida: 
                     (estimulada) (e depois? –repete as outras alternativas) 
                 </label>
                 <br>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary">
-                        <input name="questao_2_3" type="radio" value="mais tempo" > Mais tempo
-                    </label>
-                    <label class="btn btn-primary">
-                        <input name="questao_2_3" type="radio" value="mais conforto" > Mais conforto
-                    </label>
-                    <label class="btn btn-primary">
-                        <input name="questao_2_3" type="radio" value="mais dinheiro" > Mais dinheiro
-                    </label>
-                    <label class="btn btn-primary">
-                        <input name="questao_2_3" type="radio" value="mais saúde" > Mais saúde
-                    </label>
-                </div>                                                 
+				Mais tempo <input name="questao_2_3_1" type="number" class="form-control"><br>
+				Mais conforto <input name="questao_2_3_2" type="number" class="form-control"><br>
+				Mais dinheiro <input name="questao_2_3_3" type="number" class="form-control"><br>
+				Mais saúde <input name="questao_2_3_4" type="number" class="form-control"><br>                   
             </div>     
         
-            <div class="form-group">
+            <div class="form-group form-inline">
                 <label for="exampleInputEmail1">(D) 2.4 Depois da construção do banheiro o que melhorou na sua vida: 
                     (estimulada) (e depois? –repete as outras alternativas)	
                 </label>
                 <br>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary">
-                        <input name="questao_2_4" type="radio" value="mais tempo"> Mais tempo
-                    </label>
-                    <label class="btn btn-primary">
-                        <input name="questao_2_4" type="radio" value="mais conforto" > Mais conforto
-                    </label>
-                    <label class="btn btn-primary">
-                        <input name="questao_2_4" type="radio" value="mais privacidade" > Mais privacidade
-                    </label>
-                    <label class="btn btn-primary">
-                        <input name="questao_2_4" type="radio" value="mais saúde" > Mais saúde
-                    </label>
-                </div>                                                 
+				Mais tempo <input name="questao_2_4_1" type="number" class="form-control"><br>
+				Mais conforto <input name="questao_2_4_2" type="number" class="form-control"><br>
+				Mais dinheiro <input name="questao_2_4_3" type="number" class="form-control"><br>
+				Mais saúde <input name="questao_2_4_4" type="number" class="form-control"><br>                                             
             </div>              
         </div>
         
@@ -256,11 +216,11 @@
         <div class="form-group form-inline">
             <div class="col-sm-4">
                 <input name="questao_3_1_anos" type="number" class="form-control" placeholder="">
-                <label for="casa_numero" class=""> anos</label>
+                <label for="questao_3_1_anos" class=""> anos</label>
             </div>
             <div class="col-sm-5">
                 <input name="questao_3_1_meses" type="number" class="form-control" placeholder="">
-                <label for="casa_numero" class=""> meses</label>
+                <label for="questao_3_1_meses" class=""> meses</label>
             </div>
         </div>         
         
@@ -268,25 +228,25 @@
             <label for="exampleInputEmail1">3.2 As pessoas desta casa moram só aqui nesta comunidade? (estimular se necessário)
             </label>
             <div class="radio"><label>
-                <input name="questao_3_2" type="radio" value="mais tempo" > Sim
+                <input name="questao_3_2" type="radio" value="SIM" > Sim
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_3_2" type="radio" value="mais conforto" > Não
+                <input name="questao_3_2" type="radio" value="NAO" > Não
             </label></div>     
             
             <div class="col-sm-7 col-sm-offset-1">
                 <div class="radio"><label>
-                    <input name="questao_3_2_2" type="radio" value="mais tempo" > Permanece alguns dias da semana nesta casa
+                    <input name="questao_3_2_2" type="radio" value="dias da semana" > Permanece alguns dias da semana nesta casa
                 </label></div>
                 <input name="questao_3_2_2_tempo" type="text" > dias
                 
                 <div class="radio"><label>
-                    <input name="questao_3_2_2" type="radio" value="mais tempo" > Permanece nesta casa apenas parte do mês
+                    <input name="questao_3_2_2" type="radio" value="apenas parte do mês" > Permanece nesta casa apenas parte do mês
                 </label></div>
                 <input name="questao_3_2_2_tempo" type="text" > dias
                 
                 <div class="radio"><label>
-                    <input name="questao_3_2_2" type="radio" value="mais tempo" > Permanece apenas alguns meses do ano nesta casa
+                    <input name="questao_3_2_2" type="radio" value="alguns meses do ano" > Permanece apenas alguns meses do ano nesta casa
                 </label></div>
                 <input name="questao_3_2_2_tempo" type="text" > meses
             </div>                                
@@ -368,7 +328,8 @@
             </label></div>           
             <div class="checkbox"><label>
                 <input name="questao_3_7" type="checkbox" value="7" > 7 - Tem outro destino
-            </label></div>                                   
+            </label></div>
+			<input type="hidden" name="questao_3_7" value="">
         </div>        
         
 
@@ -398,9 +359,10 @@
             </label></div>                        
             <div class="radio"><label>
                 <input name="questao_3_8" type="radio" value="8" > 8 - Outro material
-            </label></div>        
+            </label></div>      
 
             Especificar: <input name="questao_3_8_especificar" type="text" >                                                    
+			<input type="hidden" name="questao_3_8" value="">  
         </div>
 
         
@@ -430,9 +392,11 @@
             </label></div>                        
             <div class="radio"><label>
                 <input name="questao_3_9" type="radio" value="8" > 8. Outro
-            </label></div>        
+            </label></div>
 
-            Especificar: <input name="questao_3_9_especificar" type="text" >                                                    
+            Especificar: <input name="questao_3_9_especificar" type="text" >
+
+			<input type="hidden" name="questao_3_9" value="">
         </div>        
         
         <div class="form-group col-sm-12">
@@ -452,38 +416,12 @@
             </label></div>   
             <div class="radio"><label>
                 <input name="questao_3_10" type="radio" value="5" > 5. Outro
-            </label></div>                          
-            Especificar: <input name="questao_3_10_especificar" type="text" >                                                    
-        </div>         
-        
-        
-        <div class="form-group col-sm-12">
-            <label for="exampleInputEmail1">3.7 O que a família faz com o lixo desta casa? (múltipla) e outra? 
-            </label>
-            <div class="checkbox"><label>
-                <input name="questao_3_7" type="checkbox" value="1" > 1 - Coletado diretamente por serviço de limpeza
-            </label></div>  
-            <div class="checkbox"><label>
-                <input name="questao_3_7" type="checkbox" value="2" > 2 - Colocado em caçamba de serviço de limpeza
             </label></div>
-            <div class="checkbox"><label>
-                <input name="questao_3_7" type="checkbox" value="3" > 3 - Queimado (na propriedade)
-            </label></div> 
-            <div class="checkbox"><label>
-                <input name="questao_3_7" type="checkbox" value="4" > 4 - Enterrado (na propriedade)
-            </label></div>   
-            <div class="checkbox"><label>
-                <input name="questao_3_7" type="checkbox" value="5" > 5 - Jogado em terreno baldio ou logradouro
-            </label></div>
-            <div class="checkbox"><label>
-                <input name="questao_3_7" type="checkbox" value="6" > 6 - Jogado em rio
-            </label></div>           
-            <div class="checkbox"><label>
-                <input name="questao_3_7" type="checkbox" value="7" > 7 - Tem outro destino
-            </label></div>                                   
-        </div>           
+            Especificar: <input name="questao_3_10_especificar" type="text" >
 
-    
+			<input type="hidden" name="questao_3_10" value="">
+        </div>         
+            
         <div class="form-group col-sm-12">
             <label for="exampleInputEmail1">3.11 Quais bens a família possui? (resposta múltipla)
             </label>
@@ -542,6 +480,8 @@
                 <input name="questao_3_11" type="checkbox" value="18" > 18. Outros
             </label></div>   
             Especificar: <input name="questao_3_11_especificar" type="text" >
+			
+			<input type="hidden" name="questao_3_11" value="">
         </div>       	
 
         <label>3.12 Quanto a família gasta por mês com: </label>
@@ -553,7 +493,8 @@
                     <input name="questao_3_12_1" type="number" class="form-control" placeholder="">
                 </div>
             </div>
-            <label><input name="questao_3_12_1_naotem" type="checkbox" value="nao" > Não tem</label>
+            <label><input name="questao_3_12_1_naotem" type="checkbox" value="NAO TEM" > Não tem</label>
+			<input type="hidden" name="questao_3_12_1_naotem" value="">
         </div>
         <div class="form-group">
             <label class="col-sm-3 control-label">2. Água</label>
@@ -563,18 +504,9 @@
                     <input name="questao_3_12_2" type="number" class="form-control" placeholder="">
                 </div>
             </div>
-            <label><input name="questao_3_12_2_naotem" type="checkbox" value="nao" > Não tem</label>
+            <label><input name="questao_3_12_2_naotem" type="checkbox" value="NAO TEM" > Não tem</label>
+			<input type="hidden" name="questao_3_12_2_naotem" value="">
         </div>
-        <div class="form-group">
-            <label class="col-sm-3 control-label">2. Água</label>
-            <div class="col-sm-3">
-                <div class="input-group">
-                    <span class="input-group-addon">R$</span>
-                    <input name="questao_3_12_2" type="number" class="form-control" placeholder="">
-                </div>
-            </div>
-            <label><input name="questao_3_12_2_naotem" type="checkbox" value="nao" > Não tem</label>
-        </div>	
         <div class="form-group">
             <label class="col-sm-3 control-label">3. Gás, carvão e lenha</label>
             <div class="col-sm-3">
@@ -583,7 +515,8 @@
                     <input name="questao_3_12_3" type="number" class="form-control" placeholder="">
                 </div>
             </div>
-            <label><input name="questao_3_12_3_naotem" type="checkbox" value="nao" > Não tem</label>
+            <label><input name="questao_3_12_3_naotem" type="checkbox" value="NAO TEM" > Não tem</label>
+			<input type="hidden" name="questao_3_12_3_naotem" value="">
         </div>		
         <div class="form-group">
             <label class="col-sm-3 control-label">4. Supermercado (Alimentação, Higiene e Limpeza)</label>
@@ -593,7 +526,8 @@
                     <input name="questao_3_12_4" type="number" class="form-control" placeholder="">
                 </div>
             </div>
-            <label><input name="questao_3_12_4_naotem" type="checkbox" value="nao" > Não tem</label>
+            <label><input name="questao_3_12_4_naotem" type="checkbox" value="NAO TEM" > Não tem</label>
+			<input type="hidden" name="questao_3_12_4_naotem" value="">
         </div>	
         <div class="form-group">
             <label class="col-sm-3 control-label">5. Animais  (Doméstico ou Criação)</label>
@@ -603,7 +537,8 @@
                     <input name="questao_3_12_5" type="number" class="form-control" placeholder="">
                 </div>
             </div>
-            <label><input name="questao_3_12_5_naotem" type="checkbox" value="nao" > Não tem</label>
+            <label><input name="questao_3_12_5_naotem" type="checkbox" value="NAO TEM" > Não tem</label>
+			<input type="hidden" name="questao_3_12_5_naotem" value="">
         </div>	
         <div class="form-group">
             <label class="col-sm-3 control-label">6. Transporte</label>
@@ -613,7 +548,8 @@
                     <input name="questao_3_12_6" type="number" class="form-control" placeholder="">
                 </div>
             </div>
-            <label><input name="questao_3_12_6_naotem" type="checkbox" value="nao" > Não tem</label>
+            <label><input name="questao_3_12_6_naotem" type="checkbox" value="NAO TEM" > Não tem</label>
+			<input type="hidden" name="questao_3_12_6_naotem" value="">
         </div>	
         <div class="form-group">
             <label class="col-sm-3 control-label">7. Aluguel</label>
@@ -623,7 +559,8 @@
                     <input name="questao_3_12_7" type="number" class="form-control" placeholder="">
                 </div>
             </div>
-            <label><input name="questao_3_12_7_naotem" type="checkbox" value="nao" > Não tem</label>
+            <label><input name="questao_3_12_7_naotem" type="checkbox" value="NAO TEM" > Não tem</label>
+			<input type="hidden" name="questao_3_12_7_naotem" value="">
         </div>	
         <div class="form-group">
             <label class="col-sm-3 control-label">8. Remédio</label>
@@ -633,7 +570,8 @@
                     <input name="questao_3_12_8" type="number" class="form-control" placeholder="">
                 </div>
             </div>
-            <label><input name="questao_3_12_8_naotem" type="checkbox" value="nao" > Não tem</label>
+            <label><input name="questao_3_12_8_naotem" type="checkbox" value="NAO TEM" > Não tem</label>
+			<input type="hidden" name="questao_3_12_8_naotem" value="">
         </div> 	
         <div class="form-group">
             <label class="col-sm-3 control-label">9. Funcionários</label>
@@ -643,7 +581,8 @@
                     <input name="questao_3_12_9" type="number" class="form-control" placeholder="">
                 </div>
             </div>
-            <label><input name="questao_3_12_9_naotem" type="checkbox" value="nao" > Não tem</label>
+            <label><input name="questao_3_12_9_naotem" type="checkbox" value="NAO TEM" > Não tem</label>
+			<input type="hidden" name="questao_3_12_9_naotem" value="">
         </div> 	 
         <div class="form-group">
             <label class="col-sm-3 control-label">10. Outros</label>
@@ -682,7 +621,7 @@
             <label for="exampleInputEmail1">3.13- A família possui animais de criação (que não são domésticos)? Em caso afirmativo: quais e quantos? (estimulada)
             </label>
             <div class="radio"><label>
-                <input name="questao_3_13" type="radio" value="sim"> Sim
+                <input name="questao_3_13" type="radio" value="SIM"> Sim
             </label></div>  
                 <div class="col-sm-8 col-sm-offset-1">
                     <div class="radio"><label class="control-label">
@@ -710,37 +649,39 @@
             <div class="clearfix"></div>
             
             <div class="radio"><label>
-                <input name="questao_3_13" type="radio" value="nao"> Não
+                <input name="questao_3_13" type="radio" value="NAO"> Não
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_3_13" type="radio" value="998"> NSR
+                <input name="questao_3_13" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_3_13" type="radio" value="999"> NQR
-            </label></div>                                               
+                <input name="questao_3_13" type="radio" value="NQR"> NQR
+            </label></div>      
+			<input type="hidden" name="questa_3_13" value="">                                         
         </div>
 
 
         <div class="form-group col-sm-12">
             <label for="exampleInputEmail1">3.14- A família possui terra?</label>
             <div class="radio"><label>
-                <input name="questao_3_14" type="radio" value="sim_1"> Sim. Junto ao terreno, onde está a casa
+                <input name="questao_3_14" type="radio" value="Sim. Junto ao terreno, onde está a casa"> Sim. Junto ao terreno, onde está a casa
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_3_14" type="radio" value="sim_2"> Sim. Em outro local
+                <input name="questao_3_14" type="radio" value="Sim. Em outro local"> Sim. Em outro local
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_3_14" type="radio" value="sim_3"> Sim. Junto ao terreno da casa e em outro local
+                <input name="questao_3_14" type="radio" value="Sim. Junto ao terreno da casa e em outro local"> Sim. Junto ao terreno da casa e em outro local
             </label></div>   
             <div class="radio"><label>
-                <input name="questao_3_14" type="radio" value="nao"> Não
+                <input name="questao_3_14" type="radio" value="NAO"> Não
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_3_14" type="radio" value="998"> NSR
+                <input name="questao_3_14" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_3_14" type="radio" value="999"> NQR
+                <input name="questao_3_14" type="radio" value="NQR"> NQR
             </label></div>                                     
+			<input type="hidden" name="questao_3_14" value="">   
         </div>
 
 
@@ -790,11 +731,12 @@
                 <input name="questao_3_15" type="radio" value="14"> 14. Mais de 10 salários mínimos (mais de R$ 7.240)
             </label></div>          
             <div class="radio"><label>
-                <input name="questao_3_15" type="radio" value="998"> NSR
+                <input name="questao_3_15" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_3_15" type="radio" value="999"> NQR
+                <input name="questao_3_15" type="radio" value="NQR"> NQR
             </label></div>                                     
+			<input type="hidden" name="questao_3_15" value="">
         </div>	
 
         <div class="clearfix"></div>
@@ -809,6 +751,8 @@
             <div class="radio"><label>
                 <input name="questao_4_1" type="radio" value="2" ng-model="questao_4_1"> 2. Verão
             </label></div>
+ 
+			<input type="hidden" name="questao_4_1" value="">
         </div>
 
 
@@ -855,9 +799,9 @@
             <tr>
                 <td>1</td>
                 <td>Rio</td>
-                <td><input type="checkbox" name="questao_4_2" value="1"></td>
-                <td><input type="checkbox" name="questao_4_3_1" value="1" ></td>
-                <td><input type="radio" name="questao_4_3_2" value="1"></td>
+                <td><input type="checkbox" name="questao_4_2" value="1"><input type="hidden" name="questao_4_2" value=""></td>
+                <td><input type="checkbox" name="questao_4_3_1" value="1" ><input type="hidden" name="questao_4_3_1" value=""></td>
+                <td><input type="radio" name="questao_4_3_2" value="1"><input type="hidden" name="questao_4_3_2" value=""></td>
                 <td>
                     <div class="radio"><label>
                         <input name="questao_4_4_1" type="radio" value="1"> 1. Ótima
@@ -872,11 +816,12 @@
                         <input name="questao_4_4_1" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_1" type="radio" value="998"> NSR
+                        <input name="questao_4_4_1" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_1" type="radio" value="999"> NQR
-                    </label></div>                                                                                    
+                        <input name="questao_4_4_1" type="radio" value="NQR"> NQR
+                    </label></div>            
+					<input type="hidden" name="questao_4_4_1" value="">                                                                        
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -892,28 +837,34 @@
                         <input name="questao_4_5_1" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_1" type="radio" value="998"> NSR
+                        <input name="questao_4_5_1" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_1" type="radio" value="999"> NQR
-                    </label></div>                                                                                    
+                        <input name="questao_4_5_1" type="radio" value="NQR"> NQR
+                    </label></div>               
+					<input type="hidden" name="questao_4_5_1" value="">                                                                          
                 </td>            
                 <td>
                     <input name="questao_4_6_1_1" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_1" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_1" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_1" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_1" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
+					<input type="hidden" name="questao_4_7_1_1" value="">
                 </td>                
                 <td>
                     <input name="questao_4_7_2_1" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
+					<input type="hidden" name="questao_4_7_2_1" value="">
                 </td>                  
                 <td>
-                    <select name="questao_4_8_1" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_1" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_1" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_1" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_1" type="number" >    
@@ -946,11 +897,12 @@
                         <input name="questao_4_4_2" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_2" type="radio" value="998"> NSR
+                        <input name="questao_4_4_2" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_2" type="radio" value="999"> NQR
-                    </label></div>                                                                                    
+                        <input name="questao_4_4_2" type="radio" value="NQR"> NQR
+                    </label></div>                                               
+					<input type="hidden" name="questao_4_4_2" value="">                                     
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -966,29 +918,33 @@
                         <input name="questao_4_5_2" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_2" type="radio" value="998"> NSR
+                        <input name="questao_4_5_2" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_2" type="radio" value="999"> NQR
+                        <input name="questao_4_5_2" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_2" value="">
                 </td>                
                 <td>
                     <input name="questao_4_6_1_2" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_2" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_2" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_2" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_2" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                
                 <td>
                     <input name="questao_4_7_2_2" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                </td>                  
+                </td>
                 <td>
-                    <select name="questao_4_8_2" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
-                </td>   
+                    <div class="radio"><label>
+                        <input name="questao_4_8_2" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_2" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_2" value="">
+                </td>  
                 <td>
                     <input name="questao_4_9_2" type="number" >    
                 </td>                                    
@@ -1020,11 +976,12 @@
                         <input name="questao_4_4_3" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_3" type="radio" value="998"> NSR
+                        <input name="questao_4_4_3" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_3" type="radio" value="999"> NQR
+                        <input name="questao_4_4_3" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_3" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1040,15 +997,17 @@
                         <input name="questao_4_5_3" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_3" type="radio" value="998"> NSR
+                        <input name="questao_4_5_3" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_3" type="radio" value="999"> NQR
+                        <input name="questao_4_5_3" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_3" value="">
                 </td>        
                 <td>
                     <input name="questao_4_6_1_3" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_3" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_3" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_3" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_3" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1057,12 +1016,14 @@
                     <input name="questao_4_7_2_3" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_3" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
-                </td>   
+                    <div class="radio"><label>
+                        <input name="questao_4_8_3" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_3" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_3" value="">
+                </td>  
                 <td>
                     <input name="questao_4_9_3" type="number" >    
                 </td>                                    
@@ -1094,11 +1055,12 @@
                         <input name="questao_4_4_4" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_4" type="radio" value="998"> NSR
+                        <input name="questao_4_4_4" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_4" type="radio" value="999"> NQR
+                        <input name="questao_4_4_4" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_4" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1114,15 +1076,17 @@
                         <input name="questao_4_5_4" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_4" type="radio" value="998"> NSR
+                        <input name="questao_4_5_4" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_4" type="radio" value="999"> NQR
+                        <input name="questao_4_5_4" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_4" value="">
                 </td>          
                 <td>
                     <input name="questao_4_6_1_4" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_4" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_4" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_4" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_4" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1131,11 +1095,13 @@
                     <input name="questao_4_7_2_4" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_4" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_4" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_4" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_4" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_4" type="number" >    
@@ -1168,11 +1134,12 @@
                         <input name="questao_4_4_5" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_5" type="radio" value="998"> NSR
+                        <input name="questao_4_4_5" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_5" type="radio" value="999"> NQR
+                        <input name="questao_4_4_5" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_5" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1188,15 +1155,17 @@
                         <input name="questao_4_5_5" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_5" type="radio" value="998"> NSR
+                        <input name="questao_4_5_5" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_5" type="radio" value="999"> NQR
+                        <input name="questao_4_5_5" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_5" value="">
                 </td>                
                 <td>
                     <input name="questao_4_6_1_5" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_5" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_5" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_5" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_5" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1205,11 +1174,13 @@
                     <input name="questao_4_7_2_5" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_5" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_5" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_5" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_5" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_5" type="number" >    
@@ -1242,11 +1213,12 @@
                         <input name="questao_4_4_6" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_6" type="radio" value="998"> NSR
+                        <input name="questao_4_4_6" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_6" type="radio" value="999"> NQR
+                        <input name="questao_4_4_6" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_6" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1262,15 +1234,17 @@
                         <input name="questao_4_5_6" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_6" type="radio" value="998"> NSR
+                        <input name="questao_4_5_6" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_6" type="radio" value="999"> NQR
+                        <input name="questao_4_5_6" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_6" value="">
                 </td>       
                 <td>
                     <input name="questao_4_6_1_6" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_6" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_6" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_6" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_6" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1279,11 +1253,13 @@
                     <input name="questao_4_7_2_6" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_6" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_6" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_6" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_6" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_6" type="number" >    
@@ -1316,11 +1292,12 @@
                         <input name="questao_4_4_7" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_7" type="radio" value="998"> NSR
+                        <input name="questao_4_4_7" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_7" type="radio" value="999"> NQR
+                        <input name="questao_4_4_7" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_7" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1336,15 +1313,17 @@
                         <input name="questao_4_5_7" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_7" type="radio" value="998"> NSR
+                        <input name="questao_4_5_7" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_7" type="radio" value="999"> NQR
+                        <input name="questao_4_5_7" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_7" value="">
                 </td>                
                 <td>
                     <input name="questao_4_6_1_7" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_7" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_7" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_7" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_7" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1353,11 +1332,13 @@
                     <input name="questao_4_7_2_7" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_7" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_7" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_7" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_7" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_7" type="number" >    
@@ -1390,11 +1371,12 @@
                         <input name="questao_4_4_8" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_8" type="radio" value="998"> NSR
+                        <input name="questao_4_4_8" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_8" type="radio" value="999"> NQR
+                        <input name="questao_4_4_8" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_8" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1410,15 +1392,17 @@
                         <input name="questao_4_5_8" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_8" type="radio" value="998"> NSR
+                        <input name="questao_4_5_8" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_8" type="radio" value="999"> NQR
+                        <input name="questao_4_5_8" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_8" value="">
                 </td>                
                 <td>
                     <input name="questao_4_6_1_8" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_8" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_8" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_8" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_8" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1427,11 +1411,13 @@
                     <input name="questao_4_7_2_8" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_8" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_8" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_8" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_8" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_8" type="number" >    
@@ -1464,11 +1450,12 @@
                         <input name="questao_4_4_9" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_9" type="radio" value="998"> NSR
+                        <input name="questao_4_4_9" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_9" type="radio" value="999"> NQR
+                        <input name="questao_4_4_9" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_9" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1484,15 +1471,17 @@
                         <input name="questao_4_5_9" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_9" type="radio" value="998"> NSR
+                        <input name="questao_4_5_9" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_9" type="radio" value="999"> NQR
+                        <input name="questao_4_5_9" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_9" value="">
                 </td>                
                 <td>
                     <input name="questao_4_6_1_9" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_9" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_9" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_9" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_9" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1501,11 +1490,13 @@
                     <input name="questao_4_7_2_9" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_9" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_9" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_9" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_9" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_9" type="number" >    
@@ -1538,11 +1529,12 @@
                         <input name="questao_4_4_10" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_10" type="radio" value="998"> NSR
+                        <input name="questao_4_4_10" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_10" type="radio" value="999"> NQR
+                        <input name="questao_4_4_10" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_10" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1558,15 +1550,17 @@
                         <input name="questao_4_5_10" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_10" type="radio" value="998"> NSR
+                        <input name="questao_4_5_10" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_10" type="radio" value="999"> NQR
+                        <input name="questao_4_5_10" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_10" value="">
                 </td>                
                 <td>
                     <input name="questao_4_6_1_10" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_10" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_10" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_10" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_10" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1575,11 +1569,13 @@
                     <input name="questao_4_7_2_10" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_10" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_10" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_10" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_10" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_10" type="number" >    
@@ -1612,11 +1608,12 @@
                         <input name="questao_4_4_11" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_11" type="radio" value="998"> NSR
+                        <input name="questao_4_4_11" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_11" type="radio" value="999"> NQR
+                        <input name="questao_4_4_11" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_11" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1632,15 +1629,17 @@
                         <input name="questao_4_5_11" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_11" type="radio" value="998"> NSR
+                        <input name="questao_4_5_11" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_11" type="radio" value="999"> NQR
+                        <input name="questao_4_5_11" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_11" value="">
                 </td>                
                 <td>
                     <input name="questao_4_6_1_11" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_11" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_11" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_11" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_11" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1649,11 +1648,13 @@
                     <input name="questao_4_7_2_11" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_11" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_11" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_11" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_11" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_11" type="number" >    
@@ -1668,7 +1669,15 @@
             
             <tr>
                 <td>12</td>
-                <td>Busca chafariz ou cisterna pública</td>
+                <td>
+					Busca chafariz ou cisterna pública<br>
+					1. <input type="checkbox" name="questao_4_1_12" value="1"><br>
+					2. <input type="checkbox" name="questao_4_1_12" value="2"><br>
+					3. <input type="checkbox" name="questao_4_1_12" value="3"><br>
+					4. <input type="checkbox" name="questao_4_1_12" value="4"><br>
+					5. <input type="checkbox" name="questao_4_1_12" value="5"><br>
+					<input type="hidden" name="questao_4_1_12" value="">
+				</td>
                 <td><input type="checkbox" name="questao_4_2" value="12"></td>
                 <td><input type="checkbox" name="questao_4_3_1" value="12" ></td>
                 <td><input type="radio" name="questao_4_3_2" value="12"></td>
@@ -1686,11 +1695,12 @@
                         <input name="questao_4_4_12" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_12" type="radio" value="998"> NSR
+                        <input name="questao_4_4_12" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_12" type="radio" value="999"> NQR
+                        <input name="questao_4_4_12" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_12" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1706,15 +1716,17 @@
                         <input name="questao_4_5_12" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_12" type="radio" value="998"> NSR
+                        <input name="questao_4_5_12" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_12" type="radio" value="999"> NQR
+                        <input name="questao_4_5_12" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_12" value="">
                 </td>                
                 <td>
                     <input name="questao_4_6_1_12" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_12" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_12" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_12" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_12" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1723,11 +1735,13 @@
                     <input name="questao_4_7_2_12" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_12" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_12" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_12" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_12" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_12" type="number" >    
@@ -1760,11 +1774,12 @@
                         <input name="questao_4_4_13" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_13" type="radio" value="998"> NSR
+                        <input name="questao_4_4_13" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_13" type="radio" value="999"> NQR
+                        <input name="questao_4_4_13" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_13" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1780,15 +1795,17 @@
                         <input name="questao_4_5_13" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_13" type="radio" value="998"> NSR
+                        <input name="questao_4_5_13" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_13" type="radio" value="999"> NQR
+                        <input name="questao_4_5_13" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_13" value="">
                 </td>              
                 <td>
                     <input name="questao_4_6_1_13" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_13" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_13" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_13" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_13" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1797,11 +1814,13 @@
                     <input name="questao_4_7_2_13" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_13" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_13" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_13" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_13" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_13" type="number" >    
@@ -1834,11 +1853,12 @@
                         <input name="questao_4_4_14" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_14" type="radio" value="998"> NSR
+                        <input name="questao_4_4_14" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_14" type="radio" value="999"> NQR
+                        <input name="questao_4_4_14" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_14" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1854,15 +1874,17 @@
                         <input name="questao_4_5_14" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_14" type="radio" value="998"> NSR
+                        <input name="questao_4_5_14" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_14" type="radio" value="999"> NQR
+                        <input name="questao_4_5_14" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_14" value="">
                 </td>             
                 <td>
                     <input name="questao_4_6_1_14" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_14" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_14" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_14" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_14" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1871,11 +1893,13 @@
                     <input name="questao_4_7_2_14" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_14" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_14" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_14" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_14" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_14" type="number" >    
@@ -1908,11 +1932,12 @@
                         <input name="questao_4_4_15" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_4_15" type="radio" value="998"> NSR
+                        <input name="questao_4_4_15" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_4_15" type="radio" value="999"> NQR
+                        <input name="questao_4_4_15" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_4_15" value="">
                 </td>
                 <td>
                     <div class="radio"><label>
@@ -1928,15 +1953,17 @@
                         <input name="questao_4_5_15" type="radio" value="4"> 4. Ruim
                     </label></div>  
                     <div class="radio"><label>
-                        <input name="questao_4_5_15" type="radio" value="998"> NSR
+                        <input name="questao_4_5_15" type="radio" value="NSR"> NSR
                     </label></div> 
                     <div class="radio"><label>
-                        <input name="questao_4_5_15" type="radio" value="999"> NQR
+                        <input name="questao_4_5_15" type="radio" value="NQR"> NQR
                     </label></div>                                                                                    
+					<input type="hidden" name="questao_4_5_15" value="">
                 </td>         
                 <td>
                     <input name="questao_4_6_1_15" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
-                    <label><input name="questao_4_6_2_15" type="checkbox" value="998" > NSR</label>
+                    <label><input name="questao_4_6_2_15" type="checkbox" value="NSR" > NSR</label>
+					<input type="hidden" name="questao_4_6_2_15" value="">
                 </td>
                 <td>
                     <input name="questao_4_7_1_15" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
@@ -1945,11 +1972,13 @@
                     <input name="questao_4_7_2_15" type="number" step="0.1" pattern="[0-9]+([\.|,][0-9]+)?">    
                 </td>                  
                 <td>
-                    <select name="questao_4_8_15" >
-                        <option value=""></option>
-                        <option value="1">Sim</option>
-                        <option value="2">Não</option>
-                    </select>
+                    <div class="radio"><label>
+                        <input name="questao_4_8_15" type="radio" value="1"> 1. SIM
+                    </label></div>  
+                    <div class="radio"><label>
+                        <input name="questao_4_8_15" type="radio" value="2"> 2. NAO
+                    </label></div>         
+					<input type="hidden" name="questao_4_8_15" value="">
                 </td>   
                 <td>
                     <input name="questao_4_9_15" type="number" >    
@@ -2024,10 +2053,11 @@
             </label></div>  
             Especificar: <input name="questao_4_11_especificar" type="text" >
             <div class="checkbox"><label>
-                <input name="questao_4_11" type="checkbox" value="998" > NSR
+                <input name="questao_4_11" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_11" type="checkbox" value="999" > NQR
-            </label></div>                         
+                <input name="questao_4_11" type="checkbox" value="NQR" > NQR
+            </label></div>         
+			<input type="hidden" name="questao_4_11" value="">                
         </div>  
   	
         <div ng-show="questao_4_1==1" class="form-group col-sm-12">
@@ -2052,10 +2082,11 @@
                 <input name="questao_4_12" type="checkbox" value="6" > 6. Não busca água
             </label></div> 
             <div class="checkbox"><label>
-                <input name="questao_4_12" type="checkbox" value="998" > NSR
+                <input name="questao_4_12" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_12" type="checkbox" value="999" > NQR
-            </label></div>                         
+                <input name="questao_4_12" type="checkbox" value="NQR" > NQR
+            </label></div>             
+			<input type="hidden" name="questao_4_12" value="">            
         </div>      
 	
 
@@ -2099,10 +2130,11 @@
             </label></div>  
             Especificar: <input name="questao_4_22_especificar" type="text" >
             <div class="checkbox"><label>
-                <input name="questao_4_22" type="checkbox" value="998" > NSR
+                <input name="questao_4_22" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_22" type="checkbox" value="999" > NQR
+                <input name="questao_4_22" type="checkbox" value="NQR" > NQR
             </label></div>                         
+			<input type="hidden" name="questao_4_22" value="">
         </div>  
   	
         <div ng-show="questao_4_1==2" class="form-group col-sm-12">
@@ -2127,10 +2159,11 @@
                 <input name="questao_4_23" type="checkbox" value="6" > 6. Não busca água
             </label></div> 
             <div class="checkbox"><label>
-                <input name="questao_4_23" type="checkbox" value="998" > NSR
+                <input name="questao_4_23" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_23" type="checkbox" value="999" > NQR
-            </label></div>                         
+                <input name="questao_4_23" type="checkbox" value="NQR" > NQR
+            </label></div>            
+			<input type="hidden" name="questao_4_23" value="">             
         </div>  
 
         <div ng-show="questao_4_1==2" class="form-group col-sm-12">
@@ -2144,7 +2177,8 @@
                 <label class="btn btn-primary">
                     <input name="questao_4_24" type="radio" value="2" > 2. Não (retornar para a questão 4.14)
                 </label>
-            </div>                         
+            </div>      
+			<input type="hidden" name="questao_4_24" value="">                   
         </div>  
 
 
@@ -2168,12 +2202,12 @@
                 <input name="questao_4_34" type="checkbox" value="997" > NSA – Mudou há pouco tempo
             </label></div> 
             <div class="checkbox"><label>
-                <input name="questao_4_34" type="checkbox" value="998" > NSR
+                <input name="questao_4_34" type="checkbox" value="NSR" > NSR
             </label></div> 
             <div class="checkbox"><label>
-                <input name="questao_4_34" type="checkbox" value="999" > NQR
+                <input name="questao_4_34" type="checkbox" value="NQR" > NQR
             </label></div> 
-            
+            <input type="hidden" name="questao_4_34" value="">
         </div>  
 
 
@@ -2215,10 +2249,11 @@
             </label></div>  
             Especificar: <input name="questao_4_35_especificar" type="text" >
             <div class="checkbox"><label>
-                <input name="questao_4_35" type="checkbox" value="998" > NSR
+                <input name="questao_4_35" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_35" type="checkbox" value="999" > NQR
+                <input name="questao_4_35" type="checkbox" value="NQR" > NQR
             </label></div>                         
+			<input type="hidden" name="questao_4_35" value="">
         </div>  
 
 
@@ -2244,10 +2279,11 @@
                 <input name="questao_4_36" type="checkbox" value="6" > 6. Não busca água
             </label></div> 
             <div class="checkbox"><label>
-                <input name="questao_4_36" type="checkbox" value="998" > NSR
+                <input name="questao_4_36" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_36" type="checkbox" value="999" > NQR
+                <input name="questao_4_36" type="checkbox" value="NQR" > NQR
             </label></div>                         
+			<input type="hidden" name="questao_4_36" value="">
         </div>  
 
 
@@ -2265,11 +2301,12 @@
                 <input name="questao_4_37" type="radio" value="3"> 3. Não. A água é guardada em outro lugar (tambor, balde ou vasilha)  
             </label></div>   
             <div class="radio"><label>
-                <input name="questao_4_37" type="radio" value="998"> NSR
+                <input name="questao_4_37" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_37" type="radio" value="999"> NQR
-            </label></div>                                     
+                <input name="questao_4_37" type="radio" value="NQR"> NQR
+            </label></div>         
+			<input type="hidden" name="questao_4_37" value="">                            
         </div>
 
         <div class="form-group col-sm-12">
@@ -2304,11 +2341,12 @@
                 <input name="questao_4_38" type="radio" value="9"> 9. Nunca lavei a caixa, tambor, balde ou vasilha
             </label></div>                                                                            
             <div class="radio"><label>
-                <input name="questao_4_38" type="radio" value="998"> NSR
+                <input name="questao_4_38" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_38" type="radio" value="999"> NQR
-            </label></div>                                     
+                <input name="questao_4_38" type="radio" value="NQR"> NQR
+            </label></div>       
+			<input type="hidden" name="questao_4_38" value="">                              
         </div>
 
         <div class="form-group col-sm-12">
@@ -2336,6 +2374,7 @@
             </label></div>                             
             <br>
             Quantidade de torneiras: <input name="questao_4_39_torceiras" type="number" >
+			<input type="hidden" name="questao_4_39" value="">
         </div>
 
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
@@ -2374,17 +2413,18 @@
                     <input name="questao_4_40" type="checkbox" value="11" > 11. Outros - 
                 </label>
             Especificar: <input name="questao_4_40_especificar" type="text" value="" > 
+				<input type="hidden" name="questao_4_40" value="">
             </div>
                              
             <div class="checkbox"><label>
                 <input name="questao_4_40" type="checkbox" value="997" > NSA - mora há pouco tempo na casa
             </label></div>                  
             <div class="checkbox"><label>
-                <input name="questao_4_40" type="checkbox" value="998" > NSR
+                <input name="questao_4_40" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_40" type="checkbox" value="999" > NQR
+                <input name="questao_4_40" type="checkbox" value="NQR" > NQR
             </label></div>             
-      
+			<input type="hidden" name="questao_4_40" value="">
         </div>
         
         <h2>PERCEPÇÃO SOBRE A QUALIDADE DOS SERVIÇOS</h2>
@@ -2426,11 +2466,11 @@
                 <input name="questao_4_41" type="checkbox" value="997" > NSA - mora há pouco tempo na casa
             </label></div>                  
             <div class="checkbox"><label>
-                <input name="questao_4_41" type="checkbox" value="998" > NSR
+                <input name="questao_4_41" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_41" type="checkbox" value="999" > NQR
+                <input name="questao_4_41" type="checkbox" value="NQR" > NQR
             </label></div>             
-      
+      	  	<input type="hidden" name="questao_4_41" value="">
         </div>
 	
         <div class="form-group col-sm-12">
@@ -2445,11 +2485,12 @@
                 <input name="questao_4_42" type="radio" value="3"> 3. Não está nada satisfeita  
             </label></div>                                                                              
             <div class="radio"><label>
-                <input name="questao_4_42" type="radio" value="998"> NSR
+                <input name="questao_4_42" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_42" type="radio" value="999"> NQR
-            </label></div>                                     
+                <input name="questao_4_42" type="radio" value="NQR"> NQR
+            </label></div>               
+			<input type="hidden" name="questao_4_42" value="">                      
         </div>
 
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
@@ -2473,11 +2514,12 @@
                 <input name="questao_4_43" type="radio" value="997"> NSA - Não está ligado a rede do SISAR
             </label></div>                                                                              
             <div class="radio"><label>
-                <input name="questao_4_43" type="radio" value="998"> NSR
+                <input name="questao_4_43" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_43" type="radio" value="999"> NQR
-            </label></div>                                     
+                <input name="questao_4_43" type="radio" value="NQR"> NQR
+            </label></div>               
+			<input type="hidden" name="questao_4_43" value="">                      
         </div>
 
 
@@ -2510,10 +2552,11 @@
             Especificar: <input name="questao_4_44_especificar" type="text" value="" > 
             </div>              
             <div class="checkbox"><label>
-                <input name="questao_4_44" type="checkbox" value="998" > NSR
+                <input name="questao_4_44" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_44" type="checkbox" value="999" > NQR
+                <input name="questao_4_44" type="checkbox" value="NQR" > NQR
             </label></div>             
+			<input type="hidden" name="questao_4_44" value="">
         </div>
 
         <div class="form-group col-sm-12">
@@ -2530,7 +2573,8 @@
             </label></div>  
             <div class="radio"><label>
                 <input name="questao_4_45" type="radio" value="999"> 999. NQR (ir para a pergunta 4.47)
-            </label></div>                                     
+            </label></div>            
+			<input type="hidden" name="questao_4_45" value="">                         
         </div>
 	
          <div class="form-group col-sm-12">
@@ -2562,7 +2606,8 @@
              </label></div>  
              <div class="radio"><label>
                  <input name="questao_4_46" type="radio" value="999"> 999. NQR (ir para a pergunta 4.47)
-             </label></div>                                     
+             </label></div>    
+			 <input type="hidden" name="questao_4_46" value="">                                 
          </div>   
     
         <div class="form-group col-sm-12">
@@ -2588,10 +2633,11 @@
                 <input name="questao_4_47" type="checkbox" value="997" > NSA 
             </label></div>                  
             <div class="checkbox"><label>
-                <input name="questao_4_47" type="checkbox" value="998" > NSR
+                <input name="questao_4_47" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_47" type="checkbox" value="999" > NQR
-            </label></div>             
+                <input name="questao_4_47" type="checkbox" value="NQR" > NQR
+            </label></div>     
+			<input type="hidden" name="questao_4_47" value="">        
         </div>    
     
         <div class="form-group col-sm-12">
@@ -2629,6 +2675,7 @@
                 </label>
             Especificar: <input name="questao_4_48_especificar" type="text" value="" > 
             </div>
+			<input type="hidden" name="questao_4_48" value="">
         </div>
 
         <h2>ALTERAÇÃO NO TEMPO DE ACESSO A ÁGUA</h2>
@@ -2669,10 +2716,11 @@
                 <input name="questao_4_49" type="checkbox" value="997" > NSA - mora a pouco tempo ou não esta ligado
             </label></div>                  
             <div class="checkbox"><label>
-                <input name="questao_4_49" type="checkbox" value="998" > NSR
+                <input name="questao_4_49" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_4_49" type="checkbox" value="999" > NQR
-            </label></div>             
+                <input name="questao_4_49" type="checkbox" value="NQR" > NQR
+            </label></div>    
+			<input type="hidden" name="questao_4_49" value="">         
         </div>
 			
         <h2>PERCEPÇÃO SOBRE CUSTOS PARA ACESSO E DISPONIBILIDADE DE PAGAMENTO</h2>
@@ -2737,11 +2785,12 @@
             </label></div>
                                                                 
             <div class="radio"><label>
-                <input name="questao_4_50" type="radio" value="998"> NSR
+                <input name="questao_4_50" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_50" type="radio" value="999"> NQR
-            </label></div>                                     
+                <input name="questao_4_50" type="radio" value="NQR"> NQR
+            </label></div>    
+			<input type="hidden" name="questao_4_50" value="">                                 
         </div>                
             
             
@@ -2806,11 +2855,12 @@
             </label></div>
                                                                 
             <div class="radio"><label>
-                <input name="questao_4_51" type="radio" value="998"> NSR
+                <input name="questao_4_51" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_51" type="radio" value="999"> NQR
-            </label></div>                                     
+                <input name="questao_4_51" type="radio" value="NQR"> NQR
+            </label></div>             
+			<input type="hidden" name="questao_4_51" value="">                        
         </div>            
 
    
@@ -2830,11 +2880,12 @@
                 <input name="questao_4_52" type="radio" value="997"> NSA - No caso de não pagar
             </label></div>                                                                              
             <div class="radio"><label>
-                <input name="questao_4_52" type="radio" value="998"> NSR
+                <input name="questao_4_52" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_52" type="radio" value="999"> NQR
-            </label></div>                                     
+                <input name="questao_4_52" type="radio" value="NQR"> NQR
+            </label></div>      
+			<input type="hidden" name="questao_4_52" value="">                               
         </div>    
     
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
@@ -2853,11 +2904,12 @@
                 <input name="questao_4_53" type="radio" value="997"> NSA - No caso de não estar ligado a rede (ir para questão 4.58)
             </label></div>                                                                              
             <div class="radio"><label>
-                <input name="questao_4_53" type="radio" value="998"> NSR
+                <input name="questao_4_53" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_53" type="radio" value="999"> NQR
+                <input name="questao_4_53" type="radio" value="NQR"> NQR
             </label></div>                                     
+			<input type="hidden" name="questao_4_53" value="">
         </div>       
     
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
@@ -2876,11 +2928,12 @@
                 <input name="questao_4_54" type="radio" value="997"> NSA - No caso de não estar ligado a rede (ir para questão 4.58)
             </label></div>                                                                              
             <div class="radio"><label>
-                <input name="questao_4_54" type="radio" value="998"> NSR
+                <input name="questao_4_54" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_54" type="radio" value="999"> NQR
+                <input name="questao_4_54" type="radio" value="NQR"> NQR
             </label></div>                                     
+			<input type="hidden" name="questao_4_54" value="">
         </div>          
     
         <h2>5- DESTINAÇÃO DOS ESGOTOS E CONDIÇÕES DE ACESSO E USOS DO BANHEIRO</h2>
@@ -2910,6 +2963,7 @@
                 <div class="radio"><label>
                     <input name="questao_5_1_com" type="checkbox" value="6" > 6. tanque séptico
                 </label></div>                
+				<input type="hidden" name="questao_5_1_com" value="">
             
            <div class="radio"><label>
                <input name="questao_5_1" type="radio" value="2" > 2. Não, usam o mato ou terreno próximo a casa  (ir para pergunta 5.3)
@@ -2926,10 +2980,11 @@
                              
         
             <div class="radio"><label>
-                <input name="questao_5_1" type="radio" value="998" > NSR
+                <input name="questao_5_1" type="radio" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="radio"><label>
-                <input name="questao_5_1" type="radio" value="999" > NQR
-            </label></div>             
+                <input name="questao_5_1" type="radio" value="NQR" > NQR
+            </label></div>    
+			<input type="hidden" name="questao_5_1" value="">         
         </div>
      
 
@@ -2941,7 +2996,7 @@
            <div class="checkbox"><label>
                <input name="questao_5_2" type="checkbox" value="2" > 2. Fora da casa. 
            </label></div> 
-                  
+           <input type="hidden" name="questao_5_2" value="">
         </div>  
     
     
@@ -2963,11 +3018,12 @@
             </div>
                                                                         
             <div class="radio"><label>
-                <input name="questao_5_3" type="radio" value="998"> NSR
+                <input name="questao_5_3" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_5_3" type="radio" value="999"> NQR
-            </label></div>                                     
+                <input name="questao_5_3" type="radio" value="NQR"> NQR
+            </label></div>        
+			<input type="hidden" name="questao_5_3" value="">                             
         </div>    
     
     
@@ -2985,11 +3041,12 @@
 
                                                                     
         <div class="radio"><label>
-            <input name="questao_5_4" type="radio" value="998"> NSR
+            <input name="questao_5_4" type="radio" value="NSR"> NSR
         </label></div>  
         <div class="radio"><label>
-            <input name="questao_5_4" type="radio" value="999"> NQR
-        </label></div>                                     
+            <input name="questao_5_4" type="radio" value="NQR"> NQR
+        </label></div>      
+		<input type="hidden" name="questao_5_4" value="">                               
     </div>
     
     
@@ -3025,10 +3082,11 @@
                 <input name="questao_5_5" type="checkbox" value="8" > 8. Não possui tanque ou pia de cozinha   
             </label></div>                  
             <div class="checkbox"><label>
-                <input name="questao_5_5" type="checkbox" value="998" > NSR
+                <input name="questao_5_5" type="checkbox" value="NSR" > NSR
             </label></div>                                                                                                                        <div class="checkbox"><label>
-                <input name="questao_5_5" type="checkbox" value="999" > NQR
+                <input name="questao_5_5" type="checkbox" value="NQR" > NQR
             </label></div>             
+			<input type="hidden" name="questao_5_5" value="">
         </div>    
     
     
@@ -3048,11 +3106,12 @@
                 </label></div>
                                                  
                 <div class="radio"><label>
-                    <input name="questao_5_6" type="radio" value="998"> NSR
+                    <input name="questao_5_6" type="radio" value="NSR"> NSR
                 </label></div>  
                 <div class="radio"><label>
-                    <input name="questao_5_6" type="radio" value="999"> NQR
-                </label></div>                                     
+                    <input name="questao_5_6" type="radio" value="NQR"> NQR
+                </label></div>      
+				<input type="hidden" name="questao_5_6" value="">                               
             </div>
             
             
@@ -3072,11 +3131,12 @@
                 Especificar: <input name="questao_5_7_especificar" type="text" value="" > 
                                                  
                 <div class="radio"><label>
-                    <input name="questao_5_7" type="radio" value="998"> NSR
+                    <input name="questao_5_7" type="radio" value="NSR"> NSR
                 </label></div>  
                 <div class="radio"><label>
-                    <input name="questao_5_7" type="radio" value="999"> NQR
+                    <input name="questao_5_7" type="radio" value="NQR"> NQR
                 </label></div>                                     
+				<input type="hidden" name="questao_5_7" value="">
             </div>
         </div>
 
@@ -3091,7 +3151,8 @@
             </label></div>  
             <div class="radio"><label>
                 <input name="questao_6_1" type="radio" value="2"> 2. Não (ir para pergunta 8.1)
-            </label></div>                   
+            </label></div>              
+			<input type="hidden" name="questao_6_1" value="">     
         </div>
 
         <div class="form-group col-sm-12">
@@ -3106,11 +3167,12 @@
                 <input name="questao_6_2" type="radio" value="3"> 3. O banho não é diário	
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_6_2" type="radio" value="998"> NSR
+                <input name="questao_6_2" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_6_2" type="radio" value="999"> NQR
+                <input name="questao_6_2" type="radio" value="NQR"> NQR
             </label></div>            
+			<input type="hidden" name="questao_6_2" value="">
         </div>    
     
         <div class="form-group col-sm-12">
@@ -3131,11 +3193,12 @@
                 <input name="questao_6_3" type="radio" value="5"> 5. A criança não se alimenta sozinha 
             </label></div>
             <div class="radio"><label>
-                <input name="questao_6_3" type="radio" value="998"> NSR
+                <input name="questao_6_3" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_6_3" type="radio" value="999"> NQR
-            </label></div>            
+                <input name="questao_6_3" type="radio" value="NQR"> NQR
+            </label></div>      
+			<input type="hidden" name="questao_6_3" value="">      
         </div>      
     
         <div class="form-group col-sm-12">
@@ -3156,11 +3219,12 @@
                 <input name="questao_6_4" type="radio" value="5"> 5. A criança não se alimenta sozinha 
             </label></div>
             <div class="radio"><label>
-                <input name="questao_6_4" type="radio" value="998"> NSR
+                <input name="questao_6_4" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_6_4" type="radio" value="999"> NQR
+                <input name="questao_6_4" type="radio" value="NQR"> NQR
             </label></div>            
+			<input type="hidden" name="questao_6_4" value="">
         </div>    
 
         <div class="form-group col-sm-12">
@@ -3178,11 +3242,12 @@
                 <input name="questao_6_5" type="radio" value="4"> 4. Nunca lavam
             </label></div>
             <div class="radio"><label>
-                <input name="questao_6_5" type="radio" value="998"> NSR
+                <input name="questao_6_5" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_6_5" type="radio" value="999"> NQR
+                <input name="questao_6_5" type="radio" value="NQR"> NQR
             </label></div>            
+			<input type="hidden" name="questao_6_5" value="">
         </div>     
  
         <div class="form-group col-sm-12">
@@ -3207,11 +3272,12 @@
             </label></div>
                 Especificar: <input name="questao_6_6_especificar" type="text" value="" > 
             <div class="radio"><label>
-                <input name="questao_6_6" type="radio" value="998"> NSR
+                <input name="questao_6_6" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_6_6" type="radio" value="999"> NQR
+                <input name="questao_6_6" type="radio" value="NQR"> NQR
             </label></div>            
+			<input type="hidden" name="questao_6_6" value="">
         </div>    
  
  
@@ -3282,11 +3348,12 @@
                 <input name="questao_7_24" type="radio" value="997"> NSA
             </label></div>                                                                              
             <div class="radio"><label>
-                <input name="questao_7_24" type="radio" value="998"> NSR
+                <input name="questao_7_24" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_7_24" type="radio" value="999"> NQR
+                <input name="questao_7_24" type="radio" value="NQR"> NQR
             </label></div>                                     
+			<input type="hidden" name="questao_7_24" value="">
         </div>
         
         <div class="form-group col-sm-12">
@@ -3305,11 +3372,12 @@
             </label></div>
                                                                        
             <div class="radio"><label>
-                <input name="questao_7_25" type="radio" value="998"> NSR
+                <input name="questao_7_25" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_7_25" type="radio" value="999"> NQR
-            </label></div>                                     
+                <input name="questao_7_25" type="radio" value="NQR"> NQR
+            </label></div>               
+			<input type="hidden" name="questao_7_25" value="">                      
         </div>        
         
         
@@ -3329,11 +3397,12 @@
             </label></div>
                                                                        
             <div class="radio"><label>
-                <input name="questao_7_26" type="radio" value="998"> NSR
+                <input name="questao_7_26" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_7_26" type="radio" value="999"> NQR
+                <input name="questao_7_26" type="radio" value="NQR"> NQR
             </label></div>                                     
+			<input type="hidden" name="questao_7_26" value="">
         </div>          
         
         
@@ -3394,11 +3463,12 @@
             </label></div>
             Especificar: <input name="questao_8_7_especificar" type="text" value="" >                                                                            
             <div class="radio"><label>
-                <input name="questao_8_7" type="radio" value="998"> NSR
+                <input name="questao_8_7" type="radio" value="NSR"> NSR
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_8_7" type="radio" value="999"> NQR
+                <input name="questao_8_7" type="radio" value="NQR"> NQR
             </label></div>                                     
+			<input type="hidden" name="questao_8_7" value="">
         </div>        
 
 
@@ -3480,10 +3550,11 @@
                 Especificar: <input name="questao_9_3_rio_especificar" type="text" value="" > 
                 
                 <div class="checkbox"><label>
-                    <input name="questao_9_3_rio" type="checkbox" value="998" > NSR
+                    <input name="questao_9_3_rio" type="checkbox" value="NSR" > NSR
                 </label></div>                                                                                                                        <div class="checkbox"><label>
-                    <input name="questao_9_3_rio" type="checkbox" value="999" > NQR
+                    <input name="questao_9_3_rio" type="checkbox" value="NQR" > NQR
                 </label></div>
+				<input type="hidden" name="questao_9_3_rio" value="">
             </div>  <br>         
             <div><strong>Canal:</strong>
                 <div class="checkbox"><label>
@@ -3507,10 +3578,11 @@
                 Especificar: <input name="questao_9_3_canal_especificar" type="text" value="" > 
                 
                 <div class="checkbox"><label>
-                    <input name="questao_9_3_canal" type="checkbox" value="998" > NSR
+                    <input name="questao_9_3_canal" type="checkbox" value="NSR" > NSR
                 </label></div>                                                                                                                        <div class="checkbox"><label>
-                    <input name="questao_9_3_canal" type="checkbox" value="999" > NQR
+                    <input name="questao_9_3_canal" type="checkbox" value="NQR" > NQR
                 </label></div>
+				<input type="hidden" name="questao_9_3_canal" value="">
             </div>                             
         </div>          
        
@@ -3533,10 +3605,11 @@
                     <input name="questao_9_4_rio" type="checkbox" value="5" >  5- Não é aceitável para nenhum uso 
                 </label></div>
                 <div class="checkbox"><label>
-                    <input name="questao_9_4_rio" type="checkbox" value="998" > NSR
+                    <input name="questao_9_4_rio" type="checkbox" value="NSR" > NSR
                 </label></div>                                                                                                                        <div class="checkbox"><label>
-                    <input name="questao_9_4_rio" type="checkbox" value="999" > NQR
+                    <input name="questao_9_4_rio" type="checkbox" value="NQR" > NQR
                 </label></div> 
+				<input type="hidden" name="questao_9_4_rio" value="">
             </div>            
             <br>
             <div><strong>Canal:</strong>
@@ -3556,10 +3629,11 @@
                     <input name="questao_9_4_canal" type="checkbox" value="5" >  5- Não é aceitável para nenhum uso 
                 </label></div>
                 <div class="checkbox"><label>
-                    <input name="questao_9_4_canal" type="checkbox" value="998" > NSR
+                    <input name="questao_9_4_canal" type="checkbox" value="NSR" > NSR
                 </label></div>                                                                                                                        <div class="checkbox"><label>
-                    <input name="questao_9_4_canal" type="checkbox" value="999" > NQR
+                    <input name="questao_9_4_canal" type="checkbox" value="NQR" > NQR
                 </label></div> 
+				<input type="hidden" name="questao_9_4_canal" value="">
             </div>             
         </div>       
        
@@ -3653,9 +3727,10 @@
         
         
         <div class="form-group">
-            <div class="col-sm-offset-8 col-sm-4">
+            <div class="col-sm-12">
                 <button type="submit" class="btn btn-primary" ng-click="salvarClick()">Salvar questionário</button>
 				<button class="btn btn-primary" ng-click="getItensFromDB()">Export</button>
+                <button class="btn btn-primary" ng-click="clearDB()">Limpar Dados do Banco</button>
             </div>
         </div>        
     </form>

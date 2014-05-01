@@ -8,5 +8,4 @@ $(function() {
         
         $("#result-pre-form").text(dig1+dig2+dig3+dig4+dig5);
     });
-   
 });

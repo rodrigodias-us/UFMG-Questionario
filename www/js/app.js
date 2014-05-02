@@ -41,7 +41,7 @@ angular.module('project', [])
 		}
 		function gotFileWriter(writer) {
 			writer.onwriteend = function(evt) {
-				console.log('finished writing');
+				alert('Arquivo Salvo com Sucesso!');
 				if (callback !== undefined) {
 					callback(writer);
 				}
@@ -95,7 +95,9 @@ angular.module('project', [])
 			console.log(err);
 		}
 		function success() {
-			console.log("Gravado no Banco!");
+			alert("Gravado no Banco!");
+			$('form')[0].reset();
+			$('html, body').scrollTop(0);
 		}
 		db.transaction(query, error, success);
 	}
@@ -136,8 +138,10 @@ angular.module('project', [])
 			console.log(err);
 		}
 		function success() {
-			console.log("Dados Excluidos!");
+			alert("Dados Excluidos!");
 		}
-		db.transaction(query, error, success);
+		if(confirm("Tem certeza que deseja apagar todos os dados?")){
+			db.transaction(query, error, success);
+		}
 	}
 });

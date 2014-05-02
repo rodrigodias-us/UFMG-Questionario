@@ -1,0 +1,17 @@
+input[type="radio"] {
+  width: 30px;
+  padding: 31px;
+  line-height: 30px; }
+
+.table-responsive {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border: 1px solid #ddd;
+  -webkit-overflow-scrolling: touch; }
+  .table-responsive > .table {
+    margin-bottom: 0; }
+    .table-responsive > .table th.quest {
+      min-width: 150px; }

@@ -28,6 +28,7 @@
 /Users/rodrigodias/Sites/adriano/godoy.bitbucket.org/platforms/android/assets/www/phonegap.js \
 /Users/rodrigodias/Sites/adriano/godoy.bitbucket.org/platforms/android/assets/www/plugins \
 /Users/rodrigodias/Sites/adriano/godoy.bitbucket.org/platforms/android/assets/www/res \
+/Users/rodrigodias/Sites/adriano/godoy.bitbucket.org/platforms/android/assets/www/to_copy.txt \
 /Users/rodrigodias/Sites/adriano/godoy.bitbucket.org/platforms/android/assets/www/bootstrap/config.json \
 /Users/rodrigodias/Sites/adriano/godoy.bitbucket.org/platforms/android/assets/www/bootstrap/css \
 /Users/rodrigodias/Sites/adriano/godoy.bitbucket.org/platforms/android/assets/www/bootstrap/js \

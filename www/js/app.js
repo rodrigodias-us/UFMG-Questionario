@@ -2,6 +2,8 @@ angular.module('project', [])
 
 .controller('AppController', function($scope){
 
+	$scope.pre_form_2 = 0;
+
 	$.fn.serializeObject = function()
 	{
 	   var o = {};

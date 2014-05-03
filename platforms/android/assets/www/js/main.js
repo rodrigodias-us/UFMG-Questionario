@@ -14,4 +14,15 @@ $(function() {
 			navigator.app.exitApp();
 		}
 	},false);
+	
+	$('select').on('change', function(e){
+		if($(this).val())
+		{
+			$(this).css('background', 'green');
+			$(this).css('color', 'white');
+		} else {
+			$(this).css('background', 'initial');
+			$(this).css('color', 'initial');
+		}
+	})
 });

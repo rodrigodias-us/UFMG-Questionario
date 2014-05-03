@@ -26,7 +26,7 @@
     <div id="pre-form">
         
         <label>1. Recebeu banheiro</label><br>
-        <div class="btn-group" data-toggle="buttons">
+       
             <label class="btn btn-primary active">
               <input name="pre-form-1" type="radio" value="0" checked> Sem informação
             </label>
@@ -36,7 +36,7 @@
             <label class="btn btn-primary">
               <input name="pre-form-1" type="radio" value="2"> Sim
             </label>        
-        </div>    
+            
         <br>
         <label>2. Etapa</label><br>
        
@@ -57,14 +57,14 @@
         </div>  -->
         <br>
         <label>3. Caso ou controle</label><br>
-        <div class="btn-group" data-toggle="buttons">
+        
             <label class="btn btn-primary active">
               <input name="pre-form-3" type="radio" value="0" checked> Caso
             </label>
             <label class="btn btn-primary">
               <input name="pre-form-3" type="radio" value="1"> Controle
             </label>      
-        </div>
+      
         <br>
         <label>4. Localidade</label><br>
         <select name="pre-form-4">
@@ -73,14 +73,14 @@
         </select>    
         <br>
         <label>5. Crianças até 5 anos</label><br>
-        <div class="btn-group" data-toggle="buttons">
+        
             <label class="btn btn-primary active">
-              <input name="pre-form-5" type="radio" value="0" checked> Não possui
+              <input ng-model="has_children" name="pre-form-5" type="radio" value="0" checked > Não possui
             </label>
             <label class="btn btn-primary">
-              <input name="pre-form-5" type="radio" value="1"> Possui
+              <input ng-model="has_children" name="pre-form-5" type="radio" value="1"> Possui
             </label>      
-        </div>         
+              
     </div>
 
 
@@ -3139,7 +3139,7 @@
         </div>
 
 
-
+<div ng-show="has_children==1">
         <h2>6	HIGIENE PESSOAL</h2>
 
         <div class="form-group col-sm-12">
@@ -6469,7 +6469,7 @@
             </label></div>                                     
 			<input type="hidden" name="questao_7_26" value="">
         </div>          
-        
+</div> <!-- fim de has_children -->
         
         <h2>8	CARACTERISTICAS DO DOMICILIO (PARTE 2)</h2>
         <p>IDENTIFICAÇÃO DOS MORADORES E A RESPECTIVA SITUAÇÃO DE RENDIMENTO</p>

@@ -120,7 +120,7 @@
                     <label class="btn btn-primary">
                       <input name="questao_1_sexo" type="radio" value="mulher"> Mulher
                     </label>
-               
+					<input type="hidden" name="questao_1_sexo" value="">               
             </div>
         </div>        
         
@@ -151,6 +151,7 @@
            <div class="col-sm-4">
             <label class="btn btn-danger">
                 <input name="questao_1_desistiu" type="checkbox" value="desistiu" ng-model="questao_1_desistiu"> Não participou/desistiu
+				<input type="hidden" name="questao_1_desistiu" value="">
             </label>
            </div>
            <label for="questao_1_hora_entrevista" class="col-sm-4 control-label">Início da entrevista (hora)</label>
@@ -179,6 +180,7 @@
                 <div class="radio"><label>
                     <input name="questao_2_1_5" type="radio" value="999"> NQR
                 </label></div>
+				<input type="hidden" name="questao_2_1_5" value="">
             </div>
      
 
@@ -200,6 +202,7 @@
                 <div class="radio"><label>
                     <input name="questao_2_2_5" type="radio" value="999"> NQR
                 </label></div>
+				<input type="hidden" name="questao_2_2_5" value="">
             </div>        
         
             <div ng-show="pre_form_2==1" class="form-group form-inline">
@@ -219,7 +222,8 @@
                 </label></div>  <br>
                 <div class="radio"><label>
                     <input name="questao_2_3_5" type="radio" value="999"> NQR
-                </label></div>                
+                </label></div>          
+				<input type="hidden" name="questao_2_3_5" value="">      
             </div>     
         
             <div ng-show="pre_form_2==1" class="form-group form-inline">
@@ -239,7 +243,8 @@
                 </label></div>  <br>
                 <div class="radio"><label>
                     <input name="questao_2_4_5" type="radio" value="999"> NQR
-                </label></div>                                      
+                </label></div>   
+				<input type="hidden" name="questao_2_4_5" value="">                                   
             </div>              
         </div>
         
@@ -267,6 +272,7 @@
             <div class="radio"><label>
                 <input name="questao_3_2" type="radio" value="NAO" > Não
             </label></div>     
+			<input type="hidden" name="questao_3_2" value="">
             
             <div class="col-sm-7 col-sm-offset-1">
                 <div class="radio"><label>
@@ -283,6 +289,7 @@
                     <input name="questao_3_2_2" type="radio" value="alguns meses do ano" > Permanece apenas alguns meses do ano nesta casa
                 </label></div>
                 <input name="questao_3_2_2_tempo" type="number" > meses
+				<input type="hidden" name="questao_3_2_2" value="">
             </div>                                
         </div>          
         
@@ -316,7 +323,8 @@
             </label></div>  
             <div class="radio"><label>
                 <input name="questao_3_3" type="radio" value="999"> NQR
-            </label></div>                                              
+            </label></div>              
+			<input type="hidden" name="questao_3_3" value="">                                
         </div>
         
         

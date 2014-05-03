@@ -18,3 +18,6 @@ input[type="radio"] {
 
 #btns-footer {
   margin: 100px 0 400px 0; }
+
+.linha-marcada td {
+  background-color: #b9b8d4 !important; }

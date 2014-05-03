@@ -1,9 +1,14 @@
 angular.module('project', [])
 
 .controller('AppController', function($scope){
-
-	$scope.pre_form_2 = 0;
-	$scope.has_children = 0;
+	
+	$scope.pre_form_1 = '0';
+	$scope.pre_form_2 = '0';
+	$scope.pre_form_3 = '0';
+	$scope.pre_form_4 = '0';
+	$scope.has_children = '0';
+	$scope.numero = '';
+	
 
 	$.fn.serializeObject = function()
 	{
@@ -143,4 +148,11 @@ angular.module('project', [])
 			db.transaction(query, error, success);
 		}
 	}
+	
+	$scope.changeNumber = function(){
+		$scope.pre_num = $scope.pre_form_1 + $scope.pre_form_2 + $scope.pre_form_3 + $scope.pre_form_4 + $scope.has_children;
+		$scope.numero_full = $scope.pre_num + $scope.numero;
+		$("#numero").val('[' + $scope.numero_full + ']');
+	}
+	$scope.changeNumber();
 });

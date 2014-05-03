@@ -28,23 +28,23 @@
         <label>1. Recebeu banheiro</label><br>
        
             <label class="btn btn-primary active">
-              <input name="pre-form-1" type="radio" value="0" checked> Sem informação
+              <input name="pre-form-1" type="radio" value="0" ng-model="pre_form_1" ng-change="changeNumber()"> Sem informação
             </label>
             <label class="btn btn-primary">
-              <input name="pre-form-1" type="radio" value="1"> Não
+              <input name="pre-form-1" type="radio" value="1" ng-model="pre_form_1" ng-change="changeNumber()"> Não
             </label>
             <label class="btn btn-primary">
-              <input name="pre-form-1" type="radio" value="2"> Sim
+              <input name="pre-form-1" type="radio" value="2" ng-model="pre_form_1" ng-change="changeNumber()"> Sim
             </label>        
             
         <br>
         <label>2. Etapa</label><br>
        
             <label class="btn btn-primary active">
-              <input name="pre-form-2" ng-model="pre_form_2" type="radio" value="0" checked> Antes
+              <input name="pre-form-2" ng-model="pre_form_2" type="radio" value="0" ng-change="changeNumber()"> Antes
             </label>
             <label class="btn btn-primary">
-              <input name="pre-form-2" ng-model="pre_form_2" type="radio" value="1"> Depois
+              <input name="pre-form-2" ng-model="pre_form_2" type="radio" value="1" ng-change="changeNumber()"> Depois
             </label>      
          
         <!-- <div class="btn-group" data-toggle="buttons">
@@ -59,15 +59,15 @@
         <label>3. Caso ou controle</label><br>
         
             <label class="btn btn-primary active">
-              <input name="pre-form-3" type="radio" value="0" checked> Caso
+              <input name="pre-form-3" type="radio" value="0" ng-model="pre_form_3" ng-change="changeNumber()"> Caso
             </label>
             <label class="btn btn-primary">
-              <input name="pre-form-3" type="radio" value="1"> Controle
+              <input name="pre-form-3" type="radio" value="1" ng-model="pre_form_3" ng-change="changeNumber()"> Controle
             </label>      
       
         <br>
         <label>4. Localidade</label><br>
-        <select name="pre-form-4">
+        <select name="pre-form-4" ng-model="pre_form_4" ng-change="changeNumber()">
             <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option>
             <option>5</option><option>6</option><option>7</option><option>8</option><option>9</option>
         </select>    
@@ -75,10 +75,10 @@
         <label>5. Crianças até 5 anos</label><br>
         
             <label class="btn btn-primary active">
-              <input ng-model="has_children" name="pre-form-5" type="radio" value="0" checked > Não possui
+              <input ng-model="has_children" name="pre-form-5" type="radio" value="0" ng-change="changeNumber()"> Não possui
             </label>
             <label class="btn btn-primary">
-              <input ng-model="has_children" name="pre-form-5" type="radio" value="1"> Possui
+              <input ng-model="has_children" name="pre-form-5" type="radio" value="1" ng-change="changeNumber()"> Possui
             </label>      
               
     </div>
@@ -90,9 +90,10 @@
             <div class="col-sm-4">
                 
                 <div class="input-group">
-                  <span class="input-group-addon" id="result-pre-form">00000</span>
-                  <input name="numero" type="number" class="form-control" max="9999">
-                </div>                
+                  <span class="input-group-addon" id="result-pre-form">{{pre_num}}</span>
+                  <input type="number" class="form-control" max="9999" ng-model="numero" ng-change="changeNumber()">
+				  <input id="numero" name="numero" type="hidden">
+                </div>
                 (digite os outros 4 dígitos que idenfiticam o formulário)
             </div>
         </div>

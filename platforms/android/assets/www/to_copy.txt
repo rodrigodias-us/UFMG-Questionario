@@ -1,0 +1,51 @@
+
+ANTES
+ng-show="pre_form_2==0"
+class="antes"
+
+DEPOIS
+ng-show="pre_form_2==1"
+class="depois"
+
+
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">4.41 Quais</label>
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="1" > 1. Aumentou a quantidade de água usada pela família
+            </label></div>  
+            
+            <div class="checkbox"><label>
+                    <input name="questao_4_41" type="checkbox" value="9" > 9. Outros - 
+                </label>
+            Especificar: <input name="questao_4_41_especificar" type="text" value="" > 
+            </div>
+                             
+                             
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="997" > NSA - mora há pouco tempo na casa
+            </label></div>                  
+            <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="998" > NSR
+            </label></div>                                                                                                                        <div class="checkbox"><label>
+                <input name="questao_4_41" type="checkbox" value="999" > NQR
+            </label></div>             
+        </div>
+        
+        
+        <div class="form-group col-sm-12">
+            <label for="exampleInputEmail1">4.43 Falta</label>
+            <div class="radio"><label>
+                <input name="questao_4_43" type="radio" value="1"> 1. Não nunca falta 	
+            </label></div>  
+
+
+            <div class="radio"><label>
+                <input name="questao_4_43" type="radio" value="997"> NSA - Não está ligado a rede do SISAR
+            </label></div>                                                                              
+            <div class="radio"><label>
+                <input name="questao_4_43" type="radio" value="998"> NSR
+            </label></div>  
+            <div class="radio"><label>
+                <input name="questao_4_43" type="radio" value="999"> NQR
+            </label></div>                                     
+        </div>

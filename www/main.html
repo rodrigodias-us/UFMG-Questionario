@@ -163,7 +163,7 @@
         <h2>2. Participação e importância do acesso à água e ao banheiro</h2>
         <h3>PERCEPÇÃO SOBRE A ÁGUA E O BANHEIRO</h3>
         <div class="col-sm-12">
-            <div class="form-group form-inline">
+            <div ng-show="pre_form_2==0" class="form-group form-inline">
                 <label for="exampleInputEmail1">(A) 2.1 Como a chegada da água tratada vai melhorar sua vida: (estimulada) 
                   (e depois? –repete as outras alternativas) 
                 </label>
@@ -175,7 +175,7 @@
             </div>
      
 
-            <div class="form-group form-inline">
+            <div ng-show="pre_form_2==0" class="form-group form-inline">
                 <label for="exampleInputEmail1">(A) 2.2 Como você acha que a construção do banheiro vai melhorar sua vida: 
                     (estimulada) (e depois? –repete as outras alternativas) 
                 </label>
@@ -186,7 +186,7 @@
 				Mais saúde <input name="questao_2_2_4" type="number" class="form-control"><br>
             </div>        
         
-            <div class="form-group form-inline">
+            <div ng-show="pre_form_2==1" class="form-group form-inline">
                 <label for="exampleInputEmail1">(D) 2.3 Depois da chegada da água o que melhorou na sua vida: 
                     (estimulada) (e depois? –repete as outras alternativas) 
                 </label>
@@ -197,7 +197,7 @@
 				Mais saúde <input name="questao_2_3_4" type="number" class="form-control"><br>                   
             </div>     
         
-            <div class="form-group form-inline">
+            <div ng-show="pre_form_2==1" class="form-group form-inline">
                 <label for="exampleInputEmail1">(D) 2.4 Depois da construção do banheiro o que melhorou na sua vida: 
                     (estimulada) (e depois? –repete as outras alternativas)	
                 </label>
@@ -743,7 +743,7 @@
         <h2>4. ABASTECIMENTO DE ÁGUA</h2>
         <h3>QUANTIDADE, USOS, CONDIÇÕES, TEMPO E CUSTOS PARA ACESSO A ÁGUA </h3>
 
-        <div class="form-group col-sm-12">
+        <div ng-show="pre_form_2==0" class="form-group col-sm-12">
             <label for="exampleInputEmail1">(A) 4.1 - Qual a estação que estamos hoje: (estimulada)</label>
             <div class="radio"><label>
                 <input name="questao_4_1" type="radio" value="1" ng-model="questao_4_1"> 1.  Inverno
@@ -2014,9 +2014,8 @@
         </div>
 
 
-
-        <div ng-show="questao_4_1==1" class="form-group col-sm-12">
-            <label for="exampleInputEmail1">4.11 No inverno, o que você faz com todas ás águas que tem: (estimulada e múltipla )
+        <div ng-show="questao_4_1==1&&pre_form_2==0" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">(A) 4.11 No inverno, o que você faz com todas ás águas que tem: (estimulada e múltipla )
             </label>
             <div class="checkbox"><label>
                 <input name="questao_4_11" type="checkbox" value="1" > 1. Lavar vasilhas
@@ -2060,8 +2059,8 @@
 			<input type="hidden" name="questao_4_11" value="">                
         </div>  
   	
-        <div ng-show="questao_4_1==1" class="form-group col-sm-12">
-            <label for="exampleInputEmail1">4.12 No inverno, quando precisa buscar água, quem vai? (múltipla)
+        <div ng-show="questao_4_1==1&&pre_form_2==0" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">(A) 4.12 No inverno, quando precisa buscar água, quem vai? (múltipla)
             </label>
             <div class="checkbox"><label>
                 <input name="questao_4_12" type="checkbox" value="1" > 1. As mulheres (adultas) da casa
@@ -2091,9 +2090,8 @@
 	
 
 
-
-        <div ng-show="questao_4_1==2" class="form-group col-sm-12">
-            <label for="exampleInputEmail1">4.22 No verão, o que você faz com todas ás águas que tem (estimulada e múltipla)
+        <div ng-show="questao_4_1==2&&pre_form_2==0" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">(A) 4.22 No verão, o que você faz com todas ás águas que tem (estimulada e múltipla)
             </label>
             <div class="checkbox"><label>
                 <input name="questao_4_22" type="checkbox" value="1" > 1. Lavar vasilhas
@@ -2137,8 +2135,8 @@
 			<input type="hidden" name="questao_4_22" value="">
         </div>  
   	
-        <div ng-show="questao_4_1==2" class="form-group col-sm-12">
-            <label for="exampleInputEmail1">4.23 No verão, quando precisa buscar água, quem vai? (múltipla)
+        <div ng-show="questao_4_1==2&&pre_form_2==0" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">(A) 4.23 No verão, quando precisa buscar água, quem vai? (múltipla)
             </label>
             <div class="checkbox"><label>
                 <input name="questao_4_23" type="checkbox" value="1" > 1. As mulheres (adultas) da casa
@@ -2166,8 +2164,8 @@
 			<input type="hidden" name="questao_4_23" value="">             
         </div>  
 
-        <div ng-show="questao_4_1==2" class="form-group col-sm-12">
-            <label for="exampleInputEmail1">4.24 No verão os usos da água, os volumes consumidos e os valores 
+        <div ng-show="questao_4_1==2&&pre_form_2==0" class="form-group col-sm-12">
+            <label for="exampleInputEmail1">(A) 4.24 No verão os usos da água, os volumes consumidos e os valores 
                 pagos são os mesmos do inverno?
             </label>
             <div class="btn-group" data-toggle="buttons">
@@ -2184,7 +2182,7 @@
 
 
         <div ng-show="pre_form_2==1" class="form-group col-sm-12 depois">
-            <label for="exampleInputEmail1"> 4.34 (No caso de não estar ligado ao SISAR- NSA) A chegada da água tratada aumentou ou trouxe melhorias na renda da família? (pode marcar mais de uma)
+            <label for="exampleInputEmail1">(D) 4.34 (No caso de não estar ligado ao SISAR- NSA) A chegada da água tratada aumentou ou trouxe melhorias na renda da família? (pode marcar mais de uma)
             </label>
             <div class="checkbox"><label>
                 <input name="questao_4_34" type="checkbox" value="1" > 1. Não
@@ -2212,7 +2210,7 @@
 
 
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
-            <label for="exampleInputEmail1">4.35 O que você faz com todas ás águas que tem (estimulada e múltipla) 
+            <label for="exampleInputEmail1">(D) 4.35 O que você faz com todas ás águas que tem (estimulada e múltipla) 
             </label>
             <div class="checkbox"><label>
                 <input name="questao_4_35" type="checkbox" value="1" > 1. Lavar vasilhas
@@ -2258,7 +2256,7 @@
 
 
         <div ng-show="pre_form_2==0" class="form-group antes col-sm-12">
-            <label for="exampleInputEmail1">4.36 Quando precisa buscar água, quem vai? (múltipla)
+            <label for="exampleInputEmail1">(A) 4.36 Quando precisa buscar água, quem vai? (múltipla)
             </label>
             <div class="checkbox"><label>
                 <input name="questao_4_36" type="checkbox" value="1" > 1. As mulheres (adultas) da casa
@@ -2378,7 +2376,7 @@
         </div>
 
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
-            <label for="exampleInputEmail1">4.40 Foi feita alguma melhoria na casa depois da chegada da água? (múltipla e estimulada se necessário)</label>
+            <label for="exampleInputEmail1">(D) 4.40 Foi feita alguma melhoria na casa depois da chegada da água? (múltipla e estimulada se necessário)</label>
             <div class="checkbox"><label>
                 <input name="questao_4_40" type="checkbox" value="1" > 1. Construção do banheiro (recursos próprios)
             </label></div>  
@@ -2431,7 +2429,7 @@
         
 
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
-            <label for="exampleInputEmail1">4.41 Quais mudanças ocorreram depois da chegada da água na comunidade? (estimulada e múltipla)</label>
+            <label for="exampleInputEmail1">(D) 4.41 Quais mudanças ocorreram depois da chegada da água na comunidade? (estimulada e múltipla)</label>
             <div class="checkbox"><label>
                 <input name="questao_4_41" type="checkbox" value="1" > 1. Aumentou a quantidade de água usada pela família
             </label></div>  
@@ -2494,7 +2492,7 @@
         </div>
 
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
-            <label for="exampleInputEmail1">4.43 Falta água do SISAR na sua casa? Se sim: De quanto em quanto tempo falta? (se sim estimular)</label>
+            <label for="exampleInputEmail1">(D) 4.43 Falta água do SISAR na sua casa? Se sim: De quanto em quanto tempo falta? (se sim estimular)</label>
             <div class="radio"><label>
                 <input name="questao_4_43" type="radio" value="1"> 1. Não nunca falta 	
             </label></div>  
@@ -2678,12 +2676,12 @@
 			<input type="hidden" name="questao_4_48" value="">
         </div>
 
-        <h2>ALTERAÇÃO NO TEMPO DE ACESSO A ÁGUA</h2>
+        <h2 ng-show="pre_form_2==1" >ALTERAÇÃO NO TEMPO DE ACESSO A ÁGUA</h2>
 
 
 
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
-            <label for="exampleInputEmail1">4.49 Com a recente chegada da água a sua família acha que ganhou mais tempo para: (múltipla e se sim estimular se necessário) </label>
+            <label for="exampleInputEmail1">(D) 4.49 Com a recente chegada da água a sua família acha que ganhou mais tempo para: (múltipla e se sim estimular se necessário) </label>
             <div class="checkbox"><label>
                 <input name="questao_4_49" type="checkbox" value="1" > 1. Não ganhou mais tempo
             </label></div>  
@@ -2725,7 +2723,7 @@
 			
         <h2>PERCEPÇÃO SOBRE CUSTOS PARA ACESSO E DISPONIBILIDADE DE PAGAMENTO</h2>
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
-            <label for="exampleInputEmail1">4.50 Se você não tivesse água tratada até quanto pagaria para ter?</label>
+            <label for="exampleInputEmail1">(D) 4.50 Se você não tivesse água tratada até quanto pagaria para ter?</label>
             <div class="radio"><label>
                 <input name="questao_4_50" type="radio" value="1"> 	1. De 0 a 05 reais
             </label></div>  
@@ -2795,7 +2793,7 @@
             
             
         <div ng-show="pre_form_2==0" class="form-group antes col-sm-12">
-            <label for="exampleInputEmail1">4.51 Quando tiver água tratada em casa, você acha que pode pagar  até quanto pagaria para ter?</label>
+            <label for="exampleInputEmail1">(A) 4.51 Quando tiver água tratada em casa, você acha que pode pagar  até quanto pagaria para ter?</label>
             <div class="radio"><label>
                 <input name="questao_4_51" type="radio" value="1"> 	1. De 0 a 05 reais
             </label></div>  
@@ -2889,7 +2887,7 @@
         </div>    
     
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
-            <label for="exampleInputEmail1">4.53 (No caso de não estar ligado a rede marcar NSA) A família considera o preço da conta de água (SISAR)? (estimulada)</label>
+            <label for="exampleInputEmail1">(D) 4.53 (No caso de não estar ligado a rede marcar NSA) A família considera o preço da conta de água (SISAR)? (estimulada)</label>
             <div class="radio"><label>
                 <input name="questao_4_53" type="radio" value="1"> 1. Barato 	
             </label></div>  
@@ -2913,7 +2911,7 @@
         </div>       
     
         <div ng-show="pre_form_2==1" class="form-group depois col-sm-12">
-            <label for="exampleInputEmail1">4.54 O valor gasto para pagar a conta de água (SISAR) interfere no orçamento familiar? (estimulada)</label>
+            <label for="exampleInputEmail1">(D) 4.54 O valor gasto para pagar a conta de água (SISAR) interfere no orçamento familiar? (estimulada)</label>
             <div class="radio"><label>
                 <input name="questao_4_54" type="radio" value="1"> 1. Interfere muito  	
             </label></div>  
@@ -3094,7 +3092,7 @@
             <h2>INFORMAÇÕES SOBRE O BANHEIRO CONSTRUÍDO</h2>
             
             <div class="form-group col-sm-12">
-                <label for="exampleInputEmail1">5.6. Foi construido banheiro na sua casa? Se sim o que recebeu? ( se necessário estimulada)</label>
+                <label for="exampleInputEmail1">(D) 5.6. Foi construido banheiro na sua casa? Se sim o que recebeu? ( se necessário estimulada)</label>
                 <div class="radio"><label>
                     <input name="questao_5_6" type="radio" value="1"> 1. Sim, recebeu banheiro com tanque séptico e sumidouro. 	
                 </label></div>  
@@ -3116,7 +3114,7 @@
             
             
             <div class="form-group col-sm-12">
-                <label for="exampleInputEmail1">5.7. A família notou algum problema depois que o banheiro foi construído? </label>
+                <label for="exampleInputEmail1">(D) 5.7. A família notou algum problema depois que o banheiro foi construído? </label>
                 <div class="radio"><label>
                     <input name="questao_5_7" type="radio" value="1"> 1. Sim	
                 </label></div>  
@@ -3284,33 +3282,6 @@
  
         <h2>INFORMAÇÕES SOBRE CRIANÇAS DE ATÉ CINCO ANOS</h2>
         
-        <!-- <br>7.1 Nome
-        
-        <br>7.2 Parentesco
-        <br>7.3 Sexo
-        7.4 Data Nascimento<br>
-        7.5 Data Nascimento Mae<br>
-        7.6 Ordem de gravidez<br>
-        7.7 Realizou pre-natal<br>
-        7.8 Quantas consultas<br>
-        7.9 Houve complicaçoes?<br>
-        7.10 Duracao da gravidez<br>
-        7.11 Houve internacao no 1 mes?<br>
-        7.12 Vacinas em dia?<br>
-        7.13 Amamentado no peito?<br>
-        7.14 Porque nao foi?<br>
-        7.15 Quanto tempo amamentada<br>
-        7.16 Ainda é amamentada?<br>
-        7.17 Usou vitamina?<br>
-        7.18 Está tomando remedio?<br>
-        7.19 Está com diarreia hoje?<br>
-        7.20 Ontem?<br>
-        7.21 Antes de ontem?<br>
-        7.22 Outros sintomas?<br>
-        7.23 Remedio contra vermes?<br>
-        
-         -->
-               
                     
         <div class="table-responsive">
         <table class="table table-condensed table-striped">
@@ -3319,15 +3290,15 @@
                 <th>#</th>
                 <th class="quest">7.1 Nome</th>
                 <th class="quest">7.2 Parentesco com o entrevistado</th>
-                <th class="quest">7.3 Sexo</th>
-                <th class="quest">7.4 Data de nascimento</th>
-                <th class="quest">7.5 Data de nascimento da mãe</th>
-                <th class="quest">7.6 Qual a ordem da gravidez? (estimulada)</th>                
-                <th class="quest">7.7. Realizou exame pré-natal durante a gravidez? </th>                
-                <th class="quest">7.8 Quantas consultas pré-natais? (estimulada)</th>                
-                <th class="quest">7.9. Houve complicações na gestação?</th>                
-                <th class="quest">7.10. Qual a duração da gravidez?(estimulada)</th>                
-                <th class="quest">7.11. Houve internação no 1º mês de vida?</th>                
+                <th ng-show="pre_form_2==0" class="quest">(A) 7.3 Sexo</th>
+                <th ng-show="pre_form_2==0" class="quest">(A) 7.4 Data de nascimento</th>
+                <th ng-show="pre_form_2==0" class="quest">(A) 7.5 Data de nascimento da mãe</th>
+                <th ng-show="pre_form_2==0" class="quest">(A) 7.6 Qual a ordem da gravidez? (estimulada)</th>                
+                <th ng-show="pre_form_2==0" class="quest">(A) 7.7. Realizou exame pré-natal durante a gravidez? </th>                
+                <th ng-show="pre_form_2==0" class="quest">(A) 7.8 Quantas consultas pré-natais? (estimulada)</th>                
+                <th ng-show="pre_form_2==0" class="quest">(A) 7.9. Houve complicações na gestação?</th>                
+                <th ng-show="pre_form_2==0" class="quest">(A) 7.10. Qual a duração da gravidez?(estimulada)</th>                
+                <th ng-show="pre_form_2==0" class="quest">(A) 7.11. Houve internação no 1º mês de vida?</th>                
                 <th class="quest">7.12. As vacinas estão em dia?</th>                
                 <th class="quest">7.13. Foi amamentada no peito alguma vez?</th>
                 <th class="quest">7.14. Por que nunca foi amamentada? </th>
@@ -3347,7 +3318,7 @@
                 <td>1</td>
                 <td><input name="questao_7_1_1" type="text" ng-model="questao_7_1_1"></td>
                 <td><input name="questao_7_2_1" type="text"></td>
-                <td>
+                <td  ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_1" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -3356,9 +3327,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_1" value="">
                 </td>
-                <td><input name="questao_7_4_1" type="date" value="1"></td>
-                <td><input name="questao_7_5_1" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_1" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_1" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_1" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -3382,7 +3353,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_6_1" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_1" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -3397,7 +3368,7 @@
                     </label></div>        
 					<input type="hidden" name="questao_7_7_1" value="">                                                                            
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_1" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -3415,7 +3386,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_8_1" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_1" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -3430,7 +3401,7 @@
                     </label></div>        
 					<input type="hidden" name="questao_7_9_1" value="">                                                                            
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_1" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -3451,7 +3422,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_10_1" value="">                                                                   
                 </td>     
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_1" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -3650,7 +3621,7 @@
                 <td>2</td>
                 <td><input name="questao_7_1_2" type="text" ng-model="questao_7_1_2"></td>
                 <td><input name="questao_7_2_2" type="text"></td>
-                <td>
+                <td  ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_2" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -3659,9 +3630,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_2" value="">
                 </td>
-                <td><input name="questao_7_4_2" type="date" value="1"></td>
-                <td><input name="questao_7_5_2" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_2" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_2" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_2" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -3685,7 +3656,7 @@
                     </label></div>   
 					<input type="hidden" name="questao_7_6_2" value="">                                                                                 
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_2" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -3700,7 +3671,7 @@
                     </label></div>   
 					<input type="hidden" name="questao_7_7_2" value="">                                                                                 
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_2" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -3718,7 +3689,7 @@
                     </label></div>              
 					<input type="hidden" name="questao_7_8_2" value="">                                                                      
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_2" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -3733,7 +3704,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_9_2" value="">                                                                             
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_2" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -3754,7 +3725,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_10_2" value="">                                                                             
                 </td>     
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_2" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -3953,7 +3924,7 @@
                 <td>3</td>
                 <td><input name="questao_7_1_3" type="text" ng-model="questao_7_1_3"></td>
                 <td><input name="questao_7_2_3" type="text"></td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_3" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -3962,9 +3933,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_3" value="">
                 </td>
-                <td><input name="questao_7_4_3" type="date" value="1"></td>
-                <td><input name="questao_7_5_3" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_3" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_3" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_3" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -3988,7 +3959,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_6_3" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_3" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4003,7 +3974,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_7_3" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_3" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -4021,7 +3992,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_8_3" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_3" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4036,7 +4007,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_9_3" value="">                                                                             
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_3" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -4057,7 +4028,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_10_3" value="">                                                                   
                 </td>              
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_3" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4256,7 +4227,7 @@
                 <td>4</td>
                 <td><input name="questao_7_1_4" type="text" ng-model="questao_7_1_4"></td>
                 <td><input name="questao_7_2_4" type="text"></td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_4" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -4265,9 +4236,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_4" value="">
                 </td>
-                <td><input name="questao_7_4_4" type="date" value="1"></td>
-                <td><input name="questao_7_5_4" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_4" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_4" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_4" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -4291,7 +4262,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_6_4" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_4" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4306,7 +4277,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_7_4" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_4" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -4324,7 +4295,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_8_4" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_4" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4339,7 +4310,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_9_4" value="">                                                                             
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_4" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -4360,7 +4331,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_10_4" value="">                                                                   
                 </td>              
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_4" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4559,7 +4530,7 @@
                 <td>5</td>
                 <td><input name="questao_7_1_5" type="text" ng-model="questao_7_1_5"></td>
                 <td><input name="questao_7_2_5" type="text"></td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_5" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -4568,9 +4539,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_5" value="">
                 </td>
-                <td><input name="questao_7_4_5" type="date" value="1"></td>
-                <td><input name="questao_7_5_5" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_5" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_5" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_5" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -4594,7 +4565,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_6_5" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_5" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4609,7 +4580,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_7_5" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_5" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -4627,7 +4598,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_8_5" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_5" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4642,7 +4613,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_9_5" value="">                                                                             
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_5" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -4663,7 +4634,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_10_5" value="">                                                                   
                 </td>              
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_5" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4861,7 +4832,7 @@
                 <td>6</td>
                 <td><input name="questao_7_1_6" type="text" ng-model="questao_7_1_6"></td>
                 <td><input name="questao_7_2_6" type="text"></td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_6" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -4870,9 +4841,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_6" value="">
                 </td>
-                <td><input name="questao_7_4_6" type="date" value="1"></td>
-                <td><input name="questao_7_5_6" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_6" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_6" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_6" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -4896,7 +4867,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_6_6" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_6" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4911,7 +4882,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_7_6" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_6" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -4929,7 +4900,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_8_6" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_6" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -4944,7 +4915,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_9_6" value="">                                                                             
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_6" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -4965,7 +4936,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_10_6" value="">                                                                   
                 </td>              
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_6" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -5163,7 +5134,7 @@
                 <td>7</td>
                 <td><input name="questao_7_1_7" type="text" ng-model="questao_7_1_7"></td>
                 <td><input name="questao_7_2_7" type="text"></td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_7" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -5172,9 +5143,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_7" value="">
                 </td>
-                <td><input name="questao_7_4_7" type="date" value="1"></td>
-                <td><input name="questao_7_5_7" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_7" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_7" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_7" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -5198,7 +5169,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_6_7" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_7" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -5213,7 +5184,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_7_7" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_7" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -5231,7 +5202,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_8_7" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_7" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -5246,7 +5217,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_9_7" value="">                                                                             
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_7" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -5267,7 +5238,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_10_7" value="">                                                                   
                 </td>              
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_7" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -5465,7 +5436,7 @@
                 <td>8</td>
                 <td><input name="questao_7_1_8" type="text" ng-model="questao_7_1_8"></td>
                 <td><input name="questao_7_2_8" type="text"></td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_8" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -5474,9 +5445,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_8" value="">
                 </td>
-                <td><input name="questao_7_4_8" type="date" value="1"></td>
-                <td><input name="questao_7_5_8" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_8" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_8" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_8" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -5500,7 +5471,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_6_8" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_8" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -5515,7 +5486,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_7_8" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_8" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -5533,7 +5504,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_8_8" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_8" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -5548,7 +5519,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_9_8" value="">                                                                             
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_8" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -5569,7 +5540,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_10_8" value="">                                                                   
                 </td>              
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_8" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -5767,7 +5738,7 @@
                 <td>9</td>
                 <td><input name="questao_7_1_9" type="text" ng-model="questao_7_1_9"></td>
                 <td><input name="questao_7_2_9" type="text"></td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_9" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -5776,9 +5747,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_9" value="">
                 </td>
-                <td><input name="questao_7_4_9" type="date" value="1"></td>
-                <td><input name="questao_7_5_9" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_9" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_9" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_9" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -5802,7 +5773,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_6_9" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_9" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -5817,7 +5788,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_7_9" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_9" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -5835,7 +5806,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_8_9" value="">                                                                             
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_9" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -5850,7 +5821,7 @@
                     </label></div>       
 					<input type="hidden" name="questao_7_9_9" value="">                                                                             
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_9" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -5871,7 +5842,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_10_9" value="">                                                                   
                 </td>              
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_9" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -6069,7 +6040,7 @@
                 <td>10</td>
                 <td><input name="questao_7_1_10" type="text" ng-model="questao_7_1_10"></td>
                 <td><input name="questao_7_2_10" type="text"></td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_3_10" type="radio" value="1"> 1. Feminino
                     </label></div>  
@@ -6078,9 +6049,9 @@
                     </label></div>
 					<input type="hidden" name="questao_7_3_10" value="">
                 </td>
-                <td><input name="questao_7_4_10" type="date" value="1"></td>
-                <td><input name="questao_7_5_10" type="date" value="1"></td>
-                <td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_4_10" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0"><input name="questao_7_5_10" type="date" value="1"></td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_6_10" type="radio" value="1"> 1. primeira
                     </label></div>  
@@ -6104,7 +6075,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_6_10" value="">                                                                   
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_7_10" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -6119,7 +6090,7 @@
                     </label></div>         
 					<input type="hidden" name="questao_7_7_10" value="">                                                                           
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_8_10" type="radio" value="1"> 1. uma a três
                     </label></div>  
@@ -6137,7 +6108,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_8_10" value="">                                                                   
                 </td>
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_9_10" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -6152,7 +6123,7 @@
                     </label></div>                 
 					<input type="hidden" name="questao_7_9_10" value="">                                                                   
                 </td>   
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_10_10" type="radio" value="1"> 1. nove meses completos
                     </label></div>  
@@ -6173,7 +6144,7 @@
                     </label></div>        
 					<input type="hidden" name="questao_7_10_10" value="">                                                                            
                 </td>     
-                <td>
+                <td ng-show="pre_form_2==0">
                     <div class="radio"><label>
                         <input name="questao_7_11_10" type="radio" value="1"> 1. sim
                     </label></div>  
@@ -6374,15 +6345,15 @@
                 <th>#</th>
                 <th class="quest">7.1 Nome</th>
                 <th class="quest">7.2 Parentesco com o entrevistado</th>
-                <th class="quest">7.3 Sexo</th>
-                <th class="quest">7.4 Data de nascimento</th>
-                <th class="quest">7.5 Data de nascimento da mãe</th>
-                <th class="quest">7.6 Qual a ordem da gravidez? (estimulada)</th>                
-                <th class="quest">7.7. Realizou exame pré-natal durante a gravidez? </th>                
-                <th class="quest">7.8 Quantas consultas pré-natais? (estimulada)</th>                
-                <th class="quest">7.9. Houve complicações na gestação?</th>                
-                <th class="quest">7.10. Qual a duração da gravidez?(estimulada)</th>                
-                <th class="quest">7.11. Houve internação no 1º mês de vida?</th>                
+                <th ng-show="pre_form_2==0" class="quest">7.3 Sexo</th>
+                <th ng-show="pre_form_2==0" class="quest">7.4 Data de nascimento</th>
+                <th ng-show="pre_form_2==0" class="quest">7.5 Data de nascimento da mãe</th>
+                <th ng-show="pre_form_2==0" class="quest">7.6 Qual a ordem da gravidez? (estimulada)</th>                
+                <th ng-show="pre_form_2==0" class="quest">7.7. Realizou exame pré-natal durante a gravidez? </th>                
+                <th ng-show="pre_form_2==0" class="quest">7.8 Quantas consultas pré-natais? (estimulada)</th>                
+                <th ng-show="pre_form_2==0" class="quest">7.9. Houve complicações na gestação?</th>                
+                <th ng-show="pre_form_2==0" class="quest">7.10. Qual a duração da gravidez?(estimulada)</th>                
+                <th ng-show="pre_form_2==0" class="quest">7.11. Houve internação no 1º mês de vida?</th>                
                 <th class="quest">7.12. As vacinas estão em dia?</th>                
                 <th class="quest">7.13. Foi amamentada no peito alguma vez?</th>
                 <th class="quest">7.14. Por que nunca foi amamentada? </th>

@@ -84,7 +84,7 @@
     </div>
 
 
-    <form class="form-horizontal" role="form" ng-model="formulario">        
+    <form class="form-horizontal" role="form" action="javascript: void(0)">        
         <div class="form-group">
             <label for="numero" class="col-sm-5 control-label">Número do questionário (nove dígitos)</label>
             <div class="col-sm-4">
@@ -7388,9 +7388,9 @@
         
         <div class="form-group" id="btns-footer">
             <div class="col-sm-12">
-                <button type="submit" class="btn btn-primary" ng-click="salvarClick()">Salvar questionário</button>
-				<button class="btn btn-primary" ng-click="getItensFromDB()">Export</button>
-                <button class="btn btn-primary" ng-click="clearDB()">Limpar Dados do Banco</button>
+                <a href="javascript:void(0)" class="btn btn-primary" ng-click="salvarClick()">Salvar questionário</a>
+				<a href="javascript:void(0)" class="btn btn-primary" ng-click="getItensFromDB()">Export</a>
+                <a href="javascript:void(0)" class="btn btn-primary" ng-click="clearDB()">Limpar Dados do Banco</a>
             </div>
         </div>        
     </form>

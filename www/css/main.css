@@ -19,6 +19,10 @@ input[type="radio"] {
     padding-left: 191px; }
     .table-responsive.domicilio tr:nth-child(even) td, .table-responsive.domicilio tr:nth-child(even) th {
       background: white; }
+    .table-responsive.domicilio input[type="text"] {
+      width: 155px; }
+    .table-responsive.domicilio thead tr {
+      height: 131px; }
     .table-responsive.domicilio .headcol {
       position: absolute;
       overflow: hidden;

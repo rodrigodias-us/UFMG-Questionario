@@ -19,6 +19,41 @@ input[type="radio"] {
             min-width: 150px;
         }
     }
+	&.domicilio{
+		padding-left: 191px;
+		tr:nth-child(even){
+			td,th{
+				background: white;
+			}
+		}
+		.headcol{
+			position: absolute;
+			overflow: hidden;
+			border-right: 1px solid #ddd;
+			&.headcol-id{
+				height: 67px;
+				left: 16px;
+				width: 27px;
+			}
+			&.headcol-nome{
+				left: 43px;
+				height: 67px;
+			}
+		}
+		th{
+			background: white;
+			&.headcol-id{
+				width: 165px;
+				padding-top: 65px;
+				height: 132px !important;
+			}
+			&.headcol-nome{
+				width: 165px;
+				padding-top: 65px;
+				height: 132px !important;
+			}
+		}
+	}
     
 }
     

@@ -15,6 +15,31 @@ input[type="radio"] {
     margin-bottom: 0; }
     .table-responsive > .table th.quest {
       min-width: 150px; }
+  .table-responsive.domicilio {
+    padding-left: 191px; }
+    .table-responsive.domicilio tr:nth-child(even) td, .table-responsive.domicilio tr:nth-child(even) th {
+      background: white; }
+    .table-responsive.domicilio .headcol {
+      position: absolute;
+      overflow: hidden;
+      border-right: 1px solid #ddd; }
+      .table-responsive.domicilio .headcol.headcol-id {
+        height: 67px;
+        left: 16px;
+        width: 27px; }
+      .table-responsive.domicilio .headcol.headcol-nome {
+        left: 43px;
+        height: 67px; }
+    .table-responsive.domicilio th {
+      background: white; }
+      .table-responsive.domicilio th.headcol-id {
+        width: 165px;
+        padding-top: 65px;
+        height: 132px !important; }
+      .table-responsive.domicilio th.headcol-nome {
+        width: 165px;
+        padding-top: 65px;
+        height: 132px !important; }
 
 #btns-footer {
   margin: 100px 0 400px 0; }

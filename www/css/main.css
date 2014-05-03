@@ -15,3 +15,6 @@ input[type="radio"] {
     margin-bottom: 0; }
     .table-responsive > .table th.quest {
       min-width: 150px; }
+
+#btns-footer {
+  margin: 100px 0 400px 0; }

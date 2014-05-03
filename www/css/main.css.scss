@@ -19,6 +19,44 @@ input[type="radio"] {
             min-width: 150px;
         }
     }
+    &.tabela-aguas {
+        padding-left: 200px;
+        tr {
+            
+            height: 133px;
+            td:first-child, td:nth-child(2), th:first-child, th:nth-child(2) {
+                
+    			position: absolute;
+    			overflow: hidden;
+                height: 133px;
+                vertical-align: bottom;
+                border-right: 1px solid #ddd;
+            }
+            td:first-child, th:first-child {
+                width: 30px;
+                left: 16px;
+            }
+            td:nth-child(2), th:nth-child(2){
+                width: 170px;
+                left: 46px;
+            }
+            th:first-child, th:nth-child(2) {
+                padding-top: 65px;
+            }
+        }
+        .chafariz {
+            height: 145px !important;
+            td {
+                height: 145px !important;
+            }
+        }
+		tr:nth-child(even){
+			td,th{
+				background: white;
+			}
+		}
+    }
+    
 	&.domicilio{
 		padding-left: 191px;
 		tr:nth-child(even){

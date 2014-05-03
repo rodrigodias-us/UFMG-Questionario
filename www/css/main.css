@@ -15,6 +15,30 @@ input[type="radio"] {
     margin-bottom: 0; }
     .table-responsive > .table th.quest {
       min-width: 150px; }
+  .table-responsive.tabela-aguas {
+    padding-left: 200px; }
+    .table-responsive.tabela-aguas tr {
+      height: 133px; }
+      .table-responsive.tabela-aguas tr td:first-child, .table-responsive.tabela-aguas tr td:nth-child(2), .table-responsive.tabela-aguas tr th:first-child, .table-responsive.tabela-aguas tr th:nth-child(2) {
+        position: absolute;
+        overflow: hidden;
+        height: 133px;
+        vertical-align: bottom;
+        border-right: 1px solid #ddd; }
+      .table-responsive.tabela-aguas tr td:first-child, .table-responsive.tabela-aguas tr th:first-child {
+        width: 30px;
+        left: 16px; }
+      .table-responsive.tabela-aguas tr td:nth-child(2), .table-responsive.tabela-aguas tr th:nth-child(2) {
+        width: 170px;
+        left: 46px; }
+      .table-responsive.tabela-aguas tr th:first-child, .table-responsive.tabela-aguas tr th:nth-child(2) {
+        padding-top: 65px; }
+    .table-responsive.tabela-aguas .chafariz {
+      height: 145px !important; }
+      .table-responsive.tabela-aguas .chafariz td {
+        height: 145px !important; }
+    .table-responsive.tabela-aguas tr:nth-child(even) td, .table-responsive.tabela-aguas tr:nth-child(even) th {
+      background: white; }
   .table-responsive.domicilio {
     padding-left: 191px; }
     .table-responsive.domicilio tr:nth-child(even) td, .table-responsive.domicilio tr:nth-child(even) th {

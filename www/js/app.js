@@ -106,6 +106,7 @@ angular.module('project', [])
 			alert("Gravado no Banco!");
 			$('form')[0].reset();
 			$('html, body').scrollTop(0);
+            $('.linha-marcada').removeClass("linha-marcada");
 		}
 		db.transaction(query, error, success);
 	}

@@ -8195,12 +8195,12 @@
 					<th class="quest">8.4 Quem é o chefe da família? </th>
 					<th class="quest">8.5 Até quando estudou? (>7 anos) (estimulada se necessário)</th>
 					<th class="quest">8.6.1 Quanto recebe normalmente por mês (R$)?  <br>Carteira assinada</th>                
-					<th class="quest">8.6.2 Ajuda regular de não morador</th>                
-					<th class="quest">8.6.3 Aposentadoria ou pensão </th>                
-					<th class="quest">8.6.4 Seguro desemprego</th>                
-					<th class="quest">8.6.5 Pensão alimentícia</th>                
-					<th class="quest">8.6.6 Bolsa família ou transferências similares</th>                
-					<th class="quest">8.6.7 Outras fontes de renumeração: (incluindo serviços como: agricultura, costura, lavar roupa, venda de comida, etc.) </th>  
+					<th class="quest">8.6.2 Quanto recebe normalmente por mês (R$)?  <br>Ajuda regular de não morador</th>                
+					<th class="quest">8.6.3 Quanto recebe normalmente por mês (R$)?  <br>Aposentadoria ou pensão </th>                
+					<th class="quest">8.6.4 Quanto recebe normalmente por mês (R$)?  <br>Seguro desemprego</th>                
+					<th class="quest">8.6.5 Quanto recebe normalmente por mês (R$)?  <br>Pensão alimentícia</th>                
+					<th class="quest">8.6.6 Quanto recebe normalmente por mês (R$)?  <br>Bolsa família ou transferências similares</th>                
+					<th class="quest">8.6.7 Quanto recebe normalmente por mês (R$)?  <br>Outras fontes de renumeração: (incluindo serviços como: agricultura, costura, lavar roupa, venda de comida, etc.) </th>    
                     <th class="quest">8.1 Primeiro nome e a relação com o chefe da família</th>              
 				</tr>
 			</thead>        
@@ -8742,7 +8742,6 @@
                     <option value="1">1- Não</option>
                     <option value="2">2- Sim</option>
                     <option value="998">998- NSR (ir para a pergunta 9.3)</option>
-                    <option value="99">999-NQR (ir para a pergunta 9.3)</option>
                 </select>
             </p>                             
         </div>       
@@ -8791,7 +8790,7 @@
                     <input name="questao_9_3_canal" type="checkbox" value="4" > 4. Pescar
                 </label></div>
                 <div class="checkbox"><label>
-                    <input name="questao_9_3_canal" type="checkbox" value="5" > 5. Lavar animais
+                    <input name="questao_9_3_canal" type="checkbox" value="5" > 5. Levar animais
                 </label></div>
                 <div class="checkbox"><label>
                     <input name="questao_9_3_canal" type="checkbox" value="6" > 6. Outros
@@ -8808,7 +8807,7 @@
         </div>          
        
         <div class="form-group col-sm-12">
-            <label for="exampleInputEmail1">9.4 Como você caracteriza a qualidade da água do {Rio/canal}? (estimulada e múltipla)</label>
+            <label for="exampleInputEmail1">9.4 A água do {Rio/canal} é boa para que? (estimulada e múltipla)</label>
             <div><strong>Rio:</strong>
                 <div class="checkbox"><label>
                     <input name="questao_9_4_rio" type="checkbox" value="1" >  1- É boa para tomar banho
@@ -8820,7 +8819,7 @@
                     <input name="questao_9_4_rio" type="checkbox" value="3" >  3- É bom para praticar atividades 
                 </label></div>
                 <div class="checkbox"><label>
-                    <input name="questao_9_4_rio" type="checkbox" value="4" >  4- É bom levar animais
+                    <input name="questao_9_4_rio" type="checkbox" value="4" >  4- É bom para levar animais
                 </label></div>
                 <div class="checkbox"><label>
                     <input name="questao_9_4_rio" type="checkbox" value="5" >  5- Não é aceitável para nenhum uso 
@@ -8870,9 +8869,9 @@
                     <option value="1">1-Muito poluído</option>
                     <option value="2">2-Poluído</option>
                     <option value="3">3-Pouco poluído</option>
-                    <option value="4">4-Limpo (ir para a pergunta 9.3)</option>
-                    <option value="998">998- NSR (ir para a pergunta 9.3)</option>
-                    <option value="99">999-NQR (ir para a pergunta 9.3)</option>
+                    <option value="4">4-Limpo (ir para a pergunta 9.7)</option>
+                    <option value="998">998- NSR (ir para a pergunta 9.7)</option>
+                    <option value="99">999-NQR (ir para a pergunta 9.7)</option>
                 </select>
             </p>           
                                       
@@ -8887,7 +8886,6 @@
                     <option value="1">1- Não</option>
                     <option value="2">2- Sim</option>
                     <option value="998">998- NSR (ir para a pergunta 9.3)</option>
-                    <option value="99">999-NQR (ir para a pergunta 9.3)</option>
                 </select>
             </p>           
                                    
@@ -8909,7 +8907,7 @@
                     <input name="questao_9_7" type="checkbox" value="4" > 4. Pescar
                 </label></div>
                 <div class="checkbox"><label>
-                    <input name="questao_9_7" type="checkbox" value="5" > 5. Lavar animais
+                    <input name="questao_9_7" type="checkbox" value="5" > 5. Levar animais
                 </label></div>
                 <div class="checkbox"><label>
                     <input name="questao_9_7" type="checkbox" value="6" > 6. Outros
@@ -8927,7 +8925,7 @@
         </div>          
        
         <div ng-show="questao_9_outro" class="form-group col-sm-12">
-            <label for="exampleInputEmail1">9.8 Como você caracteriza a qualidade da água do {{questao_9_outro}}? (estimulada e múltipla)</label>
+            <label for="exampleInputEmail1">9.8 A água do {{questao_9_outro}} é boa para que? (estimulada e múltipla)</label>
             <div>
                 <div class="checkbox"><label>
                     <input name="questao_9_8" type="checkbox" value="1" >  1- É boa para tomar banho
@@ -8939,7 +8937,7 @@
                     <input name="questao_9_8" type="checkbox" value="3" >  3- É bom para praticar atividades 
                 </label></div>
                 <div class="checkbox"><label>
-                    <input name="questao_9_8" type="checkbox" value="4" >  4- É bom levar animais
+                    <input name="questao_9_8" type="checkbox" value="4" >  4- É bom para levar animais
                 </label></div>
                 <div class="checkbox"><label>
                     <input name="questao_9_8" type="checkbox" value="5" >  5- Não é aceitável para nenhum uso 
@@ -9086,12 +9084,7 @@
      </p>
     <br>
     
-     <p>Encerramento da entrevista (hora): <input name="encerramento_hora" type="text"></p>
-    
-    
-
-
-        
+     <p>Encerramento da entrevista (hora): <input name="encerramento_hora" type="time"></p>
         
         <div class="form-group" id="btns-footer">
             <div class="col-sm-12">

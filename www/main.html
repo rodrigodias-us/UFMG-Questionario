@@ -3909,17 +3909,14 @@
             <label for="exampleInputEmail1">(D) 4.34 (No caso de não estar ligado ao SISAR- NSA) A chegada da água tratada aumentou ou trouxe melhorias na renda da família? (pode marcar mais de uma)
             </label>
             <div class="checkbox"><label>
-                <input name="questao_4_34" type="checkbox" value="1" > 1. Não
-            </label></div>  
-            <div class="checkbox"><label>
-                <input name="questao_4_34" type="checkbox" value="2" > 2. Sim: criação de animais
-            </label></div>
-            <div class="checkbox"><label>
-                <input name="questao_4_34" type="checkbox" value="3" > 3. Sim: cultiva plantas
-            </label></div> 
-            <div class="checkbox"><label>
-                <input name="questao_4_34" type="checkbox" value="4" > 4. Sim: outras
-            </label></div> 
+                <input name="questao_4_34" type="checkbox" value="1" > <strong>1. Não </strong><br>
+            </label></div>  <br>
+            <div class="">
+                <strong>Sim. Quais: </strong><br>
+                <label><input name="questao_4_34" type="checkbox" value="2" > 2. Sim, criação de animais</label>
+                <label><input name="questao_4_34" type="checkbox" value="3" > 3. Sim, cultiva plantas</label>
+                <label><input name="questao_4_34" type="checkbox" value="4" > 4. Sim, outras</label>
+            </div> 
             <div class="checkbox"><label>
                 <input name="questao_4_34" type="checkbox" value="997" > NSA – Mudou há pouco tempo
             </label></div> 
@@ -3979,8 +3976,8 @@
         </div>  
 
 
-        <div ng-show="pre_form_2==0" class="form-group antes col-sm-12">
-            <label for="exampleInputEmail1">(A) 4.36 Quando precisa buscar água, quem vai? (múltipla)
+        <div ng-show="pre_form_2==1" class="form-group antes col-sm-12">
+            <label for="exampleInputEmail1">(D) 4.36 Quando precisa buscar água, quem vai? (múltipla)
             </label>
             <div class="checkbox"><label>
                 <input name="questao_4_36" type="checkbox" value="1" > 1. As mulheres (adultas) da casa
@@ -4286,22 +4283,22 @@
         <div class="form-group col-sm-12">
             <label for="exampleInputEmail1">4.45 A família faz algum tratamento da água que usa para beber? </label>
             <div class="radio"><label>
-                <input name="questao_4_45" type="radio" value="1"> 1. Sim
+                <input name="questao_4_45" ng-model="questao_4_45" type="radio" value="1"> 1. Sim
             </label></div>  
 
             <div class="radio"><label>
-                <input name="questao_4_45" type="radio" value="2"> 2. Não (ir para a pergunta 4.47)
+                <input name="questao_4_45" ng-model="questao_4_45" type="radio" value="2"> 2. Não 
             </label></div>                                                                              
             <div class="radio"><label>
-                <input name="questao_4_45" type="radio" value="998"> 998. NSR (ir para a pergunta 4.47)
+                <input name="questao_4_45" ng-model="questao_4_45" type="radio" value="998"> NSR 
             </label></div>  
             <div class="radio"><label>
-                <input name="questao_4_45" type="radio" value="999"> 999. NQR (ir para a pergunta 4.47)
+                <input name="questao_4_45" ng-model="questao_4_45" type="radio" value="999"> NQR 
             </label></div>            
 			<input type="hidden" name="questao_4_45" value="">                         
         </div>
 	
-         <div class="form-group col-sm-12">
+         <div class="form-group col-sm-12" ng-show="questao_4_45==1" >
              <label for="exampleInputEmail1">4.46 Como sua família trata a água para beber? </label>
              <div class="radio"><label>
                  <input name="questao_4_46" type="radio" value="1"> 1. Só filtração (filtro caseiro)
@@ -4432,9 +4429,10 @@
             <div class="checkbox"><label>
                 <input name="questao_4_49" type="checkbox" value="8" > 8. Estudar
             </label></div>    
-            <div class="checkbox"><label>
-                <input name="questao_4_49" type="checkbox" value="9" > 9. Outros 
-            </label></div>              
+            <div class="checkbox">
+                <label><input name="questao_4_49" type="checkbox" value="9" > 9. Outro. </label>
+                Especificar: <input name="questao_4_49_especificar" type="text" value="" >
+            </div>              
                              
             <div class="checkbox"><label>
                 <input name="questao_4_49" type="checkbox" value="997" > NSA - mora a pouco tempo ou não esta ligado

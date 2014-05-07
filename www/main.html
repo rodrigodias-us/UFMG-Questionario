@@ -8053,15 +8053,15 @@
                 <th>#</th>
                 <th class="quest">7.1 Nome</th>
                 <th class="quest">7.2 Parentesco com o entrevistado</th>
-                <th ng-show="pre_form_2==0" class="quest">7.3 Sexo</th>
-                <th ng-show="pre_form_2==0" class="quest">7.4 Data de nascimento</th>
-                <th ng-show="pre_form_2==0" class="quest">7.5 Data de nascimento da mãe</th>
-                <th ng-show="pre_form_2==0" class="quest">7.6 Qual a ordem da gravidez? (estimulada)</th>                
-                <th ng-show="pre_form_2==0" class="quest">7.7. Realizou exame pré-natal durante a gravidez? </th>                
-                <th ng-show="pre_form_2==0" class="quest">7.8 Quantas consultas pré-natais? (estimulada)</th>                
-                <th ng-show="pre_form_2==0" class="quest">7.9. Houve complicações na gestação?</th>                
-                <th ng-show="pre_form_2==0" class="quest">7.10. Qual a duração da gravidez?(estimulada)</th>                
-                <th ng-show="pre_form_2==0" class="quest">7.11. Houve internação no 1º mês de vida?</th>                
+                <th class="quest">7.3 Sexo</th>
+                <th class="quest">7.4 Data de nascimento</th>
+                <th class="quest">7.5 Data de nascimento da mãe</th>
+                <th class="quest">7.6 Qual a ordem da gravidez? (estimulada)</th>                
+                <th class="quest">7.7. Realizou exame pré-natal durante a gravidez? </th>                
+                <th class="quest">7.8 Quantas consultas pré-natais? (estimulada)</th>                
+                <th class="quest">7.9. Houve complicações na gestação?</th>                
+                <th class="quest">7.10. Qual a duração da gravidez?(estimulada)</th>                
+                <th class="quest">7.11. Houve internação no 1º mês de vida?</th>                
                 <th class="quest">7.12. As vacinas estão em dia?</th>                
                 <th class="quest">7.13. Foi amamentada no peito alguma vez?</th>
                 <th class="quest">7.14. Por que nunca foi amamentada? </th>
@@ -8200,13 +8200,14 @@
 					<th class="quest">8.6.4 Seguro desemprego</th>                
 					<th class="quest">8.6.5 Pensão alimentícia</th>                
 					<th class="quest">8.6.6 Bolsa família ou transferências similares</th>                
-					<th class="quest">8.6.7 Outras fontes de renumeração: (incluindo serviços como: agricultura, costura, lavar roupa, venda de comida, etc.) </th>                
+					<th class="quest">8.6.7 Outras fontes de renumeração: (incluindo serviços como: agricultura, costura, lavar roupa, venda de comida, etc.) </th>  
+                    <th class="quest">8.1 Primeiro nome e a relação com o chefe da família</th>              
 				</tr>
 			</thead>        
 			<tbody>
 				<tr>
 					<td class="headcol headcol-id">1</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_1" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_1" ng-model="questao_8_1_1" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_1" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8232,9 +8233,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8245,10 +8246,11 @@
 					<td><input name="questao_8_6_5_1" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_1" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_1" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_1"></td>   
 				</tr>
 				<tr>
 					<td class="headcol headcol-id">2</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_2" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_2" ng-model="questao_8_1_2" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_2" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8274,9 +8276,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8287,10 +8289,11 @@
 					<td><input name="questao_8_6_5_2" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_2" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_2" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_2"></td>   
 				</tr>
 				<tr>
 					<td class="headcol headcol-id">3</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_3" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_3" ng-model="questao_8_1_3" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_3" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8316,9 +8319,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8329,10 +8332,11 @@
 					<td><input name="questao_8_6_5_3" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_3" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_3" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_3"></td>   
 				</tr>
 				<tr>
 					<td class="headcol headcol-id">4</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_4" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_4" ng-model="questao_8_1_4" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_4" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8358,9 +8362,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8371,10 +8375,11 @@
 					<td><input name="questao_8_6_5_4" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_4" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_4" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_4"></td>   
 				</tr>
 				<tr>
 					<td class="headcol headcol-id">5</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_5" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_5" ng-model="questao_8_1_5" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_5" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8400,9 +8405,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8413,10 +8418,11 @@
 					<td><input name="questao_8_6_5_5" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_5" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_5" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_5"></td>   
 				</tr>
 				<tr>
 					<td class="headcol headcol-id">6</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_6" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_6" ng-model="questao_8_1_6" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_6" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8442,9 +8448,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8455,10 +8461,11 @@
 					<td><input name="questao_8_6_5_6" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_6" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_6" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_6"></td>   
 				</tr>
 				<tr>
 					<td class="headcol headcol-id">7</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_7" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_7" ng-model="questao_8_1_7" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_7" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8484,9 +8491,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8497,10 +8504,11 @@
 					<td><input name="questao_8_6_5_7" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_7" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_7" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_7"></td>   
 				</tr>
 				<tr>
 					<td class="headcol headcol-id">8</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_8" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_8" ng-model="questao_8_1_8" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_8" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8526,9 +8534,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8539,10 +8547,11 @@
 					<td><input name="questao_8_6_5_8" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_8" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_8" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_8"></td>   
 				</tr>
 				<tr>
 					<td class="headcol headcol-id">9</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_9" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_9" ng-model="questao_8_1_9" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_9" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8568,9 +8577,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8581,10 +8590,11 @@
 					<td><input name="questao_8_6_5_9" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_9" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_9" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_9"></td>  
 				</tr>
 				<tr>
 					<td class="headcol headcol-id">10</td>
-					<td class="headcol headcol-nome"><input name="questao_8_1_10" type="text" placeholder="nome"></td>
+					<td class="headcol headcol-nome"><input name="questao_8_1_10" ng-model="questao_8_1_10" type="text" placeholder="nome"></td>
 					<td><input name="questao_8_2_10" type="number" style="width: 50px"></td>
 					<td>
 						<div class="radio"><label>
@@ -8610,9 +8620,9 @@
 								<option value="8"> 8- Curso Técnico completo </option>
 								<option value="9"> 9- Nível Superior incompleto </option>
 								<option value="10"> 10- Nível Superior completo </option>
-								<option value="NSR"> NSR </option>
-								<option value="NSR"> NSR </option>
-								<option value="NQR"> NQR </option>
+								<option value="997"> NSA </option>
+								<option value="998"> NSR </option>
+								<option value="999"> NQR </option>
 							</select>
 						</label></div>                                      
 					</td>                
@@ -8623,6 +8633,7 @@
 					<td><input name="questao_8_6_5_10" type="number" placeholder="pensão alimentícia"></td>
 					<td><input name="questao_8_6_6_10" type="number" placeholder="bolsa"></td>
 					<td><input name="questao_8_6_7_10" type="number" placeholder="outras"></td>
+                    <td nowrap><input type="text" ng-model="questao_8_1_10"></td>
 				</tr>
 			</tbody>        
 		</table>

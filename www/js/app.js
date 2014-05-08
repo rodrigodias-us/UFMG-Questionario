@@ -34,6 +34,7 @@ angular.module('project', [])
 		$scope.has_children = '0';
 		$scope.numero = '';
 		$scope.$$phase || $scope.$apply();
+		$scope.changeNumber();
 	}
 	
 	$scope.saveFile = function(filename, data, callback) {
@@ -159,7 +160,7 @@ angular.module('project', [])
 		$scope.pre_num = $scope.pre_form_1 + $scope.pre_form_2 + $scope.pre_form_3 + $scope.pre_form_4 + $scope.has_children;
 		$scope.numero_full = $scope.pre_num + $scope.numero;
 		$("#numero").val('[' + $scope.numero_full + ']');
+		$scope.$$phase || $scope.$apply();
 	}
 	$scope.resetForm();
-	$scope.changeNumber();
 });

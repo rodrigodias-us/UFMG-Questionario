@@ -1,14 +1,6 @@
 angular.module('project', [])
 
 .controller('AppController', function($scope){
-	
-	$scope.pre_form_1 = '0';
-	$scope.pre_form_2 = '0';
-	$scope.pre_form_3 = '0';
-	$scope.pre_form_4 = '0';
-	$scope.has_children = '0';
-	$scope.numero = '';
-	
 
 	$.fn.serializeObject = function()
 	{
@@ -31,6 +23,18 @@ angular.module('project', [])
 		var jsonData = JSON.stringify($('form').serializeObject());
 		$scope.insertItemDB(jsonData);
 	};
+	
+	$scope.resetForm = function(){
+		$scope.pre_form_1 = '0';
+		$scope.pre_form_2 = '0';
+		$scope.pre_form_3 = '0';
+		$scope.pre_form_4 = '0';
+		$('[ng-model="pre_form_4"]').css('background', 'initial');
+		$('[ng-model="pre_form_4"]').css('color', 'initial');
+		$scope.has_children = '0';
+		$scope.numero = '';
+		$scope.$$phase || $scope.$apply();
+	}
 	
 	$scope.saveFile = function(filename, data, callback) {
 		var defaultFileName =  'export-file.txt';
@@ -105,6 +109,7 @@ angular.module('project', [])
 		function success() {
 			alert("Gravado no Banco!");
 			$('form')[0].reset();
+			$scope.resetForm();
 			$('html, body').scrollTop(0);
             $('.linha-marcada').removeClass("linha-marcada");
 		}
@@ -155,5 +160,6 @@ angular.module('project', [])
 		$scope.numero_full = $scope.pre_num + $scope.numero;
 		$("#numero").val('[' + $scope.numero_full + ']');
 	}
+	$scope.resetForm();
 	$scope.changeNumber();
 });

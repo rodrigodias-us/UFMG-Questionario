@@ -133,8 +133,8 @@ angular.module('project', [])
 				$scope.dataExport.push(JSON.parse(results.rows.item(i).data));
 			}
 			var csv = $scope.convertToCSV($scope.dataExport);
-			window.open("data:text/csv;charset=utf-8," + escape(csv));
-			// $scope.saveFile('export.csv', csv);
+			// window.open("data:text/csv;charset=utf-8," + escape(csv));
+			$scope.saveFile('export.csv', csv);
 			alert("Arquivo Exportado");
 		}
 		db.transaction(queryDB, error);

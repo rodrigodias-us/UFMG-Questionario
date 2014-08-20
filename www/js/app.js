@@ -149,14 +149,25 @@ angular.module('project', [])
 			console.log(err);
 		}
 		function success(tx, results) {
-			$scope.dataExport = [];
 			var len = results.rows.length;
+      var file_num = 1;
 			console.log("DADOS table: " + len + " rows found.");
+      
+      $scope.dataExport = [];
+      
 			for (var i=0; i<len; i++){
+        if (i % 100 == 0 && i != 0) {
+          $scope.saveFile('export_' + file_num + '.json', $scope.dataExport);
+          file_num++;
+          $scope.dataExport = [];
+        }
+        
 				$scope.dataExport.push(JSON.parse(results.rows.item(i).data));
 			}
+      
 			// window.open("data:text/csv;charset=utf-8," + escape(csv));
-			$scope.saveFile('export.json', $scope.dataExport);
+      $scope.saveFile('export_' + file_num + '.json', $scope.dataExport);
+      
 			alert("Arquivo Exportado");
 		}
 		db.transaction(queryDB, error);
